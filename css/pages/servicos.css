@@ -1,0 +1,499 @@
+/* =======================================================
+   SERVICOS.CSS
+   Projeto: B2 Energia Solar
+=======================================================*/
+
+/* =======================================================
+   HERO DA PÁGINA
+=======================================================*/
+
+.page-hero{
+
+    background:
+    linear-gradient(
+        rgba(7,21,31,.88),
+        rgba(7,21,31,.88)
+    ),
+    url("../../img/services/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    text-align:center;
+
+    padding:180px 20px 120px;
+
+    color:#fff;
+
+}
+
+.page-hero span{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+.page-hero h1{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.page-hero p{
+
+    color:#d8d8d8;
+
+    max-width:760px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* =======================================================
+   SERVIÇOS
+=======================================================*/
+
+.servicos{
+
+    background:var(--bg-section);
+
+    padding:120px 0;
+
+}
+
+.servicos-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+/* =======================================================
+   CARD
+=======================================================*/
+
+.servico-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-md);
+
+    transition:.4s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.servico-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* =======================================================
+   IMAGEM
+=======================================================*/
+
+.servico-img{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.servico-img img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.servico-card:hover .servico-img img{
+
+    transform:scale(1.08);
+
+}
+
+/* =======================================================
+   ÍCONE
+=======================================================*/
+
+.servico-icon{
+
+    position:absolute;
+
+    bottom:-35px;
+
+    left:30px;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* =======================================================
+   TEXTO
+=======================================================*/
+
+.servico-info{
+
+    padding:55px 30px 30px;
+
+}
+
+.servico-info h3{
+
+    color:var(--secondary);
+
+    margin-bottom:18px;
+
+}
+
+.servico-info p{
+
+    margin-bottom:25px;
+
+    line-height:1.8;
+
+}
+
+/* =======================================================
+   LISTA
+=======================================================*/
+
+.servico-info ul{
+
+    margin-bottom:30px;
+
+}
+
+.servico-info li{
+
+    margin-bottom:12px;
+
+    color:var(--text-light);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.servico-info li::before{
+
+    content:"✓";
+
+    color:var(--success);
+
+    font-weight:bold;
+
+}
+
+/* =======================================================
+   BOTÃO
+=======================================================*/
+
+.servico-info .btn{
+
+    width:100%;
+
+}
+
+/* =======================================================
+   DIFERENCIAIS
+=======================================================*/
+
+.diferenciais{
+
+    background:white;
+
+    padding:120px 0;
+
+}
+
+.diferenciais-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.diferencial{
+
+    background:var(--bg-section);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.diferencial:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.diferencial i{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.diferencial h3{
+
+    margin-bottom:15px;
+
+}
+
+/* =======================================================
+   PROCESSO
+=======================================================*/
+
+.processo{
+
+    background:var(--secondary);
+
+    color:white;
+
+    padding:120px 0;
+
+}
+
+.processo h2{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:80px;
+
+}
+
+.timeline{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:30px;
+
+}
+
+.etapa{
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+.numero{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+.etapa h4{
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+.etapa p{
+
+    color:#ddd;
+
+}
+
+/* Linha */
+
+.etapa:not(:last-child)::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:40px;
+
+    left:70%;
+
+    width:100%;
+
+    height:3px;
+
+    background:rgba(255,255,255,.2);
+
+}
+
+/* =======================================================
+   CTA
+=======================================================*/
+
+.servicos-cta{
+
+    background:
+    linear-gradient(
+        rgba(13,59,102,.94),
+        rgba(13,59,102,.94)
+    ),
+    url("../../img/services/cta.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+
+    padding:120px 20px;
+
+}
+
+.servicos-cta h2{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.servicos-cta p{
+
+    color:#ddd;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+}
+
+/* =======================================================
+   RESPONSIVO
+=======================================================*/
+
+@media(max-width:992px){
+
+    .timeline{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .etapa::after{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .servicos-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .diferenciais-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .page-hero{
+
+        padding:150px 20px 90px;
+
+    }
+
+}

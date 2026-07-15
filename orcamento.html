@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- =====================================================
+         CONFIGURAÇÕES BÁSICAS
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Solicite seu Orçamento | B2 Energia Solar
+    </title>
+
+    <meta
+        name="description"
+        content="Solicite um orçamento personalizado de energia solar com a B2 Energia Solar. Preencha seus dados e fale diretamente com nossa equipe pelo WhatsApp."
+    >
+
+    <meta
+        name="keywords"
+        content="orçamento energia solar, simulação energia solar, preço energia solar, B2 Energia Solar, energia solar Espírito Santo"
+    >
+
+    <meta
+        name="author"
+        content="B2 Energia Solar"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0d3b66"
+    >
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta
+        property="og:title"
+        content="Solicite seu orçamento | B2 Energia Solar"
+    >
+
+    <meta
+        property="og:description"
+        content="Preencha seus dados e receba uma análise personalizada para seu projeto de energia solar."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:image"
+        content="assets/img/hero/hero.jpg"
+    >
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/img/logo/favicon.png"
+    >
+
+    <!-- =====================================================
+         FONTES
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =====================================================
+         ÍCONES
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- =====================================================
+         CSS PRINCIPAL
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <!-- =====================================================
+         ESTILOS ESPECÍFICOS DESTA PÁGINA
+    ====================================================== -->
+
+    <style>
+
+        /* ===================================================
+           HERO DO ORÇAMENTO
+        =================================================== */
+
+        .orcamento-hero{
+
+            position:relative;
+
+            overflow:hidden;
+
+            padding:180px 20px 110px;
+
+            background:
+                linear-gradient(
+                    rgba(7,21,31,.88),
+                    rgba(7,21,31,.90)
+                ),
+                url("assets/img/hero/banner.jpg");
+
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+
+            text-align:center;
+
+            color:var(--white);
+
+        }
+
+        .orcamento-hero::before{
+
+            content:"";
+
+            position:absolute;
+
+            top:-160px;
+            right:-120px;
+
+            width:360px;
+            height:360px;
+
+            border-radius:50%;
+
+            background:rgba(255,122,0,.12);
+
+        }
+
+        .orcamento-hero::after{
+
+            content:"";
+
+            position:absolute;
+
+            left:-150px;
+            bottom:-180px;
+
+            width:380px;
+            height:380px;
+
+            border-radius:50%;
+
+            background:rgba(0,180,216,.08);
+
+        }
+
+        .orcamento-hero .container{
+
+            position:relative;
+
+            z-index:2;
+
+        }
+
+        .orcamento-hero span{
+
+            display:inline-flex;
+
+            align-items:center;
+
+            gap:10px;
+
+            margin-bottom:18px;
+
+            color:var(--primary);
+
+            font-size:.92rem;
+            font-weight:var(--fw-semibold);
+
+            text-transform:uppercase;
+            letter-spacing:1.5px;
+
+        }
+
+        .orcamento-hero span::before,
+        .orcamento-hero span::after{
+
+            content:"";
+
+            width:32px;
+            height:3px;
+
+            border-radius:var(--radius-full);
+
+            background:var(--primary);
+
+        }
+
+        .orcamento-hero h1{
+
+            max-width:900px;
+
+            margin:0 auto 22px;
+
+            color:var(--white);
+
+            font-size:clamp(2.4rem,5vw,4rem);
+
+        }
+
+        .orcamento-hero p{
+
+            max-width:760px;
+
+            margin:0 auto;
+
+            color:#dce3e8;
+
+            font-size:1.08rem;
+
+            line-height:1.85;
+
+        }
+
+        /* ===================================================
+           SEÇÃO PRINCIPAL
+        =================================================== */
+
+        .orcamento-section{
+
+            padding:110px 0;
+
+            background:var(--bg-section);
+
+        }
+
+        .orcamento-layout{
+
+            display:grid;
+
+            grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);
+
+            gap:55px;
+
+            align-items:start;
+
+        }
+
+        /* ===================================================
+           INFORMAÇÕES LATERAIS
+        =================================================== */
+
+        .orcamento-info{
+
+            position:sticky;
+
+            top:120px;
+
+        }
+
+        .orcamento-info > span{
+
+            display:inline-flex;
+
+            align-items:center;
+
+            gap:10px;
+
+            margin-bottom:16px;
+
+            color:var(--primary);
+
+            font-size:.9rem;
+            font-weight:var(--fw-semibold);
+
+            text-transform:uppercase;
+            letter-spacing:1px;
+
+        }
+
+        .orcamento-info > span::before{
+
+            content:"";
+
+            width:30px;
+            height:3px;
+
+            border-radius:var(--radius-full);
+
+            background:var(--primary);
+
+        }
+
+        .orcamento-info h2{
+
+            margin-bottom:20px;
+
+            color:var(--secondary);
+
+            font-size:clamp(2rem,4vw,2.8rem);
+
+        }
+
+        .orcamento-info > p{
+
+            margin-bottom:32px;
+
+            color:var(--text-light);
+
+            line-height:1.85;
+
+        }
+
+        .orcamento-beneficios{
+
+            display:flex;
+
+            flex-direction:column;
+
+            gap:18px;
+
+        }
+
+        .orcamento-beneficio{
+
+            display:flex;
+
+            align-items:flex-start;
+
+            gap:16px;
+
+            padding:20px;
+
+            background:var(--white);
+
+            border:1px solid var(--gray-200);
+
+            border-radius:var(--radius-md);
+
+            box-shadow:var(--shadow-sm);
+
+        }
+
+        .orcamento-beneficio i{
+
+            width:46px;
+            height:46px;
+
+            display:flex;
+
+            align-items:center;
+            justify-content:center;
+
+            flex-shrink:0;
+
+            color:var(--white);
+
+            background:var(--primary);
+
+            border-radius:14px;
+
+            font-size:20px;
+
+        }
+
+        .orcamento-beneficio h3{
+
+            margin-bottom:6px;
+
+            color:var(--secondary);
+
+            font-size:1.08rem;
+
+        }
+
+        .orcamento-beneficio p{
+
+            margin:0;
+
+            font-size:.92rem;
+
+            line-height:1.6;
+
+        }
+
+        .contato-direto{
+
+            margin-top:28px;
+
+            padding:24px;
+
+            color:var(--white);
+
+            background:var(--secondary);
+
+            border-radius:var(--radius-lg);
+
+            box-shadow:var(--shadow-md);
+
+        }
+
+        .contato-direto h3{
+
+            margin-bottom:10px;
+
+            color:var(--white);
+
+        }
+
+        .contato-direto p{
+
+            margin-bottom:18px;
+
+            color:#dbe5ed;
+
+        }
+
+        .contato-direto .btn{
+
+            width:100%;
+
+        }
+
+        /* ===================================================
+           FORMULÁRIO
+        =================================================== */
+
+        .form-container{
+
+            max-width:none;
+
+        }
+
+        .form-intro{
+
+            margin-bottom:32px;
+
+            padding:18px 20px;
+
+            display:flex;
+
+            align-items:flex-start;
+
+            gap:14px;
+
+            color:#765100;
+
+            background:#fff6dc;
+
+            border:1px solid #f7d98a;
+
+            border-radius:14px;
+
+        }
+
+        .form-intro i{
+
+            margin-top:3px;
+
+            color:#d99a00;
+
+            font-size:20px;
+
+        }
+
+        .form-intro p{
+
+            margin:0;
+
+            color:#765100;
+
+            font-size:.92rem;
+
+            line-height:1.65;
+
+        }
+
+        .form-required{
+
+            color:var(--danger);
+
+        }
+
+        .form-help{
+
+            margin-top:8px;
+
+            color:var(--text-light);
+
+            font-size:.82rem;
+
+        }
+
+        .radio-options{
+
+            display:grid;
+
+            grid-template-columns:repeat(3,minmax(0,1fr));
+
+            gap:12px;
+
+        }
+
+        .radio-card{
+
+            position:relative;
+
+        }
+
+        .radio-card input{
+
+            position:absolute;
+
+            opacity:0;
+
+            pointer-events:none;
+
+        }
+
+        .radio-card label{
+
+            min-height:74px;
+
+            display:flex;
+
+            flex-direction:column;
+
+            align-items:center;
+            justify-content:center;
+
+            gap:7px;
+
+            margin:0;
+
+            padding:14px;
+
+            text-align:center;
+
+            color:var(--secondary);
+
+            background:var(--white);
+
+            border:2px solid var(--gray-300);
+
+            border-radius:14px;
+
+            cursor:pointer;
+
+            transition:var(--transition);
+
+        }
+
+        .radio-card label i{
+
+            color:var(--primary);
+
+            font-size:22px;
+
+        }
+
+        .radio-card input:checked + label{
+
+            color:var(--primary);
+
+            border-color:var(--primary);
+
+            background:rgba(255,122,0,.07);
+
+            box-shadow:0 0 0 4px rgba(255,122,0,.10);
+
+        }
+
+        .radio-card input:focus-visible + label{
+
+            outline:3px solid rgba(255,122,0,.25);
+
+            outline-offset:2px;
+
+        }
+
+        .privacy-note{
+
+            display:flex;
+
+            align-items:flex-start;
+
+            gap:12px;
+
+            margin-top:24px;
+
+            padding:16px;
+
+            background:var(--gray-100);
+
+            border-radius:12px;
+
+        }
+
+        .privacy-note i{
+
+            margin-top:3px;
+
+            color:var(--secondary);
+
+        }
+
+        .privacy-note p{
+
+            margin:0;
+
+            font-size:.82rem;
+
+            line-height:1.6;
+
+        }
+
+        /* ===================================================
+           COMO FUNCIONA
+        =================================================== */
+
+        .como-funciona{
+
+            padding:110px 0;
+
+            background:var(--white);
+
+        }
+
+        .como-funciona-grid{
+
+            display:grid;
+
+            grid-template-columns:repeat(3,minmax(0,1fr));
+
+            gap:28px;
+
+        }
+
+        .como-funciona-card{
+
+            position:relative;
+
+            padding:38px 30px;
+
+            text-align:center;
+
+            background:var(--bg-section);
+
+            border:1px solid var(--gray-200);
+
+            border-radius:var(--radius-lg);
+
+            transition:var(--transition);
+
+        }
+
+        .como-funciona-card:hover{
+
+            transform:translateY(-8px);
+
+            box-shadow:var(--shadow-lg);
+
+        }
+
+        .como-funciona-numero{
+
+            width:68px;
+            height:68px;
+
+            display:flex;
+
+            align-items:center;
+            justify-content:center;
+
+            margin:0 auto 22px;
+
+            color:var(--white);
+
+            background:var(--primary);
+
+            border-radius:50%;
+
+            font-size:1.5rem;
+            font-weight:var(--fw-bold);
+
+            box-shadow:0 12px 25px rgba(255,122,0,.25);
+
+        }
+
+        .como-funciona-card h3{
+
+            margin-bottom:12px;
+
+        }
+
+        .como-funciona-card p{
+
+            margin:0;
+
+            line-height:1.75;
+
+        }
+
+        /* ===================================================
+           RESPONSIVO
+        =================================================== */
+
+        @media(max-width:992px){
+
+            .orcamento-layout{
+
+                grid-template-columns:1fr;
+
+            }
+
+            .orcamento-info{
+
+                position:static;
+
+            }
+
+            .radio-options{
+
+                grid-template-columns:repeat(2,minmax(0,1fr));
+
+            }
+
+        }
+
+        @media(max-width:768px){
+
+            .orcamento-hero{
+
+                padding:140px 20px 80px;
+
+            }
+
+            .orcamento-section,
+            .como-funciona{
+
+                padding:80px 0;
+
+            }
+
+            .como-funciona-grid{
+
+                grid-template-columns:1fr;
+
+            }
+
+        }
+
+        @media(max-width:576px){
+
+            .orcamento-hero{
+
+                padding:125px 16px 70px;
+
+            }
+
+            .orcamento-hero span::before,
+            .orcamento-hero span::after{
+
+                width:18px;
+
+            }
+
+            .radio-options{
+
+                grid-template-columns:1fr;
+
+            }
+
+            .orcamento-beneficio{
+
+                padding:17px;
+
+            }
+
+            .contato-direto{
+
+                padding:21px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header
+        class="header"
+        id="header"
+    >
+
+        <div class="container">
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Ir para a página inicial da B2 Energia Solar"
+            >
+
+                <img
+                    src="assets/img/logo/logo-b2.png"
+                    alt="B2 Energia Solar"
+                >
+
+            </a>
+
+            <nav
+                class="navbar"
+                id="navbar"
+                aria-label="Navegação principal"
+            >
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="obras.html">
+                            Obras e avaliações
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="orcamento.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            Orçamento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="endereco.html">
+                            Endereço
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a
+                href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+                class="btn-header"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Falar no WhatsApp
+            </a>
+
+            <button
+                class="menu-mobile"
+                id="menuMobile"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="navbar"
+            >
+
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="orcamento-hero">
+
+            <div class="container fade-up">
+
+                <span>
+                    Simulação personalizada
+                </span>
+
+                <h1>
+                    Solicite seu orçamento de energia solar
+                </h1>
+
+                <p>
+                    Preencha as informações abaixo e nossa equipe receberá
+                    seus dados diretamente pelo WhatsApp para preparar uma
+                    análise personalizada para seu imóvel.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             FORMULÁRIO
+        ================================================== -->
+
+        <section class="orcamento-section">
+
+            <div class="container">
+
+                <div class="orcamento-layout">
+
+                    <!-- =====================================
+                         INFORMAÇÕES
+                    ====================================== -->
+
+                    <aside class="orcamento-info fade-left">
+
+                        <span>
+                            Por que fazer uma simulação?
+                        </span>
+
+                        <h2>
+                            Descubra a solução ideal para seu consumo
+                        </h2>
+
+                        <p>
+                            Com algumas informações básicas, nossa equipe consegue
+                            iniciar uma análise mais precisa e entender qual sistema
+                            atende melhor suas necessidades atuais e futuras.
+                        </p>
+
+                        <div class="orcamento-beneficios">
+
+                            <article class="orcamento-beneficio">
+
+                                <i
+                                    class="fa-solid fa-bolt"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        Análise de consumo
+                                    </h3>
+
+                                    <p>
+                                        Avaliamos o valor médio da sua conta e sua
+                                        expectativa de aumento de consumo.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="orcamento-beneficio">
+
+                                <i
+                                    class="fa-solid fa-house"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        Solução personalizada
+                                    </h3>
+
+                                    <p>
+                                        Consideramos o padrão de energia, o tipo de
+                                        telhado e as características do imóvel.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="orcamento-beneficio">
+
+                                <i
+                                    class="fa-solid fa-comments"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        Atendimento direto
+                                    </h3>
+
+                                    <p>
+                                        Após preencher, seus dados serão enviados
+                                        diretamente para o WhatsApp da B2.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                        <div class="contato-direto">
+
+                            <h3>
+                                Prefere falar direto com a equipe?
+                            </h3>
+
+                            <p>
+                                Clique abaixo e converse com a B2 Energia Solar pelo WhatsApp.
+                            </p>
+
+                            <a
+                                href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+                                class="btn btn-whatsapp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <i
+                                    class="fa-brands fa-whatsapp"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Falar no WhatsApp
+
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                    <!-- =====================================
+                         FORMULÁRIO
+                    ====================================== -->
+
+                    <div class="form-container fade-right">
+
+                        <div class="form-title">
+
+                            <span class="card-tag">
+                                Orçamento gratuito
+                            </span>
+
+                            <h2>
+                                Conte um pouco sobre seu imóvel
+                            </h2>
+
+                            <p>
+                                Os campos marcados com
+                                <span class="form-required">*</span>
+                                são obrigatórios.
+                            </p>
+
+                        </div>
+
+                        <div class="form-intro">
+
+                            <i
+                                class="fa-solid fa-circle-info"
+                                aria-hidden="true"
+                            ></i>
+
+                            <p>
+                                Ao clicar em “Enviar pelo WhatsApp”, uma conversa
+                                será aberta com todas as informações preenchidas.
+                                Você poderá revisar a mensagem antes de enviá-la.
+                            </p>
+
+                        </div>
+
+                        <form
+                            id="formOrcamento"
+                            novalidate
+                        >
+
+                            <div
+                                class="form-alert"
+                                role="alert"
+                                aria-live="polite"
+                            ></div>
+
+                            <div class="form-grid">
+
+                                <!-- Nome -->
+
+                                <div class="form-group full">
+
+                                    <label for="nome">
+
+                                        Nome completo
+
+                                        <span class="form-required">
+                                            *
+                                        </span>
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        name="nome"
+                                        class="form-control"
+                                        placeholder="Digite seu nome completo"
+                                        autocomplete="name"
+                                        minlength="3"
+                                        required
+                                    >
+
+                                </div>
+
+                                <!-- Telefone -->
+
+                                <div class="form-group">
+
+                                    <label for="telefone">
+
+                                        Número de telefone
+
+                                        <span class="form-required">
+                                            *
+                                        </span>
+
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="telefone"
+                                        name="telefone"
+                                        class="form-control"
+                                        placeholder="(27) 99999-9999"
+                                        autocomplete="tel"
+                                        inputmode="tel"
+                                        maxlength="15"
+                                        required
+                                    >
+
+                                    <small class="form-help">
+                                        Informe o número com DDD.
+                                    </small>
+
+                                </div>
+
+                                <!-- Conta de luz -->
+
+                                <div class="form-group">
+
+                                    <label for="conta">
+
+                                        Quanto paga na conta de luz?
+
+                                        <span class="form-required">
+                                            *
+                                        </span>
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="conta"
+                                        name="conta"
+                                        class="form-control"
+                                        placeholder="Ex.: R$ 650,00"
+                                        inputmode="decimal"
+                                        autocomplete="off"
+                                        required
+                                    >
+
+                                    <small class="form-help">
+                                        Informe o valor médio mensal.
+                                    </small>
+
+                                </div>
+
+                                <!-- Padrão de energia -->
+
+                                <div class="form-group full">
+
+                                    <label>
+
+                                        Qual é o padrão de energia?
+
+                                        <span class="form-required">
+                                            *
+                                        </span>
+
+                                    </label>
+
+                                    <div class="radio-options">
+
+                                        <div class="radio-card">
+
+                                            <input
+                                                type="radio"
+                                                id="padrao-monofasico"
+                                                name="padrao"
+                                                value="Monofásico"
+                                                required
+                                            >
+
+                                            <label for="padrao-monofasico">
+
+                                                <i
+                                                    class="fa-solid fa-plug"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Monofásico
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="radio-card">
+
+                                            <input
+                                                type="radio"
+                                                id="padrao-bifasico"
+                                                name="padrao"
+                                                value="Bifásico"
+                                            >
+
+                                            <label for="padrao-bifasico">
+
+                                                <i
+                                                    class="fa-solid fa-bolt"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Bifásico
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="radio-card">
+
+                                            <input
+                                                type="radio"
+                                                id="padrao-trifasico"
+                                                name="padrao"
+                                                value="Trifásico"
+                                            >
+
+                                            <label for="padrao-trifasico">
+
+                                                <i
+                                                    class="fa-solid fa-industry"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Trifásico
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="radio-card">
+
+                                            <input
+                                                type="radio"
+                                                id="padrao-nao-sei"
+                                                name="padrao"
+                                                value="Não sei informar"
+                                            >
+
+                                            <label for="padrao-nao-sei">
+
+                                                <i
+                                                    class="fa-solid fa-circle-question"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Não sei informar
+
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Tipo de telhado -->
+
+                                <div class="form-group full">
+
+                                    <label for="telhado">
+
+                                        Qual é o tipo de telhado?
+
+                                        <span class="form-required">
+                                            *
+                                        </span>
+
+                                    </label>
+
+                                    <select
+                                        id="telhado"
+                                        name="telhado"
+                                        class="form-control"
+                                        required
+                                    >
+
+                                        <option value="">
+                                            Selecione uma opção
+                                        </option>
+
+                                        <option value="Telha colonial ou cerâmica">
+                                            Telha colonial ou cerâmica
+                                        </option>
+
+                                        <option value="Telha de fibrocimento">
+                                            Telha de fibrocimento
+                                        </option>
+
+                                        <option value="Telha metálica">
+                                            Telha metálica
+                                        </option>
+
+                                        <option value="Laje">
+                                            Laje
+                                        </option>
+
+                                        <option value="Solo">
+                                            Instalação no solo
+                                        </option>
+
+                                        <option value="Ainda não sei informar">
+                                            Ainda não sei informar
+                                        </option>
+
+                                        <option value="Outro tipo de estrutura">
+                                            Outro tipo de estrutura
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                                <!-- Aumento de consumo -->
+
+                                <div class="form-group full">
+
+                                    <label>
+
+                                        Pretende aumentar o consumo de energia?
+
+                                        <span class="form-required">
+                                            *
+                                        </span>
+
+                                    </label>
+
+                                    <div class="radio-options">
+
+                                        <div class="radio-card">
+
+                                            <input
+                                                type="radio"
+                                                id="aumento-sim"
+                                                name="aumentoConsumo"
+                                                value="Sim"
+                                                required
+                                            >
+
+                                            <label for="aumento-sim">
+
+                                                <i
+                                                    class="fa-solid fa-arrow-trend-up"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Sim
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="radio-card">
+
+                                            <input
+                                                type="radio"
+                                                id="aumento-nao"
+                                                name="aumentoConsumo"
+                                                value="Não"
+                                            >
+
+                                            <label for="aumento-nao">
+
+                                                <i
+                                                    class="fa-solid fa-equals"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Não
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="radio-card">
+
+                                            <input
+                                                type="radio"
+                                                id="aumento-talvez"
+                                                name="aumentoConsumo"
+                                                value="Talvez"
+                                            >
+
+                                            <label for="aumento-talvez">
+
+                                                <i
+                                                    class="fa-solid fa-circle-question"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Talvez
+
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+
+                                    <small class="form-help">
+                                        Considere ar-condicionado, chuveiro, piscina,
+                                        veículo elétrico, máquinas ou ampliação do imóvel.
+                                    </small>
+
+                                </div>
+
+                                <!-- Observações -->
+
+                                <div class="form-group full">
+
+                                    <label for="observacoes">
+                                        Observações adicionais
+                                    </label>
+
+                                    <textarea
+                                        id="observacoes"
+                                        name="observacoes"
+                                        class="form-control"
+                                        placeholder="Ex.: pretendo instalar dois aparelhos de ar-condicionado, tenho outra conta para receber créditos ou gostaria de instalar o sistema em uma empresa."
+                                    ></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Privacidade -->
+
+                            <div class="privacy-note">
+
+                                <i
+                                    class="fa-solid fa-lock"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <p>
+                                    Seus dados serão utilizados apenas para que a equipe
+                                    da B2 Energia Solar entre em contato e prepare seu
+                                    atendimento. O formulário não será publicado no site.
+                                </p>
+
+                            </div>
+
+                            <!-- Botão -->
+
+                            <div class="form-actions">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-whatsapp btn-lg btn-block"
+                                >
+
+                                    <i
+                                        class="fa-brands fa-whatsapp"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    Enviar pelo WhatsApp
+
+                                </button>
+
+                            </div>
+
+                            <div
+                                class="form-loading"
+                                aria-hidden="true"
+                            >
+
+                                <span></span>
+
+                                <p>
+                                    Preparando sua mensagem...
+                                </p>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             COMO FUNCIONA
+        ================================================== -->
+
+        <section class="como-funciona">
+
+            <div class="container">
+
+                <div class="section-title fade-up">
+
+                    <span>
+                        Próximos passos
+                    </span>
+
+                    <h2>
+                        O que acontece depois do preenchimento?
+                    </h2>
+
+                    <p>
+                        O envio do formulário é apenas o início do atendimento.
+                        Nossa equipe avaliará as informações e dará continuidade
+                        ao seu orçamento.
+                    </p>
+
+                </div>
+
+                <div class="como-funciona-grid">
+
+                    <article class="como-funciona-card fade-up">
+
+                        <div class="como-funciona-numero">
+                            1
+                        </div>
+
+                        <h3>
+                            Envio das informações
+                        </h3>
+
+                        <p>
+                            O WhatsApp será aberto com seus dados organizados
+                            em uma mensagem pronta para envio.
+                        </p>
+
+                    </article>
+
+                    <article class="como-funciona-card fade-up">
+
+                        <div class="como-funciona-numero">
+                            2
+                        </div>
+
+                        <h3>
+                            Análise da equipe
+                        </h3>
+
+                        <p>
+                            A B2 verificará seu consumo, padrão, telhado e
+                            expectativa de aumento de energia.
+                        </p>
+
+                    </article>
+
+                    <article class="como-funciona-card fade-up">
+
+                        <div class="como-funciona-numero">
+                            3
+                        </div>
+
+                        <h3>
+                            Proposta personalizada
+                        </h3>
+
+                        <p>
+                            Você receberá uma solução adequada às necessidades
+                            da sua residência, empresa ou propriedade rural.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <!-- Empresa -->
+
+            <div class="footer-logo">
+
+                <a
+                    href="index.html"
+                    aria-label="Página inicial da B2 Energia Solar"
+                >
+
+                    <img
+                        src="assets/img/logo/logo-b2.png"
+                        alt="B2 Energia Solar"
+                    >
+
+                </a>
+
+                <p>
+                    Soluções completas em energia solar, projetos elétricos,
+                    homologação, instalações, limpeza e manutenção.
+                </p>
+
+                <div
+                    class="social"
+                    aria-label="Redes sociais da B2 Energia Solar"
+                >
+
+                    <a
+                        href="https://www.instagram.com/b2energiasolar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram da B2 Energia Solar"
+                        title="Instagram da B2 Energia Solar"
+                    >
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+                    <a
+                        href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp da B2 Energia Solar"
+                        title="WhatsApp da B2 Energia Solar"
+                    >
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Navegação -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="obras.html">
+                            Obras e avaliações
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="orcamento.html">
+                            Orçamento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="endereco.html">
+                            Endereço
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Serviços -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Serviços
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="servicos.html#energia-solar">
+                            Energia solar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#homologacao">
+                            Homologação
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#manutencao">
+                            Limpeza e manutenção
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#padrao-entrada">
+                            Padrão de entrada
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#carregadores">
+                            Carregadores veiculares
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contato -->
+
+            <div>
+
+                <h3>
+                    Fale conosco
+                </h3>
+
+                <div class="footer-contact">
+
+                    <p>
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            (27) 99787-5792
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="https://www.instagram.com/b2energiasolar/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @b2energiasolar
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i
+                            class="fa-solid fa-envelope"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a href="mailto:contato@b2energiasolar.com.br">
+                            contato@b2energiasolar.com.br
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i
+                            class="fa-solid fa-location-dot"
+                            aria-hidden="true"
+                        ></i>
+
+                        Atendimento em todo o Espírito Santo
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    ©
+                    <span id="currentYear">
+                        2026
+                    </span>
+
+                    B2 Energia Solar. Todos os direitos reservados.
+                </p>
+
+                <p>
+                    Energia limpa para um futuro mais econômico.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =====================================================
+         BOTÃO FLUTUANTE DO WHATSAPP
+    ====================================================== -->
+
+    <a
+        href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar%20e%20gostaria%20de%20mais%20informações."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Conversar com a B2 Energia Solar pelo WhatsApp"
+        title="Falar no WhatsApp"
+    >
+
+        <i
+            class="fa-brands fa-whatsapp"
+            aria-hidden="true"
+        ></i>
+
+    </a>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+    <!-- =====================================================
+         MÁSCARAS DOS CAMPOS
+    ====================================================== -->
+
+    <script>
+
+        "use strict";
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const telefone = document.querySelector("#telefone");
+            const conta = document.querySelector("#conta");
+
+            /* Máscara de telefone */
+
+            if (telefone) {
+
+                telefone.addEventListener("input", () => {
+
+                    let valor = telefone.value.replace(/\D/g, "");
+
+                    valor = valor.slice(0, 11);
+
+                    if (valor.length > 10) {
+
+                        valor = valor.replace(
+                            /^(\d{2})(\d{5})(\d{4})$/,
+                            "($1) $2-$3"
+                        );
+
+                    } else if (valor.length > 6) {
+
+                        valor = valor.replace(
+                            /^(\d{2})(\d{4})(\d{0,4})$/,
+                            "($1) $2-$3"
+                        );
+
+                    } else if (valor.length > 2) {
+
+                        valor = valor.replace(
+                            /^(\d{2})(\d+)/,
+                            "($1) $2"
+                        );
+
+                    } else if (valor.length > 0) {
+
+                        valor = valor.replace(
+                            /^(\d*)/,
+                            "($1"
+                        );
+
+                    }
+
+                    telefone.value = valor;
+
+                });
+
+            }
+
+            /* Máscara de moeda */
+
+            if (conta) {
+
+                conta.addEventListener("input", () => {
+
+                    const numeros = conta.value.replace(/\D/g, "");
+
+                    if (!numeros) {
+
+                        conta.value = "";
+                        return;
+
+                    }
+
+                    const valor = Number(numeros) / 100;
+
+                    conta.value = valor.toLocaleString(
+                        "pt-BR",
+                        {
+                            style: "currency",
+                            currency: "BRL"
+                        }
+                    );
+
+                });
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

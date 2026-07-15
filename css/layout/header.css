@@ -1,0 +1,245 @@
+/* =======================================================
+   HEADER
+   Projeto: B2 Energia Solar
+======================================================= */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:var(--header-height);
+
+    z-index:var(--z-header);
+
+    transition:var(--transition);
+
+    background:transparent;
+
+}
+
+.header.scrolled{
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.header .container{
+
+    max-width:var(--container);
+
+    width:100%;
+
+    margin:auto;
+
+    height:100%;
+
+    padding:0 var(--space-6);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/* ===================================
+            LOGO
+=================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo img{
+
+    height:60px;
+
+    transition:var(--transition);
+
+}
+
+.header.scrolled .logo img{
+
+    height:52px;
+
+}
+
+/* ===================================
+            MENU
+=================================== */
+
+.navbar{
+
+    display:flex;
+
+}
+
+.nav-list{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.nav-list li{
+
+    list-style:none;
+
+}
+
+.nav-list a{
+
+    position:relative;
+
+    color:var(--white);
+
+    font-size:var(--fs-md);
+
+    font-weight:var(--fw-medium);
+
+    transition:var(--transition);
+
+}
+
+.header.scrolled .nav-list a{
+
+    color:var(--secondary);
+
+}
+
+/* Linha animada */
+
+.nav-list a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    border-radius:10px;
+
+    background:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+.nav-list a:hover::after,
+
+.nav-list a.active::after{
+
+    width:100%;
+
+}
+
+.nav-list a:hover{
+
+    color:var(--primary);
+
+}
+
+/* ===================================
+      BOTÃO DO HEADER
+=================================== */
+
+.btn-header{
+
+    height:48px;
+
+    padding:0 28px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.btn-header:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--primary-dark);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* ===================================
+       MENU MOBILE
+=================================== */
+
+.menu-mobile{
+
+    display:none;
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:26px;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.menu-mobile:hover{
+
+    transform:rotate(90deg);
+
+}
+
+/* ===================================
+        ANIMAÇÕES
+=================================== */
+
+.header.hide{
+
+    transform:translateY(-100%);
+
+}

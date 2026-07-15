@@ -1,0 +1,2857 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Obras e avaliações | B2 Energia Solar
+    </title>
+
+    <meta
+        name="description"
+        content="Conheça obras, instalações, manutenções e projetos realizados pela B2 Energia Solar. Mais de 1.600 serviços, mais de 9 anos de experiência e somente avaliações 5 estrelas."
+    >
+
+    <meta
+        name="keywords"
+        content="obras energia solar, instalações solares, avaliações B2 Energia Solar, energia solar Serra ES, manutenção placas solares"
+    >
+
+    <meta
+        name="author"
+        content="B2 Energia Solar"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0d3b66"
+    >
+
+    <!-- Open Graph -->
+
+    <meta
+        property="og:title"
+        content="Obras e avaliações | B2 Energia Solar"
+    >
+
+    <meta
+        property="og:description"
+        content="Mais de 1.600 projetos e serviços realizados, mais de 9 anos de experiência e somente avaliações 5 estrelas."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:image"
+        content="assets/img/works/banner.jpg"
+    >
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/img/logo/favicon.png"
+    >
+
+    <!-- Fontes -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Ícones -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS principal -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <style>
+
+        /* ===================================================
+           HERO DE OBRAS
+        =================================================== */
+
+        .obras-hero {
+
+            position: relative;
+
+            min-height: 760px;
+
+            display: flex;
+            align-items: center;
+
+            overflow: hidden;
+
+            padding: 160px 0 90px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(7, 21, 31, .95) 0%,
+                    rgba(7, 21, 31, .88) 48%,
+                    rgba(7, 21, 31, .62) 100%
+                ),
+                url("assets/img/works/banner.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            color: var(--white);
+
+        }
+
+        .obras-hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: -220px;
+            right: -160px;
+
+            width: 520px;
+            height: 520px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 122, 0, .13);
+
+        }
+
+        .obras-hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: -220px;
+            bottom: -300px;
+
+            width: 580px;
+            height: 580px;
+
+            border-radius: 50%;
+
+            background: rgba(0, 180, 216, .07);
+
+        }
+
+        .obras-hero .container {
+
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .obras-hero-content {
+
+            max-width: 900px;
+
+        }
+
+        .obras-hero-label {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 11px;
+
+            margin-bottom: 20px;
+            padding: 9px 17px;
+
+            color: var(--primary);
+
+            background: rgba(255, 255, 255, .08);
+
+            border: 1px solid rgba(255, 255, 255, .13);
+            border-radius: var(--radius-full);
+
+            font-size: .88rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            backdrop-filter: blur(8px);
+
+        }
+
+        .obras-hero-label i {
+
+            font-size: 1rem;
+
+        }
+
+        .obras-hero h1 {
+
+            max-width: 850px;
+
+            margin-bottom: 25px;
+
+            color: var(--white);
+
+            font-size: clamp(2.7rem, 6vw, 4.8rem);
+
+            line-height: 1.08;
+
+        }
+
+        .obras-hero h1 strong {
+
+            color: var(--primary);
+
+        }
+
+        .obras-hero-description {
+
+            max-width: 740px;
+
+            margin-bottom: 42px;
+
+            color: #dce4e9;
+
+            font-size: 1.08rem;
+
+            line-height: 1.85;
+
+        }
+
+        .obras-hero-actions {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 16px;
+
+            flex-wrap: wrap;
+
+            margin-bottom: 60px;
+
+        }
+
+        /* ===================================================
+           NÚMEROS DO HERO
+        =================================================== */
+
+        .obras-numeros {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            gap: 18px;
+
+            max-width: 980px;
+
+        }
+
+        .obra-numero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            min-height: 155px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 18px;
+
+            padding: 25px;
+
+            background: rgba(255, 255, 255, .09);
+
+            border: 1px solid rgba(255, 255, 255, .15);
+            border-radius: 19px;
+
+            backdrop-filter: blur(13px);
+
+            box-shadow: 0 20px 45px rgba(0, 0, 0, .16);
+
+            transition: var(--transition);
+
+        }
+
+        .obra-numero:hover {
+
+            transform: translateY(-6px);
+
+            background: rgba(255, 255, 255, .13);
+
+            border-color: rgba(255, 122, 0, .5);
+
+        }
+
+        .obra-numero::after {
+
+            content: "";
+
+            position: absolute;
+
+            right: -45px;
+            bottom: -55px;
+
+            width: 125px;
+            height: 125px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 122, 0, .09);
+
+        }
+
+        .obra-numero-icon {
+
+            position: relative;
+            z-index: 1;
+
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            color: var(--white);
+
+            background: var(--primary);
+
+            border-radius: 17px;
+
+            font-size: 24px;
+
+            box-shadow: 0 12px 28px rgba(255, 122, 0, .28);
+
+        }
+
+        .obra-numero-content {
+
+            position: relative;
+            z-index: 1;
+
+        }
+
+        .obra-numero strong {
+
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: var(--white);
+
+            font-size: clamp(1.65rem, 3vw, 2.35rem);
+
+            line-height: 1;
+
+        }
+
+        .obra-numero span {
+
+            display: block;
+
+            color: #dce4e9;
+
+            font-size: .86rem;
+
+            line-height: 1.5;
+
+        }
+
+        .obra-numero-estrelas {
+
+            margin-bottom: 6px;
+
+            color: #f4b400;
+
+            font-size: 1.12rem;
+            letter-spacing: 2px;
+
+        }
+
+        /* ===================================================
+           APRESENTAÇÃO
+        =================================================== */
+
+        .obras-intro {
+
+            padding: 115px 0;
+
+            background: var(--white);
+
+        }
+
+        .obras-intro-layout {
+
+            display: grid;
+
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+        .obras-intro-image {
+
+            position: relative;
+
+        }
+
+        .obras-intro-image::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: -18px;
+            bottom: -18px;
+
+            width: 65%;
+            height: 65%;
+
+            background: var(--primary);
+
+            border-radius: var(--radius-lg);
+
+        }
+
+        .obras-intro-image img {
+
+            position: relative;
+            z-index: 2;
+
+            width: 100%;
+            min-height: 500px;
+
+            object-fit: cover;
+
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .obras-intro-text > span {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 17px;
+
+            color: var(--primary);
+
+            font-size: .9rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+        }
+
+        .obras-intro-text > span::before {
+
+            content: "";
+
+            width: 32px;
+            height: 3px;
+
+            background: var(--primary);
+
+            border-radius: var(--radius-full);
+
+        }
+
+        .obras-intro-text h2 {
+
+            margin-bottom: 23px;
+
+            font-size: clamp(2rem, 4vw, 3.05rem);
+
+        }
+
+        .obras-intro-text p {
+
+            line-height: 1.85;
+
+        }
+
+        .obras-checks {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            gap: 15px;
+
+            margin: 30px 0;
+
+        }
+
+        .obras-check {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 11px;
+
+            color: var(--secondary);
+
+            font-size: .93rem;
+            font-weight: var(--fw-medium);
+
+        }
+
+        .obras-check i {
+
+            width: 31px;
+            height: 31px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            color: var(--white);
+
+            background: var(--success);
+
+            border-radius: 50%;
+
+            font-size: 13px;
+
+        }
+
+        /* ===================================================
+           GALERIA DE OBRAS
+        =================================================== */
+
+        .obras-galeria {
+
+            padding: 115px 0;
+
+            background: var(--bg-section);
+
+        }
+
+        .filtros {
+
+            display: flex;
+            justify-content: center;
+
+            gap: 13px;
+
+            flex-wrap: wrap;
+
+            margin-bottom: 48px;
+
+        }
+
+        .filtro-btn {
+
+            min-height: 48px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 8px;
+
+            padding: 11px 23px;
+
+            color: var(--secondary);
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-full);
+
+            font-weight: var(--fw-semibold);
+
+            box-shadow: var(--shadow-sm);
+
+            cursor: pointer;
+
+            transition: var(--transition);
+
+        }
+
+        .filtro-btn:hover,
+        .filtro-btn.active {
+
+            color: var(--white);
+
+            background: var(--primary);
+
+            border-color: var(--primary);
+
+            transform: translateY(-2px);
+
+        }
+
+        .obras-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            gap: 28px;
+
+        }
+
+        .obra-card {
+
+            position: relative;
+
+            overflow: hidden;
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-sm);
+
+            transition:
+                opacity .35s ease,
+                transform var(--transition),
+                box-shadow var(--transition);
+
+        }
+
+        .obra-card:hover {
+
+            transform: translateY(-9px);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .obra-card[hidden] {
+
+            display: none;
+
+        }
+
+        .obra-img {
+
+            position: relative;
+
+            height: 280px;
+
+            overflow: hidden;
+
+            cursor: pointer;
+
+        }
+
+        .obra-img img {
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: transform .6s ease;
+
+        }
+
+        .obra-card:hover .obra-img img {
+
+            transform: scale(1.07);
+
+        }
+
+        .obra-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: rgba(7, 21, 31, .64);
+
+            opacity: 0;
+
+            transition: var(--transition);
+
+        }
+
+        .obra-card:hover .obra-overlay {
+
+            opacity: 1;
+
+        }
+
+        .obra-overlay-icon {
+
+            width: 62px;
+            height: 62px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: var(--white);
+
+            background: var(--primary);
+
+            border-radius: 50%;
+
+            font-size: 23px;
+
+            transform: scale(.8);
+
+            transition: var(--transition);
+
+        }
+
+        .obra-card:hover .obra-overlay-icon {
+
+            transform: scale(1);
+
+        }
+
+        .obra-info {
+
+            padding: 25px;
+
+        }
+
+        .obra-info-top {
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 12px;
+
+            margin-bottom: 13px;
+
+        }
+
+        .obra-tag {
+
+            display: inline-flex;
+
+            padding: 7px 13px;
+
+            color: var(--primary);
+
+            background: rgba(255, 122, 0, .1);
+
+            border-radius: var(--radius-full);
+
+            font-size: .77rem;
+            font-weight: var(--fw-semibold);
+
+        }
+
+        .obra-local {
+
+            color: var(--text-light);
+
+            font-size: .78rem;
+
+        }
+
+        .obra-local i {
+
+            margin-right: 5px;
+
+            color: var(--primary);
+
+        }
+
+        .obra-info h3 {
+
+            margin-bottom: 11px;
+
+            color: var(--secondary);
+
+            font-size: 1.25rem;
+
+        }
+
+        .obra-info p {
+
+            margin: 0;
+
+            font-size: .9rem;
+
+            line-height: 1.7;
+
+        }
+
+        /* ===================================================
+           AVALIAÇÕES FLUTUANTES
+        =================================================== */
+
+        .avaliacoes-section {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 120px 0;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--secondary-dark),
+                    var(--secondary)
+                );
+
+        }
+
+        .avaliacoes-section::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: -230px;
+            right: -170px;
+
+            width: 500px;
+            height: 500px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 122, 0, .1);
+
+        }
+
+        .avaliacoes-section .section-title {
+
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .avaliacoes-section .section-title h2 {
+
+            color: var(--white);
+
+        }
+
+        .avaliacoes-section .section-title p {
+
+            color: #d8e1e7;
+
+        }
+
+        .google-rating {
+
+            position: relative;
+            z-index: 2;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 17px;
+
+            width: fit-content;
+
+            margin: -25px auto 55px;
+            padding: 19px 28px;
+
+            background: var(--white);
+
+            border-radius: var(--radius-full);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .google-rating-logo {
+
+            font-size: 1.7rem;
+            font-weight: var(--fw-bold);
+
+        }
+
+        .google-rating-stars {
+
+            color: #f4b400;
+
+            letter-spacing: 2px;
+
+        }
+
+        .google-rating strong {
+
+            color: var(--secondary);
+
+        }
+
+        .review-slider {
+
+            position: relative;
+            z-index: 2;
+
+            max-width: 780px;
+
+            min-height: 350px;
+
+            margin: 0 auto;
+
+        }
+
+        .review-floating-card {
+
+            position: absolute;
+
+            inset: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 46px;
+
+            background: var(--white);
+
+            border-radius: 28px;
+
+            box-shadow: 0 30px 65px rgba(0, 0, 0, .25);
+
+            opacity: 0;
+            visibility: hidden;
+
+            transform: translateY(35px) scale(.96);
+
+            transition:
+                opacity .6s ease,
+                visibility .6s ease,
+                transform .6s ease;
+
+        }
+
+        .review-floating-card.active {
+
+            opacity: 1;
+            visibility: visible;
+
+            transform: translateY(0) scale(1);
+
+        }
+
+        .review-quote {
+
+            position: absolute;
+
+            top: 17px;
+            right: 32px;
+
+            color: rgba(255, 122, 0, .13);
+
+            font-family: Georgia, serif;
+            font-size: 7rem;
+            line-height: 1;
+
+        }
+
+        .review-stars {
+
+            margin-bottom: 20px;
+
+            color: #f4b400;
+
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+
+        }
+
+        .review-floating-card blockquote {
+
+            position: relative;
+            z-index: 2;
+
+            margin: 0 0 28px;
+
+            color: var(--gray-700);
+
+            font-size: 1.08rem;
+
+            line-height: 1.9;
+
+        }
+
+        .review-author {
+
+            display: flex;
+            align-items: center;
+
+            gap: 14px;
+
+        }
+
+        .review-avatar {
+
+            width: 54px;
+            height: 54px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            color: var(--white);
+
+            background: var(--secondary);
+
+            border-radius: 50%;
+
+            font-weight: var(--fw-bold);
+
+        }
+
+        .review-author strong {
+
+            display: block;
+
+            color: var(--secondary);
+
+        }
+
+        .review-author small {
+
+            color: var(--text-light);
+
+        }
+
+        .review-dots {
+
+            position: relative;
+            z-index: 2;
+
+            display: flex;
+            justify-content: center;
+
+            gap: 9px;
+
+            margin-top: 30px;
+
+        }
+
+        .review-dot {
+
+            width: 11px;
+            height: 11px;
+
+            padding: 0;
+
+            background: rgba(255, 255, 255, .35);
+
+            border-radius: 50%;
+
+            cursor: pointer;
+
+            transition: var(--transition);
+
+        }
+
+        .review-dot.active {
+
+            width: 30px;
+
+            background: var(--primary);
+
+            border-radius: var(--radius-full);
+
+        }
+
+        /* ===================================================
+           CTA
+        =================================================== */
+
+        .obras-cta {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 120px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(7, 21, 31, .9),
+                    rgba(7, 21, 31, .92)
+                ),
+                url("assets/img/works/cta.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            text-align: center;
+
+        }
+
+        .obras-cta h2 {
+
+            max-width: 860px;
+
+            margin: 0 auto 21px;
+
+            color: var(--white);
+
+        }
+
+        .obras-cta p {
+
+            max-width: 730px;
+
+            margin: 0 auto 38px;
+
+            color: #dce4e9;
+
+            line-height: 1.8;
+
+        }
+
+        .obras-cta-actions {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 16px;
+
+            flex-wrap: wrap;
+
+        }
+
+        /* ===================================================
+           LEGENDA DO LIGHTBOX
+        =================================================== */
+
+        .lightbox-caption {
+
+            margin: 14px 0 0;
+
+            color: var(--white);
+
+            text-align: center;
+
+        }
+
+        /* ===================================================
+           RESPONSIVO
+        =================================================== */
+
+        @media(max-width: 1050px) {
+
+            .obras-numeros {
+
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            }
+
+            .obra-numero {
+
+                flex-direction: column;
+                align-items: flex-start;
+
+            }
+
+            .obras-grid {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+
+        }
+
+        @media(max-width: 992px) {
+
+            .obras-hero {
+
+                min-height: auto;
+
+                padding: 145px 0 85px;
+
+            }
+
+            .obras-intro-layout {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .obras-intro-image {
+
+                max-width: 760px;
+
+                margin: 0 auto;
+
+            }
+
+        }
+
+        @media(max-width: 768px) {
+
+            .obras-hero {
+
+                text-align: center;
+
+                background:
+                    linear-gradient(
+                        rgba(7, 21, 31, .88),
+                        rgba(7, 21, 31, .91)
+                    ),
+                    url("assets/img/works/banner.jpg");
+
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            .obras-hero-content {
+
+                margin: 0 auto;
+
+            }
+
+            .obras-hero-actions {
+
+                justify-content: center;
+
+            }
+
+            .obras-numeros {
+
+                grid-template-columns: 1fr;
+
+                max-width: 580px;
+
+                margin: 0 auto;
+
+                text-align: left;
+
+            }
+
+            .obra-numero {
+
+                flex-direction: row;
+                align-items: center;
+
+            }
+
+            .obras-intro,
+            .obras-galeria,
+            .avaliacoes-section {
+
+                padding: 85px 0;
+
+            }
+
+            .obras-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .review-slider {
+
+                min-height: 410px;
+
+            }
+
+            .review-floating-card {
+
+                padding: 38px 30px;
+
+            }
+
+        }
+
+        @media(max-width: 576px) {
+
+            .obras-hero {
+
+                padding: 125px 0 70px;
+
+            }
+
+            .obras-hero h1 {
+
+                font-size: 2.35rem;
+
+            }
+
+            .obras-hero-actions {
+
+                flex-direction: column;
+                align-items: stretch;
+
+            }
+
+            .obras-hero-actions .btn {
+
+                width: 100%;
+
+            }
+
+            .obra-numero {
+
+                min-height: 135px;
+
+                padding: 20px;
+
+            }
+
+            .obras-intro-image img {
+
+                min-height: 340px;
+
+            }
+
+            .obras-checks {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .filtros {
+
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+
+                overflow-x: auto;
+
+                padding-bottom: 10px;
+
+            }
+
+            .filtro-btn {
+
+                flex: 0 0 auto;
+
+            }
+
+            .obra-img {
+
+                height: 250px;
+
+            }
+
+            .google-rating {
+
+                width: 100%;
+
+                flex-direction: column;
+
+                border-radius: 20px;
+
+                text-align: center;
+
+            }
+
+            .review-slider {
+
+                min-height: 500px;
+
+            }
+
+            .review-floating-card {
+
+                padding: 35px 23px;
+
+            }
+
+            .review-floating-card blockquote {
+
+                font-size: .96rem;
+
+            }
+
+            .obras-cta-actions {
+
+                flex-direction: column;
+                align-items: stretch;
+
+            }
+
+            .obras-cta-actions .btn {
+
+                width: 100%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header
+        class="header"
+        id="header"
+    >
+
+        <div class="container">
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Ir para a página inicial da B2 Energia Solar"
+            >
+
+                <img
+                    src="assets/img/logo/logo-b2.png"
+                    alt="B2 Energia Solar"
+                >
+
+            </a>
+
+            <nav
+                class="navbar"
+                id="navbar"
+                aria-label="Navegação principal"
+            >
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="obras.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            Obras e avaliações
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="orcamento.html">
+                            Orçamento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="endereco.html">
+                            Endereço
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a
+                href="orcamento.html"
+                class="btn-header"
+            >
+                Solicitar orçamento
+            </a>
+
+            <button
+                class="menu-mobile"
+                id="menuMobile"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="navbar"
+            >
+
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- =================================================
+             HERO COM OS TRÊS DESTAQUES
+        ================================================== -->
+
+        <section class="obras-hero">
+
+            <div class="container">
+
+                <div class="obras-hero-content fade-left">
+
+                    <div class="obras-hero-label">
+
+                        <i
+                            class="fa-solid fa-award"
+                            aria-hidden="true"
+                        ></i>
+
+                        Experiência comprovada
+
+                    </div>
+
+                    <h1>
+                        Resultados que mostram a
+                        <strong>qualidade da B2</strong>
+                    </h1>
+
+                    <p class="obras-hero-description">
+                        Conheça instalações, manutenções, projetos e serviços
+                        realizados pela B2 Energia Solar em residências,
+                        empresas e propriedades de todo o Espírito Santo.
+                    </p>
+
+                    <div class="obras-hero-actions">
+
+                        <a
+                            href="#galeria"
+                            class="btn btn-laranja btn-lg"
+                        >
+
+                            <i
+                                class="fa-solid fa-images"
+                                aria-hidden="true"
+                            ></i>
+
+                            Conhecer nossas obras
+
+                        </a>
+
+                        <a
+                            href="orcamento.html"
+                            class="btn btn-transparente btn-lg"
+                        >
+
+                            <i
+                                class="fa-solid fa-calculator"
+                                aria-hidden="true"
+                            ></i>
+
+                            Solicitar orçamento
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="obras-numeros fade-up">
+
+                    <article class="obra-numero">
+
+                        <div class="obra-numero-icon">
+
+                            <i
+                                class="fa-solid fa-solar-panel"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <div class="obra-numero-content">
+
+                            <strong>
+                                + de 1.600
+                            </strong>
+
+                            <span>
+                                Projetos e serviços realizados
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="obra-numero">
+
+                        <div class="obra-numero-icon">
+
+                            <i
+                                class="fa-solid fa-calendar-check"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <div class="obra-numero-content">
+
+                            <strong>
+                                + de 9 anos
+                            </strong>
+
+                            <span>
+                                De experiência no mercado
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="obra-numero">
+
+                        <div class="obra-numero-icon">
+
+                            <i
+                                class="fa-brands fa-google"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <div class="obra-numero-content">
+
+                            <div
+                                class="obra-numero-estrelas"
+                                aria-label="Cinco estrelas"
+                            >
+                                ★★★★★
+                            </div>
+
+                            <strong>
+                                5 estrelas
+                            </strong>
+
+                            <span>
+                                Somente avaliações 5 estrelas no Google
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             APRESENTAÇÃO
+        ================================================== -->
+
+        <section class="obras-intro">
+
+            <div class="container">
+
+                <div class="obras-intro-layout">
+
+                    <div class="obras-intro-image fade-left">
+
+                        <img
+                            src="assets/img/works/equipe-instalacao.jpg"
+                            alt="Equipe da B2 Energia Solar durante uma instalação"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="obras-intro-text fade-right">
+
+                        <span>
+                            Trabalhos realizados
+                        </span>
+
+                        <h2>
+                            Cada projeto recebe atenção em todas as etapas
+                        </h2>
+
+                        <p>
+                            A B2 Energia Solar acompanha cada serviço desde a
+                            avaliação inicial até a execução, homologação e
+                            acompanhamento do sistema.
+                        </p>
+
+                        <p>
+                            Nossa galeria reúne exemplos de projetos fotovoltaicos,
+                            padrões de entrada, manutenções, limpezas e soluções
+                            elétricas realizadas pela equipe.
+                        </p>
+
+                        <div class="obras-checks">
+
+                            <div class="obras-check">
+
+                                <i
+                                    class="fa-solid fa-check"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Projetos personalizados
+
+                            </div>
+
+                            <div class="obras-check">
+
+                                <i
+                                    class="fa-solid fa-check"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Equipe capacitada
+
+                            </div>
+
+                            <div class="obras-check">
+
+                                <i
+                                    class="fa-solid fa-check"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Equipamentos de qualidade
+
+                            </div>
+
+                            <div class="obras-check">
+
+                                <i
+                                    class="fa-solid fa-check"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Suporte após a entrega
+
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="servicos.html"
+                            class="btn btn-secondary"
+                        >
+                            Conheça nossos serviços
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             GALERIA
+        ================================================== -->
+
+        <section
+            class="obras-galeria"
+            id="galeria"
+        >
+
+            <div class="container">
+
+                <div class="section-title fade-up">
+
+                    <span>
+                        Galeria de trabalhos
+                    </span>
+
+                    <h2>
+                        Conheça algumas obras realizadas
+                    </h2>
+
+                    <p>
+                        Selecione uma categoria e clique sobre as imagens
+                        para visualizar os trabalhos em tamanho ampliado.
+                    </p>
+
+                </div>
+
+                <div
+                    class="filtros"
+                    aria-label="Filtros da galeria"
+                >
+
+                    <button
+                        type="button"
+                        class="filtro-btn active"
+                        data-filter="todos"
+                    >
+                        <i class="fa-solid fa-border-all"></i>
+                        Todos
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filtro-btn"
+                        data-filter="energia-solar"
+                    >
+                        <i class="fa-solid fa-solar-panel"></i>
+                        Energia solar
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filtro-btn"
+                        data-filter="manutencao"
+                    >
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        Manutenção
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filtro-btn"
+                        data-filter="padrao"
+                    >
+                        <i class="fa-solid fa-bolt"></i>
+                        Padrão de entrada
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filtro-btn"
+                        data-filter="projetos"
+                    >
+                        <i class="fa-solid fa-file-circle-check"></i>
+                        Projetos
+                    </button>
+
+                </div>
+
+                <div class="obras-grid">
+
+                    <!-- Obra 1 -->
+
+                    <article
+                        class="obra-card fade-up"
+                        data-category="energia-solar"
+                    >
+
+                        <div
+                            class="obra-img"
+                            data-lightbox="assets/img/works/obra-01.jpg"
+                            data-caption="Instalação de energia solar realizada pela B2."
+                        >
+
+                            <img
+                                src="assets/img/works/obra-01.jpg"
+                                alt="Instalação de energia solar em residência"
+                                loading="lazy"
+                            >
+
+                            <div class="obra-overlay">
+
+                                <span class="obra-overlay-icon">
+
+                                    <i
+                                        class="fa-solid fa-magnifying-glass-plus"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="obra-info">
+
+                            <div class="obra-info-top">
+
+                                <span class="obra-tag">
+                                    Energia solar
+                                </span>
+
+                                <span class="obra-local">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Serra — ES
+
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Sistema fotovoltaico residencial
+                            </h3>
+
+                            <p>
+                                Instalação dimensionada conforme o consumo
+                                e as características do imóvel.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Obra 2 -->
+
+                    <article
+                        class="obra-card fade-up"
+                        data-category="energia-solar"
+                    >
+
+                        <div
+                            class="obra-img"
+                            data-lightbox="assets/img/works/obra-02.jpg"
+                            data-caption="Sistema fotovoltaico instalado em empresa."
+                        >
+
+                            <img
+                                src="assets/img/works/obra-02.jpg"
+                                alt="Sistema de energia solar comercial"
+                                loading="lazy"
+                            >
+
+                            <div class="obra-overlay">
+
+                                <span class="obra-overlay-icon">
+
+                                    <i
+                                        class="fa-solid fa-magnifying-glass-plus"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="obra-info">
+
+                            <div class="obra-info-top">
+
+                                <span class="obra-tag">
+                                    Energia solar
+                                </span>
+
+                                <span class="obra-local">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Vitória — ES
+
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Sistema para empresa
+                            </h3>
+
+                            <p>
+                                Projeto desenvolvido para reduzir os custos
+                                mensais de energia do estabelecimento.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Obra 3 -->
+
+                    <article
+                        class="obra-card fade-up"
+                        data-category="manutencao"
+                    >
+
+                        <div
+                            class="obra-img"
+                            data-lightbox="assets/img/works/obra-03.jpg"
+                            data-caption="Limpeza e manutenção preventiva de módulos solares."
+                        >
+
+                            <img
+                                src="assets/img/works/obra-03.jpg"
+                                alt="Limpeza e manutenção de painéis solares"
+                                loading="lazy"
+                            >
+
+                            <div class="obra-overlay">
+
+                                <span class="obra-overlay-icon">
+
+                                    <i
+                                        class="fa-solid fa-magnifying-glass-plus"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="obra-info">
+
+                            <div class="obra-info-top">
+
+                                <span class="obra-tag">
+                                    Manutenção
+                                </span>
+
+                                <span class="obra-local">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Vila Velha — ES
+
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Limpeza e avaliação do sistema
+                            </h3>
+
+                            <p>
+                                Higienização dos módulos e verificação
+                                geral do funcionamento da usina.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Obra 4 -->
+
+                    <article
+                        class="obra-card fade-up"
+                        data-category="padrao"
+                    >
+
+                        <div
+                            class="obra-img"
+                            data-lightbox="assets/img/works/obra-04.jpg"
+                            data-caption="Execução de padrão de entrada de energia."
+                        >
+
+                            <img
+                                src="assets/img/works/obra-04.jpg"
+                                alt="Padrão de entrada de energia"
+                                loading="lazy"
+                            >
+
+                            <div class="obra-overlay">
+
+                                <span class="obra-overlay-icon">
+
+                                    <i
+                                        class="fa-solid fa-magnifying-glass-plus"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="obra-info">
+
+                            <div class="obra-info-top">
+
+                                <span class="obra-tag">
+                                    Padrão de entrada
+                                </span>
+
+                                <span class="obra-local">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Serra — ES
+
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Adequação do padrão elétrico
+                            </h3>
+
+                            <p>
+                                Serviço executado conforme as necessidades
+                                do imóvel e as normas da concessionária.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Obra 5 -->
+
+                    <article
+                        class="obra-card fade-up"
+                        data-category="projetos"
+                    >
+
+                        <div
+                            class="obra-img"
+                            data-lightbox="assets/img/works/obra-05.jpg"
+                            data-caption="Projeto elétrico e homologação junto à concessionária."
+                        >
+
+                            <img
+                                src="assets/img/works/obra-05.jpg"
+                                alt="Projeto de homologação de energia solar"
+                                loading="lazy"
+                            >
+
+                            <div class="obra-overlay">
+
+                                <span class="obra-overlay-icon">
+
+                                    <i
+                                        class="fa-solid fa-magnifying-glass-plus"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="obra-info">
+
+                            <div class="obra-info-top">
+
+                                <span class="obra-tag">
+                                    Projeto
+                                </span>
+
+                                <span class="obra-local">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Cariacica — ES
+
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Projeto para homologação
+                            </h3>
+
+                            <p>
+                                Elaboração e acompanhamento da documentação
+                                necessária junto à concessionária.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Obra 6 -->
+
+                    <article
+                        class="obra-card fade-up"
+                        data-category="energia-solar"
+                    >
+
+                        <div
+                            class="obra-img"
+                            data-lightbox="assets/img/works/obra-06.jpg"
+                            data-caption="Sistema solar instalado em propriedade rural."
+                        >
+
+                            <img
+                                src="assets/img/works/obra-06.jpg"
+                                alt="Energia solar em propriedade rural"
+                                loading="lazy"
+                            >
+
+                            <div class="obra-overlay">
+
+                                <span class="obra-overlay-icon">
+
+                                    <i
+                                        class="fa-solid fa-magnifying-glass-plus"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="obra-info">
+
+                            <div class="obra-info-top">
+
+                                <span class="obra-tag">
+                                    Energia solar
+                                </span>
+
+                                <span class="obra-local">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Espírito Santo
+
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Sistema em propriedade rural
+                            </h3>
+
+                            <p>
+                                Solução desenvolvida para atender equipamentos
+                                e reduzir despesas da propriedade.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             AVALIAÇÕES
+        ================================================== -->
+
+        <section class="avaliacoes-section">
+
+            <div class="container">
+
+                <div class="section-title fade-up">
+
+                    <span>
+                        Avaliações dos clientes
+                    </span>
+
+                    <h2>
+                        A confiança de quem escolheu a B2
+                    </h2>
+
+                    <p>
+                        Nossa reputação é construída com atendimento,
+                        qualidade, transparência e compromisso com cada cliente.
+                    </p>
+
+                </div>
+
+                <div class="google-rating fade-up">
+
+                    <div class="google-rating-logo">
+                        Google
+                    </div>
+
+                    <div>
+
+                        <div
+                            class="google-rating-stars"
+                            aria-label="Cinco estrelas"
+                        >
+                            ★★★★★
+                        </div>
+
+                        <strong>
+                            Somente avaliações 5 estrelas
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="review-slider fade-up"
+                    id="reviewSlider"
+                >
+
+                    <article class="review-floating-card active">
+
+                        <span
+                            class="review-quote"
+                            aria-hidden="true"
+                        >
+                            “
+                        </span>
+
+                        <div
+                            class="review-stars"
+                            aria-label="Avaliação de cinco estrelas"
+                        >
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            Excelente atendimento, equipe organizada e serviço
+                            realizado com muita atenção. Ficamos satisfeitos com
+                            todo o acompanhamento da B2.
+                        </blockquote>
+
+                        <div class="review-author">
+
+                            <div class="review-avatar">
+                                C
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Cliente B2 Energia Solar
+                                </strong>
+
+                                <small>
+                                    Avaliação publicada no Google
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="review-floating-card">
+
+                        <span
+                            class="review-quote"
+                            aria-hidden="true"
+                        >
+                            “
+                        </span>
+
+                        <div
+                            class="review-stars"
+                            aria-label="Avaliação de cinco estrelas"
+                        >
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            A equipe explicou todas as etapas do projeto e
+                            acompanhou o processo até a finalização. Atendimento
+                            muito profissional.
+                        </blockquote>
+
+                        <div class="review-author">
+
+                            <div class="review-avatar">
+                                A
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Cliente atendido pela B2
+                                </strong>
+
+                                <small>
+                                    Avaliação publicada no Google
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="review-floating-card">
+
+                        <span
+                            class="review-quote"
+                            aria-hidden="true"
+                        >
+                            “
+                        </span>
+
+                        <div
+                            class="review-stars"
+                            aria-label="Avaliação de cinco estrelas"
+                        >
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            Gostei muito da qualidade do atendimento e da
+                            organização da instalação. A empresa passou
+                            confiança desde o primeiro contato.
+                        </blockquote>
+
+                        <div class="review-author">
+
+                            <div class="review-avatar">
+                                M
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Cliente B2 Energia Solar
+                                </strong>
+
+                                <small>
+                                    Avaliação publicada no Google
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div
+                    class="review-dots"
+                    aria-label="Selecionar avaliação"
+                >
+
+                    <button
+                        type="button"
+                        class="review-dot active"
+                        aria-label="Mostrar primeira avaliação"
+                        data-review="0"
+                    ></button>
+
+                    <button
+                        type="button"
+                        class="review-dot"
+                        aria-label="Mostrar segunda avaliação"
+                        data-review="1"
+                    ></button>
+
+                    <button
+                        type="button"
+                        class="review-dot"
+                        aria-label="Mostrar terceira avaliação"
+                        data-review="2"
+                    ></button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="obras-cta">
+
+            <div class="container fade-up">
+
+                <h2>
+                    Seu projeto também pode fazer parte dessa história
+                </h2>
+
+                <p>
+                    Solicite uma análise personalizada e descubra qual solução
+                    atende melhor sua residência, empresa ou propriedade rural.
+                </p>
+
+                <div class="obras-cta-actions">
+
+                    <a
+                        href="orcamento.html"
+                        class="btn btn-laranja btn-lg"
+                    >
+
+                        <i
+                            class="fa-solid fa-calculator"
+                            aria-hidden="true"
+                        ></i>
+
+                        Solicitar orçamento
+
+                    </a>
+
+                    <a
+                        href="https://wa.me/5527997875792?text=Olá%2C%20vi%20as%20obras%20da%20B2%20Energia%20Solar%20no%20site%20e%20gostaria%20de%20mais%20informações."
+                        class="btn btn-transparente btn-lg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                        Falar com a equipe
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-logo">
+
+                <a
+                    href="index.html"
+                    aria-label="Página inicial da B2 Energia Solar"
+                >
+
+                    <img
+                        src="assets/img/logo/logo-b2.png"
+                        alt="B2 Energia Solar"
+                    >
+
+                </a>
+
+                <p>
+                    Soluções completas em energia solar, projetos elétricos,
+                    homologação, instalações, limpeza e manutenção.
+                </p>
+
+                <div
+                    class="social"
+                    aria-label="Redes sociais da B2 Energia Solar"
+                >
+
+                    <a
+                        href="https://www.instagram.com/b2energiasolar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram da B2 Energia Solar"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="https://wa.me/5527997875792"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp da B2 Energia Solar"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <ul>
+
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="obras.html">Obras e avaliações</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                    <li><a href="endereco.html">Endereço</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>
+                    Serviços
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="servicos.html#energia-solar">
+                            Energia solar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#homologacao">
+                            Homologação
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#manutencao">
+                            Limpeza e manutenção
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#padrao-entrada">
+                            Padrão de entrada
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#carregadores">
+                            Carregadores veiculares
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Fale conosco
+                </h3>
+
+                <div class="footer-contact">
+
+                    <p>
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        <a
+                            href="https://wa.me/5527997875792"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            (27) 99787-5792
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                        <a
+                            href="https://www.instagram.com/b2energiasolar/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @b2energiasolar
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Av. Cel. Manoel Nunes, 1730
+                    </p>
+
+                    <p>
+                        José de Anchieta, Serra — ES
+                    </p>
+
+                    <p>
+                        CEP 29162-385
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    ©
+                    <span id="currentYear">2026</span>
+                    B2 Energia Solar. Todos os direitos reservados.
+                </p>
+
+                <p>
+                    Energia limpa para um futuro mais econômico.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- WhatsApp flutuante -->
+
+    <a
+        href="https://wa.me/5527997875792?text=Olá%2C%20vi%20as%20obras%20da%20B2%20Energia%20Solar%20e%20gostaria%20de%20mais%20informações."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Conversar com a B2 Energia Solar pelo WhatsApp"
+        title="Falar no WhatsApp"
+    >
+
+        <i
+            class="fa-brands fa-whatsapp"
+            aria-hidden="true"
+        ></i>
+
+    </a>
+
+    <!-- JavaScript principal -->
+
+    <script src="js/script.js"></script>
+
+    <!-- Avaliações automáticas -->
+
+    <script>
+
+        "use strict";
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const avaliacoes = Array.from(
+                document.querySelectorAll(".review-floating-card")
+            );
+
+            const botoes = Array.from(
+                document.querySelectorAll(".review-dot")
+            );
+
+            if (avaliacoes.length === 0) {
+                return;
+            }
+
+            let indiceAtual = 0;
+            let intervalo;
+
+            function exibirAvaliacao(indice) {
+
+                indiceAtual =
+                    (indice + avaliacoes.length) % avaliacoes.length;
+
+                avaliacoes.forEach((avaliacao, indiceAvaliacao) => {
+
+                    avaliacao.classList.toggle(
+                        "active",
+                        indiceAvaliacao === indiceAtual
+                    );
+
+                });
+
+                botoes.forEach((botao, indiceBotao) => {
+
+                    botao.classList.toggle(
+                        "active",
+                        indiceBotao === indiceAtual
+                    );
+
+                });
+
+            }
+
+            function iniciarRotacao() {
+
+                window.clearInterval(intervalo);
+
+                intervalo = window.setInterval(() => {
+
+                    exibirAvaliacao(indiceAtual + 1);
+
+                }, 5500);
+
+            }
+
+            botoes.forEach((botao) => {
+
+                botao.addEventListener("click", () => {
+
+                    const indice = Number(botao.dataset.review);
+
+                    if (!Number.isFinite(indice)) {
+                        return;
+                    }
+
+                    exibirAvaliacao(indice);
+                    iniciarRotacao();
+
+                });
+
+            });
+
+            exibirAvaliacao(0);
+            iniciarRotacao();
+
+        });
+
+    </script>
+
+</body>
+
+</html>

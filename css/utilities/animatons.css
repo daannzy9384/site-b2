@@ -1,0 +1,477 @@
+/* ==========================================================
+   ANIMATIONS.CSS
+   Projeto: B2 Energia Solar
+   ========================================================== */
+
+/* ==========================================================
+   TRANSIÇÕES GERAIS
+========================================================== */
+
+.fade-up,
+.fade-down,
+.fade-left,
+.fade-right,
+.zoom-in,
+.zoom-out{
+
+    opacity:0;
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+/* ==========================================================
+   ESTADOS INICIAIS
+========================================================== */
+
+.fade-up{
+
+    transform:translateY(60px);
+
+}
+
+.fade-down{
+
+    transform:translateY(-60px);
+
+}
+
+.fade-left{
+
+    transform:translateX(-60px);
+
+}
+
+.fade-right{
+
+    transform:translateX(60px);
+
+}
+
+.zoom-in{
+
+    transform:scale(.85);
+
+}
+
+.zoom-out{
+
+    transform:scale(1.15);
+
+}
+
+/* ==========================================================
+   ESTADO VISÍVEL
+========================================================== */
+
+.show{
+
+    opacity:1 !important;
+
+    transform:none !important;
+
+}
+
+/* ==========================================================
+   FLOAT
+========================================================== */
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   PULSE
+========================================================== */
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================================
+   ROTAÇÃO SUAVE
+========================================================== */
+
+.rotate{
+
+    transition:.5s ease;
+
+}
+
+.rotate:hover{
+
+    transform:rotate(6deg);
+
+}
+
+/* ==========================================================
+   HOVER LIFT
+========================================================== */
+
+.hover-lift{
+
+    transition:.35s ease;
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ==========================================================
+   HOVER SCALE
+========================================================== */
+
+.hover-scale{
+
+    transition:.35s ease;
+
+}
+
+.hover-scale:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================================
+   HOVER SHADOW
+========================================================== */
+
+.hover-shadow{
+
+    transition:.35s ease;
+
+}
+
+.hover-shadow:hover{
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ==========================================================
+   SHINE EFFECT
+========================================================== */
+
+.shine{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.shine::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+    background:
+
+        linear-gradient(
+
+            120deg,
+
+            transparent,
+
+            rgba(255,255,255,.45),
+
+            transparent
+
+        );
+
+    transform:skewX(-20deg);
+
+}
+
+.shine:hover::before{
+
+    animation:shine 1s forwards;
+
+}
+
+@keyframes shine{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:150%;
+
+    }
+
+}
+
+/* ==========================================================
+   BOTÃO PULSANDO
+========================================================== */
+
+.btn-pulse{
+
+    animation:btnPulse 2s infinite;
+
+}
+
+@keyframes btnPulse{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(255,122,0,.55);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 20px rgba(255,122,0,0);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(255,122,0,0);
+
+    }
+
+}
+
+/* ==========================================================
+   SPIN
+========================================================== */
+
+.spin{
+
+    animation:spin 2s linear infinite;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================================
+   FADE IN
+========================================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+.fade-in{
+
+    animation:fadeIn .8s ease forwards;
+
+}
+
+/* ==========================================================
+   ZOOM IN
+========================================================== */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.zoom{
+
+    animation:zoomIn .7s ease forwards;
+
+}
+
+/* ==========================================================
+   SLIDE UP
+========================================================== */
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.slide-up{
+
+    animation:slideUp .8s ease forwards;
+
+}
+
+/* ==========================================================
+   BALANÇO
+========================================================== */
+
+.swing:hover{
+
+    animation:swing .8s ease;
+
+}
+
+@keyframes swing{
+
+    20%{
+
+        transform:rotate(10deg);
+
+    }
+
+    40%{
+
+        transform:rotate(-8deg);
+
+    }
+
+    60%{
+
+        transform:rotate(6deg);
+
+    }
+
+    80%{
+
+        transform:rotate(-4deg);
+
+    }
+
+    100%{
+
+        transform:rotate(0);
+
+    }
+
+}
+
+/* ==========================================================
+   BLOQUEIO PARA USUÁRIOS QUE PREFEREM MENOS ANIMAÇÕES
+========================================================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}

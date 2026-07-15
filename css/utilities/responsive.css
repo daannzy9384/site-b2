@@ -1,0 +1,1095 @@
+/* =======================================================
+   RESPONSIVE.CSS
+   Projeto: B2 Energia Solar
+   Responsividade global do site
+======================================================= */
+
+
+/* =======================================================
+   NOTEBOOKS E TELAS MENORES
+   Até 1200px
+======================================================= */
+
+@media (max-width:1200px){
+
+    :root{
+
+        --container:1120px;
+        --space-13:100px;
+
+    }
+
+    .container{
+
+        width:min(92%, var(--container));
+
+    }
+
+    .header .container{
+
+        padding:0 20px;
+
+    }
+
+    .nav-list{
+
+        gap:26px;
+
+    }
+
+    .btn-header{
+
+        padding:0 22px;
+
+    }
+
+    .footer .container{
+
+        grid-template-columns:1.7fr 1fr 1fr 1.4fr;
+
+        gap:35px;
+
+    }
+
+}
+
+
+/* =======================================================
+   TABLETS E NOTEBOOKS PEQUENOS
+   Até 1050px
+======================================================= */
+
+@media (max-width:1050px){
+
+    .nav-list{
+
+        gap:18px;
+
+    }
+
+    .nav-list a{
+
+        font-size:.92rem;
+
+    }
+
+    .btn-header{
+
+        padding:0 18px;
+
+        font-size:.9rem;
+
+    }
+
+}
+
+
+/* =======================================================
+   TABLETS
+   Até 992px
+======================================================= */
+
+@media (max-width:992px){
+
+    :root{
+
+        --header-height:82px;
+        --space-13:90px;
+
+    }
+
+    section{
+
+        padding:90px 0;
+
+    }
+
+    .grid-4{
+
+        grid-template-columns:repeat(2,minmax(0,1fr));
+
+    }
+
+    .grid-3{
+
+        grid-template-columns:repeat(2,minmax(0,1fr));
+
+    }
+
+    .cards-grid{
+
+        grid-template-columns:repeat(2,minmax(0,1fr));
+
+    }
+
+    .servicos-grid{
+
+        grid-template-columns:repeat(2,minmax(0,1fr));
+
+    }
+
+    .obras-grid{
+
+        grid-template-columns:repeat(2,minmax(0,1fr));
+
+    }
+
+    .review-grid{
+
+        grid-template-columns:repeat(2,minmax(0,1fr));
+
+    }
+
+    .diferenciais-grid{
+
+        grid-template-columns:repeat(2,minmax(0,1fr));
+
+    }
+
+    .form-container{
+
+        padding:40px;
+
+    }
+
+    .footer .container{
+
+        grid-template-columns:repeat(2,minmax(0,1fr));
+
+        gap:45px;
+
+    }
+
+    .footer-bottom .container{
+
+        display:flex;
+
+        flex-direction:row;
+
+        justify-content:space-between;
+
+    }
+
+}
+
+
+/* =======================================================
+   MENU MOBILE
+   Até 860px
+======================================================= */
+
+@media (max-width:860px){
+
+    .header{
+
+        height:80px;
+
+    }
+
+    .header .container{
+
+        padding:0 18px;
+
+    }
+
+    .logo{
+
+        position:relative;
+
+        z-index:1002;
+
+    }
+
+    .logo img{
+
+        height:52px;
+
+    }
+
+    .header.scrolled .logo img{
+
+        height:48px;
+
+    }
+
+    .menu-mobile{
+
+        position:relative;
+
+        z-index:1002;
+
+        display:flex;
+
+        align-items:center;
+        justify-content:center;
+
+        flex-shrink:0;
+
+    }
+
+    .navbar{
+
+        position:fixed;
+
+        top:0;
+        right:-100%;
+
+        z-index:1001;
+
+        width:min(340px, 88%);
+        height:100vh;
+
+        display:block;
+
+        padding:120px 30px 40px;
+
+        background:var(--white);
+
+        box-shadow:-15px 0 40px rgba(0,0,0,.16);
+
+        overflow-y:auto;
+
+        transition:right .4s ease;
+
+    }
+
+    .navbar.active{
+
+        right:0;
+
+    }
+
+    .nav-list{
+
+        width:100%;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:8px;
+
+    }
+
+    .nav-list li{
+
+        width:100%;
+
+    }
+
+    .nav-list a{
+
+        width:100%;
+
+        display:block;
+
+        padding:15px 10px;
+
+        color:var(--secondary);
+
+        border-bottom:1px solid var(--gray-200);
+
+        font-size:1rem;
+
+    }
+
+    .nav-list a::after{
+
+        display:none;
+
+    }
+
+    .nav-list a:hover,
+    .nav-list a.active{
+
+        color:var(--primary);
+
+        padding-left:18px;
+
+    }
+
+    .btn-header{
+
+        display:none;
+
+    }
+
+    body.menu-open{
+
+        overflow:hidden;
+
+    }
+
+    body.menu-open::before{
+
+        content:"";
+
+        position:fixed;
+
+        inset:0;
+
+        z-index:999;
+
+        background:rgba(7,21,31,.65);
+
+        backdrop-filter:blur(3px);
+
+    }
+
+}
+
+
+/* =======================================================
+   CELULARES GRANDES
+   Até 768px
+======================================================= */
+
+@media (max-width:768px){
+
+    :root{
+
+        --space-11:65px;
+        --space-12:75px;
+        --space-13:80px;
+
+    }
+
+    section{
+
+        padding:80px 0;
+
+    }
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .section-title{
+
+        margin-bottom:50px;
+
+    }
+
+    .section-title span{
+
+        font-size:.82rem;
+
+    }
+
+    .section-title p{
+
+        max-width:620px;
+
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cards-grid,
+    .servicos-grid,
+    .obras-grid,
+    .review-grid,
+    .diferenciais-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-container{
+
+        padding:32px 24px;
+
+        border-radius:18px;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .form-control{
+
+        height:54px;
+
+    }
+
+    textarea.form-control{
+
+        min-height:150px;
+
+    }
+
+    .form-actions{
+
+        margin-top:30px;
+
+    }
+
+    .form-actions .btn{
+
+        width:100%;
+
+    }
+
+    .page-hero{
+
+        padding:140px 20px 85px;
+
+    }
+
+    .page-hero h1{
+
+        font-size:clamp(2.1rem,9vw,3rem);
+
+    }
+
+    .page-hero p{
+
+        font-size:.98rem;
+
+    }
+
+    .timeline{
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+    }
+
+    .etapa:not(:last-child)::after{
+
+        display:none;
+
+    }
+
+    .filtros{
+
+        justify-content:flex-start;
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        padding-bottom:10px;
+
+        scrollbar-width:none;
+
+    }
+
+    .filtros::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .filtro-btn{
+
+        flex:0 0 auto;
+
+        white-space:nowrap;
+
+    }
+
+    .footer{
+
+        padding-top:70px;
+
+        text-align:center;
+
+    }
+
+    .footer .container{
+
+        grid-template-columns:1fr;
+
+        gap:42px;
+
+    }
+
+    .footer-logo img{
+
+        margin-right:auto;
+        margin-left:auto;
+
+    }
+
+    .footer h3::after{
+
+        left:50%;
+
+        transform:translateX(-50%);
+
+    }
+
+    .footer-contact p{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .social{
+
+        justify-content:center;
+
+    }
+
+    .footer-bottom{
+
+        margin-top:50px;
+
+    }
+
+    .footer-bottom .container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* =======================================================
+   CELULARES MÉDIOS
+   Até 620px
+======================================================= */
+
+@media (max-width:620px){
+
+    h1{
+
+        font-size:clamp(2rem,10vw,2.7rem);
+
+    }
+
+    h2{
+
+        font-size:clamp(1.8rem,8vw,2.3rem);
+
+    }
+
+    h3{
+
+        font-size:clamp(1.25rem,6vw,1.65rem);
+
+    }
+
+    p{
+
+        font-size:.96rem;
+
+    }
+
+    .btn{
+
+        min-height:54px;
+
+        padding:13px 24px;
+
+    }
+
+    .btn-lg{
+
+        min-height:58px;
+
+        padding:15px 27px;
+
+        font-size:1rem;
+
+    }
+
+    .card-content{
+
+        padding:24px;
+
+    }
+
+    .card-image{
+
+        height:220px;
+
+    }
+
+    .servico-img img{
+
+        height:220px;
+
+    }
+
+    .obra-img img{
+
+        height:245px;
+
+    }
+
+    .review-card{
+
+        padding:28px 24px;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+        grid-auto-rows:250px;
+
+    }
+
+    .gallery-item--large,
+    .gallery-item--wide,
+    .gallery-item--tall{
+
+        grid-column:auto;
+        grid-row:auto;
+
+    }
+
+    .gallery-overlay{
+
+        opacity:1;
+
+        padding:22px;
+
+    }
+
+    .lightbox{
+
+        padding:12px;
+
+    }
+
+    .lightbox-prev,
+    .lightbox-next{
+
+        width:42px;
+        height:42px;
+
+        font-size:20px;
+
+    }
+
+    .lightbox-prev{
+
+        left:8px;
+
+    }
+
+    .lightbox-next{
+
+        right:8px;
+
+    }
+
+    .lightbox-close{
+
+        top:8px;
+        right:8px;
+
+        width:44px;
+        height:44px;
+
+    }
+
+}
+
+
+/* =======================================================
+   CELULARES PEQUENOS
+   Até 480px
+======================================================= */
+
+@media (max-width:480px){
+
+    :root{
+
+        --header-height:76px;
+
+    }
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .container{
+
+        width:93%;
+
+    }
+
+    .header{
+
+        height:76px;
+
+    }
+
+    .header .container{
+
+        padding:0 14px;
+
+    }
+
+    .logo img{
+
+        height:46px;
+
+    }
+
+    .header.scrolled .logo img{
+
+        height:44px;
+
+    }
+
+    .menu-mobile{
+
+        width:46px;
+        height:46px;
+
+        font-size:22px;
+
+    }
+
+    .navbar{
+
+        width:100%;
+
+        padding:105px 22px 35px;
+
+    }
+
+    .section-title{
+
+        margin-bottom:42px;
+
+    }
+
+    .section-title h2{
+
+        margin-bottom:16px;
+
+    }
+
+    .form-container{
+
+        padding:26px 18px;
+
+    }
+
+    .form-title{
+
+        margin-bottom:30px;
+
+    }
+
+    .form-title h2{
+
+        font-size:1.75rem;
+
+    }
+
+    .form-group label{
+
+        font-size:.94rem;
+
+    }
+
+    .form-control{
+
+        height:52px;
+
+        padding:0 16px;
+
+        border-radius:12px;
+
+    }
+
+    textarea.form-control{
+
+        padding:16px;
+
+    }
+
+    .checkbox-group{
+
+        align-items:flex-start;
+
+    }
+
+    .radio-group{
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+    .page-hero{
+
+        padding:125px 16px 75px;
+
+    }
+
+    .page-hero span{
+
+        font-size:.75rem;
+
+        letter-spacing:1.4px;
+
+    }
+
+    .filtro-btn{
+
+        padding:12px 22px;
+
+    }
+
+    .servico-info{
+
+        padding:52px 24px 25px;
+
+    }
+
+    .diferencial{
+
+        padding:32px 22px;
+
+    }
+
+    .obra-info{
+
+        padding:22px;
+
+    }
+
+    .footer{
+
+        padding-top:60px;
+
+    }
+
+    .footer-logo img{
+
+        width:160px;
+
+    }
+
+    .footer-bottom{
+
+        padding:22px 0;
+
+    }
+
+    .footer-bottom p{
+
+        font-size:.88rem;
+
+    }
+
+    .whatsapp-float{
+
+        right:16px;
+        bottom:16px;
+
+        width:56px;
+        height:56px;
+
+        font-size:27px;
+
+    }
+
+}
+
+
+/* =======================================================
+   CELULARES MUITO PEQUENOS
+   Até 360px
+======================================================= */
+
+@media (max-width:360px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+    .logo img{
+
+        height:42px;
+
+    }
+
+    .menu-mobile{
+
+        width:43px;
+        height:43px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        padding-right:18px;
+        padding-left:18px;
+
+        font-size:.92rem;
+
+    }
+
+    .card-content{
+
+        padding:21px;
+
+    }
+
+    .servico-info{
+
+        padding-right:20px;
+        padding-left:20px;
+
+    }
+
+    .page-hero h1{
+
+        font-size:1.9rem;
+
+    }
+
+    .page-hero p{
+
+        font-size:.91rem;
+
+    }
+
+}
+
+
+/* =======================================================
+   ORIENTAÇÃO HORIZONTAL EM CELULARES
+======================================================= */
+
+@media (max-height:520px) and (orientation:landscape){
+
+    .navbar{
+
+        padding-top:85px;
+
+    }
+
+    .nav-list{
+
+        gap:2px;
+
+    }
+
+    .nav-list a{
+
+        padding:10px;
+
+    }
+
+}
+
+
+/* =======================================================
+   TELAS COM MOUSE
+   Evita efeitos hover em telas sensíveis ao toque
+======================================================= */
+
+@media (hover:hover) and (pointer:fine){
+
+    .card:hover,
+    .servico-card:hover,
+    .obra-card:hover,
+    .diferencial:hover,
+    .review-card:hover{
+
+        transform:translateY(-8px);
+
+    }
+
+}
+
+
+/* =======================================================
+   PREFERÊNCIA POR MENOS MOVIMENTO
+======================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+
+        scroll-behavior:auto;
+
+    }
+
+    .navbar{
+
+        transition:none;
+
+    }
+
+}
+
+
+/* =======================================================
+   IMPRESSÃO
+======================================================= */
+
+@media print{
+
+    .header,
+    .footer,
+    .whatsapp-float,
+    .menu-mobile,
+    .btn,
+    .btn-header{
+
+        display:none !important;
+
+    }
+
+    body{
+
+        color:#000;
+
+        background:#fff;
+
+    }
+
+    section{
+
+        padding:30px 0;
+
+    }
+
+    a{
+
+        color:#000;
+
+        text-decoration:none;
+
+    }
+
+}

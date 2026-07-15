@@ -1,0 +1,410 @@
+/* =======================================================
+   OBRAS.CSS
+   Projeto: B2 Energia Solar
+=======================================================*/
+
+/* =======================================================
+   HERO DA PÁGINA
+=======================================================*/
+
+.page-hero{
+
+    background:linear-gradient(
+        rgba(7,21,31,.85),
+        rgba(7,21,31,.85)
+    ),
+    url("../../img/works/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:180px 20px 120px;
+
+}
+
+.page-hero span{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+.page-hero h1{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.page-hero p{
+
+    color:#ddd;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* =======================================================
+   GALERIA
+=======================================================*/
+
+.obras{
+
+    background:var(--bg-section);
+
+}
+
+.obras-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+/* =======================================================
+   CARD
+=======================================================*/
+
+.obra-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-md);
+
+    transition:.4s;
+
+}
+
+.obra-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+.obra-img{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.obra-img img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.obra-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* Overlay */
+
+.obra-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(13,59,102,.75);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.obra-card:hover .obra-overlay{
+
+    opacity:1;
+
+}
+
+.obra-overlay a{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:24px;
+
+}
+
+/* =======================================================
+   TEXTO
+=======================================================*/
+
+.obra-info{
+
+    padding:25px;
+
+}
+
+.obra-info h3{
+
+    color:var(--secondary);
+
+    margin-bottom:10px;
+
+}
+
+.obra-info p{
+
+    margin-bottom:20px;
+
+}
+
+.obra-info span{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:rgba(255,122,0,.12);
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    font-size:.9rem;
+
+}
+
+/* =======================================================
+   FILTROS
+=======================================================*/
+
+.filtros{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:50px;
+
+}
+
+.filtro-btn{
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.35s;
+
+}
+
+.filtro-btn:hover,
+
+.filtro-btn.active{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/* =======================================================
+   GOOGLE REVIEWS
+=======================================================*/
+
+.reviews{
+
+    padding:120px 0;
+
+    background:white;
+
+}
+
+.review-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.review-card{
+
+    padding:35px;
+
+    border-radius:20px;
+
+    background:var(--bg-section);
+
+    box-shadow:var(--shadow-md);
+
+    transition:.35s;
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stars{
+
+    color:#f4b400;
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+}
+
+.review-card h4{
+
+    margin-top:20px;
+
+    color:var(--secondary);
+
+}
+
+.review-card small{
+
+    color:var(--text-light);
+
+}
+
+/* =======================================================
+   CTA FINAL
+=======================================================*/
+
+.obras-cta{
+
+    padding:120px 20px;
+
+    background:linear-gradient(
+
+        rgba(13,59,102,.95),
+
+        rgba(13,59,102,.95)
+
+    ),
+    url("../../img/works/cta.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+
+}
+
+.obras-cta h2{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.obras-cta p{
+
+    color:#ddd;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+}
+
+/* =======================================================
+   RESPONSIVO
+=======================================================*/
+
+@media(max-width:768px){
+
+    .obras-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .review-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .page-hero{
+
+        padding:140px 20px 80px;
+
+    }
+
+}

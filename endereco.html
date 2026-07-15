@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- =====================================================
+         CONFIGURAÇÕES BÁSICAS
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Endereço e localização | B2 Energia Solar
+    </title>
+
+    <meta
+        name="description"
+        content="Conheça o escritório da B2 Energia Solar em José de Anchieta, Serra, Espírito Santo. Consulte nosso endereço e abra a rota diretamente no Google Maps."
+    >
+
+    <meta
+        name="keywords"
+        content="B2 Energia Solar endereço, energia solar Serra ES, empresa de energia solar Serra, B2 Energia Solar José de Anchieta"
+    >
+
+    <meta
+        name="author"
+        content="B2 Energia Solar"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0d3b66"
+    >
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta
+        property="og:title"
+        content="Endereço e localização | B2 Energia Solar"
+    >
+
+    <meta
+        property="og:description"
+        content="Visite a B2 Energia Solar em José de Anchieta, Serra, Espírito Santo."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:image"
+        content="assets/img/office/fachada-b2.jpg"
+    >
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/img/logo/favicon.png"
+    >
+
+    <!-- =====================================================
+         FONTES
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =====================================================
+         ÍCONES
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- =====================================================
+         CSS PRINCIPAL
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <!-- =====================================================
+         ESTILOS ESPECÍFICOS DA PÁGINA
+    ====================================================== -->
+
+    <style>
+
+        /* ===================================================
+           HERO DA PÁGINA
+        =================================================== */
+
+        .endereco-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 180px 20px 115px;
+
+            background:
+                linear-gradient(
+                    rgba(7, 21, 31, .88),
+                    rgba(7, 21, 31, .91)
+                ),
+                url("assets/img/office/fachada-b2.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            text-align: center;
+
+            color: var(--white);
+
+        }
+
+        .endereco-hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: -170px;
+            right: -120px;
+
+            width: 380px;
+            height: 380px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 122, 0, .13);
+
+        }
+
+        .endereco-hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: -170px;
+            bottom: -200px;
+
+            width: 420px;
+            height: 420px;
+
+            border-radius: 50%;
+
+            background: rgba(0, 180, 216, .08);
+
+        }
+
+        .endereco-hero .container {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+        .endereco-hero span {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 18px;
+
+            color: var(--primary);
+
+            font-size: .92rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+
+        }
+
+        .endereco-hero span::before,
+        .endereco-hero span::after {
+
+            content: "";
+
+            width: 32px;
+            height: 3px;
+
+            border-radius: var(--radius-full);
+
+            background: var(--primary);
+
+        }
+
+        .endereco-hero h1 {
+
+            max-width: 900px;
+
+            margin: 0 auto 22px;
+
+            color: var(--white);
+
+            font-size: clamp(2.4rem, 5vw, 4rem);
+
+        }
+
+        .endereco-hero p {
+
+            max-width: 760px;
+
+            margin: 0 auto;
+
+            color: #dce3e8;
+
+            font-size: 1.08rem;
+
+            line-height: 1.85;
+
+        }
+
+        /* ===================================================
+           LOCALIZAÇÃO PRINCIPAL
+        =================================================== */
+
+        .localizacao {
+
+            padding: 115px 0;
+
+            background: var(--bg-section);
+
+        }
+
+        .localizacao-layout {
+
+            display: grid;
+
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+            align-items: stretch;
+
+            gap: 55px;
+
+        }
+
+        /* ===================================================
+           FOTO DO ESCRITÓRIO
+        =================================================== */
+
+        .office-photo {
+
+            position: relative;
+
+            min-height: 580px;
+
+            overflow: hidden;
+
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .office-photo img {
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: center;
+
+        }
+
+        .office-photo::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(7, 21, 31, .68),
+                    transparent 55%
+                );
+
+            pointer-events: none;
+
+        }
+
+        .office-photo-label {
+
+            position: absolute;
+
+            left: 28px;
+            bottom: 28px;
+
+            z-index: 2;
+
+            max-width: 360px;
+
+            padding: 20px 22px;
+
+            color: var(--white);
+
+            background: rgba(7, 21, 31, .72);
+
+            border: 1px solid rgba(255, 255, 255, .15);
+            border-radius: 16px;
+
+            backdrop-filter: blur(10px);
+
+        }
+
+        .office-photo-label i {
+
+            margin-right: 8px;
+
+            color: var(--primary);
+
+        }
+
+        .office-photo-label strong {
+
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: var(--white);
+
+            font-size: 1.1rem;
+
+        }
+
+        .office-photo-label p {
+
+            margin: 0;
+
+            color: #e0e7ec;
+
+            font-size: .9rem;
+
+        }
+
+        /* ===================================================
+           INFORMAÇÕES DO ENDEREÇO
+        =================================================== */
+
+        .endereco-info {
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+        }
+
+        .endereco-info > span {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            width: fit-content;
+
+            margin-bottom: 17px;
+
+            color: var(--primary);
+
+            font-size: .9rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+        }
+
+        .endereco-info > span::before {
+
+            content: "";
+
+            width: 32px;
+            height: 3px;
+
+            border-radius: var(--radius-full);
+
+            background: var(--primary);
+
+        }
+
+        .endereco-info h2 {
+
+            margin-bottom: 20px;
+
+            color: var(--secondary);
+
+            font-size: clamp(2rem, 4vw, 3rem);
+
+        }
+
+        .endereco-info > p {
+
+            margin-bottom: 34px;
+
+            color: var(--text-light);
+
+            line-height: 1.85;
+
+        }
+
+        /* ===================================================
+           CARTÃO DO ENDEREÇO
+        =================================================== */
+
+        .address-card {
+
+            margin-bottom: 26px;
+
+            padding: 30px;
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-md);
+
+        }
+
+        .address-card-header {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 16px;
+
+            margin-bottom: 22px;
+
+        }
+
+        .address-icon {
+
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            color: var(--white);
+
+            background: var(--primary);
+
+            border-radius: 18px;
+
+            font-size: 25px;
+
+            box-shadow: 0 12px 25px rgba(255, 122, 0, .25);
+
+        }
+
+        .address-card-header h3 {
+
+            margin-bottom: 4px;
+
+            color: var(--secondary);
+
+            font-size: 1.35rem;
+
+        }
+
+        .address-card-header p {
+
+            margin: 0;
+
+            color: var(--text-light);
+
+            font-size: .9rem;
+
+        }
+
+        .address-text {
+
+            margin-bottom: 24px;
+
+            padding: 20px;
+
+            color: var(--gray-700);
+
+            background: var(--gray-100);
+
+            border-left: 4px solid var(--primary);
+            border-radius: 12px;
+
+            line-height: 1.75;
+
+        }
+
+        .address-text strong {
+
+            color: var(--secondary);
+
+        }
+
+        .address-actions {
+
+            display: flex;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+
+        }
+
+        .address-actions .btn {
+
+            flex: 1;
+
+            min-width: 210px;
+
+        }
+
+        /* ===================================================
+           OUTRAS INFORMAÇÕES
+        =================================================== */
+
+        .info-list {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            gap: 16px;
+
+        }
+
+        .info-item {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 14px;
+
+            padding: 20px;
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-md);
+
+            box-shadow: var(--shadow-sm);
+
+        }
+
+        .info-item i {
+
+            width: 42px;
+            height: 42px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            color: var(--primary);
+
+            background: rgba(255, 122, 0, .10);
+
+            border-radius: 12px;
+
+            font-size: 18px;
+
+        }
+
+        .info-item h3 {
+
+            margin-bottom: 5px;
+
+            color: var(--secondary);
+
+            font-size: 1rem;
+
+        }
+
+        .info-item p {
+
+            margin: 0;
+
+            font-size: .88rem;
+
+            line-height: 1.55;
+
+        }
+
+        .info-item a {
+
+            color: var(--text-light);
+
+        }
+
+        .info-item a:hover {
+
+            color: var(--primary);
+
+        }
+
+        /* ===================================================
+           MAPA
+        =================================================== */
+
+        .map-section {
+
+            padding: 115px 0;
+
+            background: var(--white);
+
+        }
+
+        .map-wrapper {
+
+            position: relative;
+
+            overflow: hidden;
+
+            height: 560px;
+
+            border: 8px solid var(--white);
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .map-wrapper iframe {
+
+            width: 100%;
+            height: 100%;
+
+            border: 0;
+
+        }
+
+        .map-badge {
+
+            position: absolute;
+
+            top: 24px;
+            left: 24px;
+
+            z-index: 2;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            max-width: 360px;
+
+            padding: 18px 20px;
+
+            background: rgba(255, 255, 255, .94);
+
+            border-radius: 14px;
+
+            box-shadow: var(--shadow-md);
+
+            backdrop-filter: blur(8px);
+
+        }
+
+        .map-badge i {
+
+            color: var(--primary);
+
+            font-size: 25px;
+
+        }
+
+        .map-badge strong {
+
+            display: block;
+
+            color: var(--secondary);
+
+        }
+
+        .map-badge small {
+
+            color: var(--text-light);
+
+        }
+
+        /* ===================================================
+           DICAS PARA VISITA
+        =================================================== */
+
+        .visit-section {
+
+            padding: 115px 0;
+
+            background: var(--bg-section);
+
+        }
+
+        .visit-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            gap: 28px;
+
+        }
+
+        .visit-card {
+
+            padding: 36px 30px;
+
+            text-align: center;
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-sm);
+
+            transition: var(--transition);
+
+        }
+
+        .visit-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .visit-card-icon {
+
+            width: 68px;
+            height: 68px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            margin: 0 auto 22px;
+
+            color: var(--white);
+
+            background: var(--secondary);
+
+            border-radius: 50%;
+
+            font-size: 26px;
+
+        }
+
+        .visit-card h3 {
+
+            margin-bottom: 12px;
+
+            color: var(--secondary);
+
+        }
+
+        .visit-card p {
+
+            margin-bottom: 22px;
+
+            line-height: 1.75;
+
+        }
+
+        /* ===================================================
+           CTA
+        =================================================== */
+
+        .endereco-cta {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 115px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(13, 59, 102, .94),
+                    rgba(7, 21, 31, .95)
+                ),
+                url("assets/img/hero/banner.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            text-align: center;
+
+        }
+
+        .endereco-cta h2 {
+
+            max-width: 850px;
+
+            margin: 0 auto 20px;
+
+            color: var(--white);
+
+        }
+
+        .endereco-cta p {
+
+            max-width: 720px;
+
+            margin: 0 auto 36px;
+
+            color: #dce3e8;
+
+            line-height: 1.8;
+
+        }
+
+        .endereco-cta-actions {
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 16px;
+
+            flex-wrap: wrap;
+
+        }
+
+        /* ===================================================
+           RESPONSIVO
+        =================================================== */
+
+        @media(max-width: 992px) {
+
+            .localizacao-layout {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .office-photo {
+
+                min-height: 520px;
+
+            }
+
+            .visit-grid {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+
+        }
+
+        @media(max-width: 768px) {
+
+            .endereco-hero {
+
+                padding: 140px 20px 82px;
+
+            }
+
+            .localizacao,
+            .map-section,
+            .visit-section {
+
+                padding: 80px 0;
+
+            }
+
+            .office-photo {
+
+                min-height: 430px;
+
+            }
+
+            .info-list {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .map-wrapper {
+
+                height: 470px;
+
+            }
+
+            .visit-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+        @media(max-width: 576px) {
+
+            .endereco-hero {
+
+                padding: 125px 16px 70px;
+
+            }
+
+            .endereco-hero span::before,
+            .endereco-hero span::after {
+
+                width: 18px;
+
+            }
+
+            .office-photo {
+
+                min-height: 340px;
+
+            }
+
+            .office-photo-label {
+
+                right: 18px;
+                left: 18px;
+                bottom: 18px;
+
+                padding: 17px;
+
+            }
+
+            .address-card {
+
+                padding: 23px 20px;
+
+            }
+
+            .address-card-header {
+
+                align-items: flex-start;
+
+            }
+
+            .address-actions {
+
+                flex-direction: column;
+
+            }
+
+            .address-actions .btn {
+
+                width: 100%;
+                min-width: 0;
+
+            }
+
+            .map-wrapper {
+
+                height: 430px;
+
+                border-width: 5px;
+
+            }
+
+            .map-badge {
+
+                top: 14px;
+                right: 14px;
+                left: 14px;
+
+                max-width: none;
+
+                padding: 15px;
+
+            }
+
+            .endereco-cta-actions {
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+            }
+
+            .endereco-cta-actions .btn {
+
+                width: 100%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header
+        class="header"
+        id="header"
+    >
+
+        <div class="container">
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Ir para a página inicial da B2 Energia Solar"
+            >
+
+                <img
+                    src="assets/img/logo/logo-b2.png"
+                    alt="B2 Energia Solar"
+                >
+
+            </a>
+
+            <nav
+                class="navbar"
+                id="navbar"
+                aria-label="Navegação principal"
+            >
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="obras.html">
+                            Obras e avaliações
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="orcamento.html">
+                            Orçamento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="endereco.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            Endereço
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a
+                href="orcamento.html"
+                class="btn-header"
+            >
+                Solicitar orçamento
+            </a>
+
+            <button
+                class="menu-mobile"
+                id="menuMobile"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="navbar"
+            >
+
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="endereco-hero">
+
+            <div class="container fade-up">
+
+                <span>
+                    Venha conhecer a B2
+                </span>
+
+                <h1>
+                    Nosso escritório está localizado na Serra
+                </h1>
+
+                <p>
+                    Consulte nosso endereço, visualize a localização no mapa
+                    e abra a melhor rota para chegar até a B2 Energia Solar.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             LOCALIZAÇÃO E FOTO
+        ================================================== -->
+
+        <section class="localizacao">
+
+            <div class="container">
+
+                <div class="localizacao-layout">
+
+                    <!-- Foto do escritório -->
+
+                    <div class="office-photo fade-left">
+
+                        <img
+                            src="assets/img/office/fachada-b2.jpg"
+                            alt="Fachada do escritório da B2 Energia Solar"
+                            loading="lazy"
+                        >
+
+                        <div class="office-photo-label">
+
+                            <strong>
+
+                                <i
+                                    class="fa-solid fa-building"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Escritório B2 Energia Solar
+
+                            </strong>
+
+                            <p>
+                                José de Anchieta, Serra — Espírito Santo
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Informações -->
+
+                    <div class="endereco-info fade-right">
+
+                        <span>
+                            Nossa localização
+                        </span>
+
+                        <h2>
+                            Estamos prontos para receber você
+                        </h2>
+
+                        <p>
+                            Nosso escritório está localizado no bairro José de
+                            Anchieta, na Serra. Para facilitar sua chegada, você
+                            pode abrir a localização diretamente no Google Maps
+                            ou iniciar uma rota pelo seu celular.
+                        </p>
+
+                        <div class="address-card">
+
+                            <div class="address-card-header">
+
+                                <div class="address-icon">
+
+                                    <i
+                                        class="fa-solid fa-location-dot"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Endereço da B2 Energia Solar
+                                    </h3>
+
+                                    <p>
+                                        Serra — Espírito Santo
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <address class="address-text">
+
+                                <strong>
+                                    Avenida Coronel Manoel Nunes, nº 1730
+                                </strong>
+
+                                <br>
+
+                                Bairro José de Anchieta
+
+                                <br>
+
+                                Serra — ES
+
+                                <br>
+
+                                CEP 29162-385
+
+                            </address>
+
+                            <div class="address-actions">
+
+                                <a
+                                    href="https://www.google.com/maps/search/?api=1&query=Av.%20Cel.%20Manoel%20Nunes%2C%201730%20-%20Jos%C3%A9%20de%20Anchieta%2C%20Serra%20-%20ES%2C%2029162-385"
+                                    class="btn btn-laranja"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+
+                                    <i
+                                        class="fa-solid fa-map-location-dot"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    Abrir no Google Maps
+
+                                </a>
+
+                                <a
+                                    href="https://www.google.com/maps/dir/?api=1&destination=Av.%20Cel.%20Manoel%20Nunes%2C%201730%20-%20Jos%C3%A9%20de%20Anchieta%2C%20Serra%20-%20ES%2C%2029162-385"
+                                    class="btn btn-outline"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+
+                                    <i
+                                        class="fa-solid fa-route"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    Traçar rota
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="info-list">
+
+                            <article class="info-item">
+
+                                <i
+                                    class="fa-brands fa-whatsapp"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        WhatsApp
+                                    </h3>
+
+                                    <p>
+
+                                        <a
+                                            href="https://wa.me/5527997875792?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20o%20endereço%20da%20B2%20Energia%20Solar."
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            (27) 99787-5792
+                                        </a>
+
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="info-item">
+
+                                <i
+                                    class="fa-brands fa-instagram"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        Instagram
+                                    </h3>
+
+                                    <p>
+
+                                        <a
+                                            href="https://www.instagram.com/b2energiasolar/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            @b2energiasolar
+                                        </a>
+
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="info-item">
+
+                                <i
+                                    class="fa-solid fa-city"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        Bairro
+                                    </h3>
+
+                                    <p>
+                                        José de Anchieta, Serra — ES
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="info-item">
+
+                                <i
+                                    class="fa-solid fa-envelope"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        CEP
+                                    </h3>
+
+                                    <p>
+                                        29162-385
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             MAPA
+        ================================================== -->
+
+        <section class="map-section">
+
+            <div class="container">
+
+                <div class="section-title fade-up">
+
+                    <span>
+                        Localização no mapa
+                    </span>
+
+                    <h2>
+                        Encontre a B2 Energia Solar
+                    </h2>
+
+                    <p>
+                        Use o mapa abaixo para visualizar nossa localização ou
+                        clique no botão para abrir a rota completa no Google Maps.
+                    </p>
+
+                </div>
+
+                <div class="map-wrapper fade-up">
+
+                    <div class="map-badge">
+
+                        <i
+                            class="fa-solid fa-location-dot"
+                            aria-hidden="true"
+                        ></i>
+
+                        <div>
+
+                            <strong>
+                                B2 Energia Solar
+                            </strong>
+
+                            <small>
+                                Av. Cel. Manoel Nunes, 1730
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Av.%20Cel.%20Manoel%20Nunes%2C%201730%20-%20Jos%C3%A9%20de%20Anchieta%2C%20Serra%20-%20ES%2C%2029162-385&output=embed"
+                        title="Mapa com a localização da B2 Energia Solar"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                    ></iframe>
+
+                </div>
+
+                <div class="text-center mt-4">
+
+                    <a
+                        href="https://www.google.com/maps/dir/?api=1&destination=Av.%20Cel.%20Manoel%20Nunes%2C%201730%20-%20Jos%C3%A9%20de%20Anchieta%2C%20Serra%20-%20ES%2C%2029162-385"
+                        class="btn btn-laranja btn-lg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <i
+                            class="fa-solid fa-diamond-turn-right"
+                            aria-hidden="true"
+                        ></i>
+
+                        Como chegar até a B2
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             INFORMAÇÕES PARA VISITA
+        ================================================== -->
+
+        <section class="visit-section">
+
+            <div class="container">
+
+                <div class="section-title fade-up">
+
+                    <span>
+                        Antes de vir
+                    </span>
+
+                    <h2>
+                        Prepare sua visita ao nosso escritório
+                    </h2>
+
+                    <p>
+                        Nossa equipe pode ajudar com dúvidas sobre energia solar,
+                        serviços elétricos, projetos, homologação e manutenção.
+                    </p>
+
+                </div>
+
+                <div class="visit-grid">
+
+                    <article class="visit-card fade-up">
+
+                        <div class="visit-card-icon">
+
+                            <i
+                                class="fa-brands fa-whatsapp"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h3>
+                            Confirme seu atendimento
+                        </h3>
+
+                        <p>
+                            Entre em contato antes da visita para verificar a
+                            disponibilidade da equipe responsável pelo seu serviço.
+                        </p>
+
+                        <a
+                            href="https://wa.me/5527997875792?text=Olá%2C%20gostaria%20de%20confirmar%20um%20atendimento%20no%20escritório%20da%20B2%20Energia%20Solar."
+                            class="btn btn-outline btn-block"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Confirmar pelo WhatsApp
+                        </a>
+
+                    </article>
+
+                    <article class="visit-card fade-up">
+
+                        <div class="visit-card-icon">
+
+                            <i
+                                class="fa-solid fa-file-invoice-dollar"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h3>
+                            Leve sua conta de energia
+                        </h3>
+
+                        <p>
+                            Para uma análise inicial de energia solar, tenha uma
+                            conta recente de energia disponível no celular ou impressa.
+                        </p>
+
+                        <a
+                            href="orcamento.html"
+                            class="btn btn-outline btn-block"
+                        >
+                            Fazer uma simulação
+                        </a>
+
+                    </article>
+
+                    <article class="visit-card fade-up">
+
+                        <div class="visit-card-icon">
+
+                            <i
+                                class="fa-solid fa-route"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h3>
+                            Abra a rota no celular
+                        </h3>
+
+                        <p>
+                            Utilize o Google Maps para consultar o melhor caminho
+                            até nosso escritório a partir da sua localização.
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/dir/?api=1&destination=Av.%20Cel.%20Manoel%20Nunes%2C%201730%20-%20Jos%C3%A9%20de%20Anchieta%2C%20Serra%20-%20ES%2C%2029162-385"
+                            class="btn btn-outline btn-block"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Abrir rota
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="endereco-cta">
+
+            <div class="container fade-up">
+
+                <h2>
+                    Tem alguma dúvida antes de visitar a B2?
+                </h2>
+
+                <p>
+                    Converse com nossa equipe pelo WhatsApp ou solicite uma
+                    simulação personalizada de energia solar.
+                </p>
+
+                <div class="endereco-cta-actions">
+
+                    <a
+                        href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar%20e%20gostaria%20de%20mais%20informações."
+                        class="btn btn-whatsapp btn-lg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                        Falar no WhatsApp
+
+                    </a>
+
+                    <a
+                        href="orcamento.html"
+                        class="btn btn-transparente btn-lg"
+                    >
+
+                        <i
+                            class="fa-solid fa-calculator"
+                            aria-hidden="true"
+                        ></i>
+
+                        Solicitar orçamento
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-logo">
+
+                <a
+                    href="index.html"
+                    aria-label="Página inicial da B2 Energia Solar"
+                >
+
+                    <img
+                        src="assets/img/logo/logo-b2.png"
+                        alt="B2 Energia Solar"
+                    >
+
+                </a>
+
+                <p>
+                    Soluções completas em energia solar, projetos elétricos,
+                    homologação, instalações, limpeza e manutenção.
+                </p>
+
+                <div
+                    class="social"
+                    aria-label="Redes sociais da B2 Energia Solar"
+                >
+
+                    <a
+                        href="https://www.instagram.com/b2energiasolar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram da B2 Energia Solar"
+                        title="Instagram da B2 Energia Solar"
+                    >
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+                    <a
+                        href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp da B2 Energia Solar"
+                        title="WhatsApp da B2 Energia Solar"
+                    >
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="obras.html">
+                            Obras e avaliações
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="orcamento.html">
+                            Orçamento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="endereco.html">
+                            Endereço
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>
+                    Serviços
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="servicos.html#energia-solar">
+                            Energia solar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#homologacao">
+                            Homologação
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#manutencao">
+                            Limpeza e manutenção
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#padrao-entrada">
+                            Padrão de entrada
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#carregadores">
+                            Carregadores veiculares
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Fale conosco
+                </h3>
+
+                <div class="footer-contact">
+
+                    <p>
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            (27) 99787-5792
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="https://www.instagram.com/b2energiasolar/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @b2energiasolar
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i
+                            class="fa-solid fa-location-dot"
+                            aria-hidden="true"
+                        ></i>
+
+                        Av. Cel. Manoel Nunes, 1730
+                    </p>
+
+                    <p>
+                        José de Anchieta, Serra — ES
+                    </p>
+
+                    <p>
+                        CEP 29162-385
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    ©
+                    <span id="currentYear">
+                        2026
+                    </span>
+
+                    B2 Energia Solar. Todos os direitos reservados.
+                </p>
+
+                <p>
+                    Energia limpa para um futuro mais econômico.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =====================================================
+         BOTÃO FLUTUANTE DO WHATSAPP
+    ====================================================== -->
+
+    <a
+        href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar%20e%20gostaria%20de%20mais%20informações."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Conversar com a B2 Energia Solar pelo WhatsApp"
+        title="Falar no WhatsApp"
+    >
+
+        <i
+            class="fa-brands fa-whatsapp"
+            aria-hidden="true"
+        ></i>
+
+    </a>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

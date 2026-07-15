@@ -1,0 +1,3503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- =====================================================
+         CONFIGURAÇÕES BÁSICAS
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Serviços | B2 Energia Solar
+    </title>
+
+    <meta
+        name="description"
+        content="Conheça os serviços da B2 Energia Solar: sistemas fotovoltaicos, limpeza e manutenção, padrão de entrada, projetos para homologação, instalações elétricas e carregadores veiculares."
+    >
+
+    <meta
+        name="keywords"
+        content="energia solar, instalação energia solar, manutenção placas solares, limpeza painéis solares, padrão de entrada, homologação EDP, carregador veicular, B2 Energia Solar"
+    >
+
+    <meta
+        name="author"
+        content="B2 Energia Solar"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0d3b66"
+    >
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta
+        property="og:title"
+        content="Serviços | B2 Energia Solar"
+    >
+
+    <meta
+        property="og:description"
+        content="Soluções completas em energia solar, elétrica, manutenção, homologação e carregamento veicular."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:image"
+        content="assets/img/services/banner.jpg"
+    >
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/img/logo/favicon.png"
+    >
+
+    <!-- =====================================================
+         FONTES
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =====================================================
+         ÍCONES
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- =====================================================
+         CSS PRINCIPAL
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <!-- =====================================================
+         ESTILOS ESPECÍFICOS DA PÁGINA
+    ====================================================== -->
+
+    <style>
+
+        /* ===================================================
+           HERO
+        =================================================== */
+
+        .servicos-hero {
+
+            position: relative;
+
+            min-height: 720px;
+
+            display: flex;
+            align-items: center;
+
+            overflow: hidden;
+
+            padding: 160px 0 90px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(7, 21, 31, .96) 0%,
+                    rgba(7, 21, 31, .88) 52%,
+                    rgba(7, 21, 31, .64) 100%
+                ),
+                url("assets/img/services/banner.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            color: var(--white);
+
+        }
+
+        .servicos-hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: -210px;
+            right: -150px;
+
+            width: 500px;
+            height: 500px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 122, 0, .13);
+
+        }
+
+        .servicos-hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: -230px;
+            bottom: -310px;
+
+            width: 580px;
+            height: 580px;
+
+            border-radius: 50%;
+
+            background: rgba(0, 180, 216, .07);
+
+        }
+
+        .servicos-hero .container {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+        .servicos-hero-content {
+
+            max-width: 850px;
+
+        }
+
+        .servicos-hero-label {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 21px;
+            padding: 9px 17px;
+
+            color: var(--primary);
+
+            background: rgba(255, 255, 255, .08);
+
+            border: 1px solid rgba(255, 255, 255, .13);
+            border-radius: var(--radius-full);
+
+            font-size: .87rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            backdrop-filter: blur(9px);
+
+        }
+
+        .servicos-hero h1 {
+
+            max-width: 800px;
+
+            margin-bottom: 25px;
+
+            color: var(--white);
+
+            font-size: clamp(2.7rem, 6vw, 4.8rem);
+
+            line-height: 1.08;
+
+        }
+
+        .servicos-hero h1 strong {
+
+            color: var(--primary);
+
+        }
+
+        .servicos-hero p {
+
+            max-width: 735px;
+
+            margin-bottom: 40px;
+
+            color: #dce4e9;
+
+            font-size: 1.08rem;
+
+            line-height: 1.85;
+
+        }
+
+        .servicos-hero-actions {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 16px;
+
+            flex-wrap: wrap;
+
+        }
+
+        /* ===================================================
+           NAVEGAÇÃO RÁPIDA
+        =================================================== */
+
+        .servicos-nav {
+
+            position: relative;
+
+            z-index: 5;
+
+            margin-top: -42px;
+
+        }
+
+        .servicos-nav-box {
+
+            display: grid;
+
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+
+            overflow: hidden;
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .servicos-nav-link {
+
+            min-height: 125px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 11px;
+
+            padding: 20px 14px;
+
+            color: var(--secondary);
+
+            text-align: center;
+
+            border-right: 1px solid var(--gray-200);
+
+            font-size: .84rem;
+            font-weight: var(--fw-semibold);
+
+            transition: var(--transition);
+
+        }
+
+        .servicos-nav-link:last-child {
+
+            border-right: none;
+
+        }
+
+        .servicos-nav-link i {
+
+            color: var(--primary);
+
+            font-size: 28px;
+
+            transition: var(--transition);
+
+        }
+
+        .servicos-nav-link:hover {
+
+            color: var(--white);
+
+            background: var(--primary);
+
+        }
+
+        .servicos-nav-link:hover i {
+
+            color: var(--white);
+
+            transform: translateY(-4px);
+
+        }
+
+        /* ===================================================
+           INTRODUÇÃO
+        =================================================== */
+
+        .servicos-intro {
+
+            padding: 135px 0 105px;
+
+            background: var(--white);
+
+        }
+
+        .servicos-intro-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, .95fr)
+                minmax(0, 1.05fr);
+
+            gap: 75px;
+
+            align-items: center;
+
+        }
+
+        .servicos-intro-image {
+
+            position: relative;
+
+        }
+
+        .servicos-intro-image::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: -18px;
+            bottom: -18px;
+
+            width: 68%;
+            height: 68%;
+
+            background: var(--primary);
+
+            border-radius: var(--radius-lg);
+
+        }
+
+        .servicos-intro-image::after {
+
+            content: "";
+
+            position: absolute;
+
+            top: -25px;
+            right: -22px;
+
+            width: 120px;
+            height: 120px;
+
+            border: 8px solid rgba(13, 59, 102, .1);
+            border-radius: 50%;
+
+        }
+
+        .servicos-intro-image img {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+            min-height: 530px;
+
+            object-fit: cover;
+
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .servicos-intro-text > span {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 17px;
+
+            color: var(--primary);
+
+            font-size: .9rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+        }
+
+        .servicos-intro-text > span::before {
+
+            content: "";
+
+            width: 32px;
+            height: 3px;
+
+            background: var(--primary);
+
+            border-radius: var(--radius-full);
+
+        }
+
+        .servicos-intro-text h2 {
+
+            margin-bottom: 23px;
+
+            font-size: clamp(2rem, 4vw, 3rem);
+
+        }
+
+        .servicos-intro-text p {
+
+            line-height: 1.85;
+
+        }
+
+        .servicos-intro-list {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            gap: 15px;
+
+            margin: 30px 0 34px;
+
+        }
+
+        .servicos-intro-item {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 11px;
+
+            color: var(--secondary);
+
+            font-size: .93rem;
+            font-weight: var(--fw-medium);
+
+        }
+
+        .servicos-intro-item i {
+
+            width: 31px;
+            height: 31px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            color: var(--white);
+
+            background: var(--success);
+
+            border-radius: 50%;
+
+            font-size: 13px;
+
+        }
+
+        /* ===================================================
+           SERVIÇOS
+        =================================================== */
+
+        .servicos-lista {
+
+            padding: 115px 0;
+
+            background: var(--bg-section);
+
+        }
+
+        .servicos-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            gap: 30px;
+
+        }
+
+        .servico-card {
+
+            position: relative;
+
+            display: flex;
+
+            flex-direction: column;
+
+            overflow: hidden;
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-sm);
+
+            transition:
+                transform var(--transition),
+                border-color var(--transition),
+                box-shadow var(--transition);
+
+        }
+
+        .servico-card:hover {
+
+            transform: translateY(-10px);
+
+            border-color: rgba(255, 122, 0, .35);
+
+            box-shadow: var(--shadow-xl);
+
+        }
+
+        .servico-img {
+
+            position: relative;
+
+            height: 250px;
+
+            overflow: hidden;
+
+        }
+
+        .servico-img img {
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: transform .6s ease;
+
+        }
+
+        .servico-card:hover .servico-img img {
+
+            transform: scale(1.07);
+
+        }
+
+        .servico-img::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(7, 21, 31, .48),
+                    transparent 62%
+                );
+
+        }
+
+        .servico-icon {
+
+            position: absolute;
+
+            left: 28px;
+            top: 215px;
+
+            z-index: 3;
+
+            width: 70px;
+            height: 70px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            color: var(--white);
+
+            background: var(--primary);
+
+            border: 7px solid var(--white);
+            border-radius: 50%;
+
+            font-size: 25px;
+
+            box-shadow: var(--shadow-md);
+
+        }
+
+        .servico-info {
+
+            display: flex;
+
+            flex-direction: column;
+            flex: 1;
+
+            padding: 58px 29px 30px;
+
+        }
+
+        .servico-tag {
+
+            width: fit-content;
+
+            margin-bottom: 13px;
+            padding: 7px 13px;
+
+            color: var(--primary);
+
+            background: rgba(255, 122, 0, .09);
+
+            border-radius: var(--radius-full);
+
+            font-size: .76rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: .5px;
+
+        }
+
+        .servico-info h2 {
+
+            margin-bottom: 15px;
+
+            color: var(--secondary);
+
+            font-size: 1.42rem;
+
+        }
+
+        .servico-info > p {
+
+            margin-bottom: 23px;
+
+            font-size: .92rem;
+
+            line-height: 1.75;
+
+        }
+
+        .servico-info ul {
+
+            margin-bottom: 28px;
+
+        }
+
+        .servico-info li {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 10px;
+
+            margin-bottom: 11px;
+
+            color: var(--text-light);
+
+            font-size: .88rem;
+
+            line-height: 1.55;
+
+        }
+
+        .servico-info li i {
+
+            margin-top: 4px;
+
+            color: var(--success);
+
+            font-size: 13px;
+
+        }
+
+        .servico-info .btn {
+
+            width: 100%;
+
+            margin-top: auto;
+
+        }
+
+        /* ===================================================
+           SERVIÇO EM DESTAQUE
+        =================================================== */
+
+        .servico-destaque {
+
+            grid-column: span 2;
+
+            display: grid;
+
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+        }
+
+        .servico-destaque .servico-img {
+
+            height: 100%;
+            min-height: 490px;
+
+        }
+
+        .servico-destaque .servico-icon {
+
+            top: 28px;
+            left: calc(50% - 35px);
+
+        }
+
+        .servico-destaque .servico-info {
+
+            padding: 45px;
+
+        }
+
+        .servico-destaque .servico-info h2 {
+
+            font-size: clamp(1.8rem, 3vw, 2.35rem);
+
+        }
+
+        /* ===================================================
+           DIFERENCIAIS
+        =================================================== */
+
+        .diferenciais {
+
+            padding: 115px 0;
+
+            background: var(--white);
+
+        }
+
+        .diferenciais-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+
+            gap: 25px;
+
+        }
+
+        .diferencial-card {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 35px 27px;
+
+            text-align: center;
+
+            background: var(--bg-section);
+
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+
+            transition: var(--transition);
+
+        }
+
+        .diferencial-card::after {
+
+            content: "";
+
+            position: absolute;
+
+            right: -50px;
+            bottom: -60px;
+
+            width: 130px;
+            height: 130px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 122, 0, .07);
+
+        }
+
+        .diferencial-card:hover {
+
+            transform: translateY(-8px);
+
+            background: var(--white);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .diferencial-icon {
+
+            position: relative;
+            z-index: 2;
+
+            width: 68px;
+            height: 68px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            margin: 0 auto 22px;
+
+            color: var(--white);
+
+            background: var(--primary);
+
+            border-radius: 20px;
+
+            font-size: 27px;
+
+            box-shadow: 0 12px 27px rgba(255, 122, 0, .24);
+
+        }
+
+        .diferencial-card h3 {
+
+            position: relative;
+            z-index: 2;
+
+            margin-bottom: 12px;
+
+            font-size: 1.18rem;
+
+        }
+
+        .diferencial-card p {
+
+            position: relative;
+            z-index: 2;
+
+            margin: 0;
+
+            font-size: .88rem;
+
+            line-height: 1.7;
+
+        }
+
+        /* ===================================================
+           PROCESSO
+        =================================================== */
+
+        .processo {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 120px 0;
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--secondary-dark),
+                    var(--secondary)
+                );
+
+        }
+
+        .processo::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: -220px;
+            right: -160px;
+
+            width: 500px;
+            height: 500px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 122, 0, .1);
+
+        }
+
+        .processo .section-title {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+        .processo .section-title h2 {
+
+            color: var(--white);
+
+        }
+
+        .processo .section-title p {
+
+            color: #dce4e9;
+
+        }
+
+        .timeline {
+
+            position: relative;
+
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+
+            gap: 25px;
+
+        }
+
+        .etapa {
+
+            position: relative;
+
+            text-align: center;
+
+        }
+
+        .etapa-numero {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 76px;
+            height: 76px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            margin: 0 auto 23px;
+
+            color: var(--white);
+
+            background: var(--primary);
+
+            border: 7px solid rgba(255, 255, 255, .11);
+            border-radius: 50%;
+
+            font-size: 1.45rem;
+            font-weight: var(--fw-bold);
+
+            box-shadow: 0 12px 30px rgba(255, 122, 0, .25);
+
+        }
+
+        .etapa:not(:last-child)::after {
+
+            content: "";
+
+            position: absolute;
+
+            top: 37px;
+            left: 67%;
+
+            width: 67%;
+
+            height: 3px;
+
+            background: rgba(255, 255, 255, .18);
+
+        }
+
+        .etapa h3 {
+
+            margin-bottom: 11px;
+
+            color: var(--white);
+
+            font-size: 1.05rem;
+
+        }
+
+        .etapa p {
+
+            margin: 0;
+
+            color: #d6e0e7;
+
+            font-size: .84rem;
+
+            line-height: 1.65;
+
+        }
+
+        /* ===================================================
+           PERGUNTAS FREQUENTES
+        =================================================== */
+
+        .faq {
+
+            padding: 115px 0;
+
+            background: var(--bg-section);
+
+        }
+
+        .faq-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, .72fr)
+                minmax(0, 1.28fr);
+
+            gap: 65px;
+
+            align-items: start;
+
+        }
+
+        .faq-intro {
+
+            position: sticky;
+
+            top: 120px;
+
+        }
+
+        .faq-intro > span {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            margin-bottom: 16px;
+
+            color: var(--primary);
+
+            font-size: .88rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+        }
+
+        .faq-intro > span::before {
+
+            content: "";
+
+            width: 30px;
+            height: 3px;
+
+            background: var(--primary);
+
+            border-radius: var(--radius-full);
+
+        }
+
+        .faq-intro h2 {
+
+            margin-bottom: 20px;
+
+            font-size: clamp(2rem, 4vw, 2.8rem);
+
+        }
+
+        .faq-intro p {
+
+            line-height: 1.8;
+
+        }
+
+        .faq-list {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 14px;
+
+        }
+
+        .faq-item {
+
+            overflow: hidden;
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-200);
+            border-radius: 16px;
+
+            box-shadow: var(--shadow-sm);
+
+        }
+
+        .faq-question {
+
+            width: 100%;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding: 22px 24px;
+
+            color: var(--secondary);
+
+            text-align: left;
+
+            font-weight: var(--fw-semibold);
+
+        }
+
+        .faq-question i {
+
+            color: var(--primary);
+
+            transition: transform var(--transition);
+
+        }
+
+        .faq-item.active .faq-question i {
+
+            transform: rotate(180deg);
+
+        }
+
+        .faq-answer {
+
+            max-height: 0;
+
+            overflow: hidden;
+
+            transition: max-height .4s ease;
+
+        }
+
+        .faq-answer p {
+
+            margin: 0;
+
+            padding: 0 24px 24px;
+
+            line-height: 1.8;
+
+        }
+
+        /* ===================================================
+           CTA
+        =================================================== */
+
+        .servicos-cta-final {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 120px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(7, 21, 31, .9),
+                    rgba(7, 21, 31, .93)
+                ),
+                url("assets/img/services/cta.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            text-align: center;
+
+        }
+
+        .servicos-cta-final h2 {
+
+            max-width: 860px;
+
+            margin: 0 auto 21px;
+
+            color: var(--white);
+
+        }
+
+        .servicos-cta-final p {
+
+            max-width: 730px;
+
+            margin: 0 auto 38px;
+
+            color: #dce4e9;
+
+            line-height: 1.8;
+
+        }
+
+        .servicos-cta-actions {
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 16px;
+
+            flex-wrap: wrap;
+
+        }
+
+        /* ===================================================
+           RESPONSIVO
+        =================================================== */
+
+        @media(max-width: 1150px) {
+
+            .servicos-nav-box {
+
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            }
+
+            .servicos-nav-link {
+
+                border-bottom: 1px solid var(--gray-200);
+
+            }
+
+            .servicos-nav-link:nth-child(3) {
+
+                border-right: none;
+
+            }
+
+            .servicos-nav-link:nth-child(n + 4) {
+
+                border-bottom: none;
+
+            }
+
+            .servicos-grid {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+
+            .servico-destaque {
+
+                grid-column: span 2;
+
+            }
+
+            .diferenciais-grid {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+
+        }
+
+        @media(max-width: 992px) {
+
+            .servicos-hero {
+
+                min-height: auto;
+
+                padding: 145px 0 100px;
+
+            }
+
+            .servicos-intro-layout {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .servicos-intro-image {
+
+                max-width: 760px;
+
+                margin: 0 auto;
+
+            }
+
+            .timeline {
+
+                grid-template-columns: 1fr;
+
+                max-width: 650px;
+
+                margin: 0 auto;
+
+                gap: 35px;
+
+            }
+
+            .etapa {
+
+                display: grid;
+
+                grid-template-columns: 80px 1fr;
+
+                column-gap: 20px;
+
+                text-align: left;
+
+            }
+
+            .etapa-numero {
+
+                grid-row: span 2;
+
+                margin: 0;
+
+            }
+
+            .etapa:not(:last-child)::after {
+
+                top: 80px;
+                left: 37px;
+
+                width: 3px;
+                height: calc(100% - 45px);
+
+            }
+
+            .faq-layout {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .faq-intro {
+
+                position: static;
+
+            }
+
+        }
+
+        @media(max-width: 768px) {
+
+            .servicos-hero {
+
+                text-align: center;
+
+                background:
+                    linear-gradient(
+                        rgba(7, 21, 31, .89),
+                        rgba(7, 21, 31, .93)
+                    ),
+                    url("assets/img/services/banner.jpg");
+
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            .servicos-hero-content {
+
+                margin: 0 auto;
+
+            }
+
+            .servicos-hero-actions {
+
+                justify-content: center;
+
+            }
+
+            .servicos-nav {
+
+                margin-top: -25px;
+
+            }
+
+            .servicos-nav-box {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+
+            .servicos-nav-link {
+
+                min-height: 110px;
+
+                border-right: 1px solid var(--gray-200);
+                border-bottom: 1px solid var(--gray-200);
+
+            }
+
+            .servicos-nav-link:nth-child(even) {
+
+                border-right: none;
+
+            }
+
+            .servicos-nav-link:nth-child(3) {
+
+                border-right: 1px solid var(--gray-200);
+
+            }
+
+            .servicos-nav-link:nth-child(n + 5) {
+
+                border-bottom: none;
+
+            }
+
+            .servicos-intro,
+            .servicos-lista,
+            .diferenciais,
+            .processo,
+            .faq {
+
+                padding: 85px 0;
+
+            }
+
+            .servicos-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .servico-destaque {
+
+                grid-column: auto;
+                grid-template-columns: 1fr;
+
+            }
+
+            .servico-destaque .servico-img {
+
+                min-height: 280px;
+
+            }
+
+            .servico-destaque .servico-icon {
+
+                top: 245px;
+                left: 28px;
+
+            }
+
+            .servico-destaque .servico-info {
+
+                padding: 58px 29px 30px;
+
+            }
+
+        }
+
+        @media(max-width: 576px) {
+
+            .servicos-hero {
+
+                padding: 125px 0 82px;
+
+            }
+
+            .servicos-hero h1 {
+
+                font-size: 2.35rem;
+
+            }
+
+            .servicos-hero-actions {
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+            }
+
+            .servicos-hero-actions .btn {
+
+                width: 100%;
+
+            }
+
+            .servicos-nav-box {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .servicos-nav-link {
+
+                min-height: 75px;
+
+                flex-direction: row;
+
+                justify-content: flex-start;
+
+                padding: 16px 22px;
+
+                text-align: left;
+
+                border-right: none;
+                border-bottom: 1px solid var(--gray-200);
+
+            }
+
+            .servicos-nav-link:nth-child(3),
+            .servicos-nav-link:nth-child(n + 5) {
+
+                border-right: none;
+                border-bottom: 1px solid var(--gray-200);
+
+            }
+
+            .servicos-nav-link:last-child {
+
+                border-bottom: none;
+
+            }
+
+            .servicos-nav-link i {
+
+                width: 32px;
+
+                font-size: 22px;
+
+            }
+
+            .servicos-intro-image img {
+
+                min-height: 340px;
+
+            }
+
+            .servicos-intro-list {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .servico-img {
+
+                height: 225px;
+
+            }
+
+            .servico-icon {
+
+                top: 190px;
+
+            }
+
+            .servico-destaque .servico-img {
+
+                min-height: 225px;
+
+            }
+
+            .servico-destaque .servico-icon {
+
+                top: 190px;
+
+            }
+
+            .diferenciais-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .etapa {
+
+                grid-template-columns: 64px 1fr;
+
+                column-gap: 15px;
+
+            }
+
+            .etapa-numero {
+
+                width: 64px;
+                height: 64px;
+
+            }
+
+            .etapa:not(:last-child)::after {
+
+                top: 67px;
+                left: 31px;
+
+            }
+
+            .faq-question {
+
+                padding: 19px 18px;
+
+            }
+
+            .faq-answer p {
+
+                padding: 0 18px 20px;
+
+            }
+
+            .servicos-cta-actions {
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+            }
+
+            .servicos-cta-actions .btn {
+
+                width: 100%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header
+        class="header"
+        id="header"
+    >
+
+        <div class="container">
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Ir para a página inicial da B2 Energia Solar"
+            >
+
+                <img
+                    src="assets/img/logo/logo-b2.png"
+                    alt="B2 Energia Solar"
+                >
+
+            </a>
+
+            <nav
+                class="navbar"
+                id="navbar"
+                aria-label="Navegação principal"
+            >
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="servicos.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="obras.html">
+                            Obras e avaliações
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="orcamento.html">
+                            Orçamento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="endereco.html">
+                            Endereço
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a
+                href="orcamento.html"
+                class="btn-header"
+            >
+                Solicitar orçamento
+            </a>
+
+            <button
+                class="menu-mobile"
+                id="menuMobile"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="navbar"
+            >
+
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="servicos-hero">
+
+            <div class="container">
+
+                <div class="servicos-hero-content fade-left">
+
+                    <div class="servicos-hero-label">
+
+                        <i
+                            class="fa-solid fa-bolt"
+                            aria-hidden="true"
+                        ></i>
+
+                        Soluções completas
+
+                    </div>
+
+                    <h1>
+                        Energia, segurança e economia em
+                        <strong>um só lugar</strong>
+                    </h1>
+
+                    <p>
+                        A B2 Energia Solar oferece soluções completas para
+                        residências, empresas e propriedades rurais, desde o
+                        projeto inicial até a instalação, homologação,
+                        manutenção e acompanhamento do sistema.
+                    </p>
+
+                    <div class="servicos-hero-actions">
+
+                        <a
+                            href="#nossos-servicos"
+                            class="btn btn-laranja btn-lg"
+                        >
+
+                            <i
+                                class="fa-solid fa-screwdriver-wrench"
+                                aria-hidden="true"
+                            ></i>
+
+                            Conhecer os serviços
+
+                        </a>
+
+                        <a
+                            href="orcamento.html"
+                            class="btn btn-transparente btn-lg"
+                        >
+
+                            <i
+                                class="fa-solid fa-calculator"
+                                aria-hidden="true"
+                            ></i>
+
+                            Solicitar orçamento
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             NAVEGAÇÃO RÁPIDA
+        ================================================== -->
+
+        <section
+            class="servicos-nav"
+            aria-label="Acesso rápido aos serviços"
+        >
+
+            <div class="container">
+
+                <div class="servicos-nav-box fade-up">
+
+                    <a
+                        href="#energia-solar"
+                        class="servicos-nav-link"
+                    >
+
+                        <i
+                            class="fa-solid fa-solar-panel"
+                            aria-hidden="true"
+                        ></i>
+
+                        Energia solar
+
+                    </a>
+
+                    <a
+                        href="#manutencao"
+                        class="servicos-nav-link"
+                    >
+
+                        <i
+                            class="fa-solid fa-screwdriver-wrench"
+                            aria-hidden="true"
+                        ></i>
+
+                        Limpeza e manutenção
+
+                    </a>
+
+                    <a
+                        href="#padrao-entrada"
+                        class="servicos-nav-link"
+                    >
+
+                        <i
+                            class="fa-solid fa-bolt"
+                            aria-hidden="true"
+                        ></i>
+
+                        Padrão de entrada
+
+                    </a>
+
+                    <a
+                        href="#homologacao"
+                        class="servicos-nav-link"
+                    >
+
+                        <i
+                            class="fa-solid fa-file-circle-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        Projeto e homologação
+
+                    </a>
+
+                    <a
+                        href="#instalacoes-eletricas"
+                        class="servicos-nav-link"
+                    >
+
+                        <i
+                            class="fa-solid fa-plug-circle-bolt"
+                            aria-hidden="true"
+                        ></i>
+
+                        Instalações elétricas
+
+                    </a>
+
+                    <a
+                        href="#carregadores"
+                        class="servicos-nav-link"
+                    >
+
+                        <i
+                            class="fa-solid fa-charging-station"
+                            aria-hidden="true"
+                        ></i>
+
+                        Carregadores veiculares
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             INTRODUÇÃO
+        ================================================== -->
+
+        <section class="servicos-intro">
+
+            <div class="container">
+
+                <div class="servicos-intro-layout">
+
+                    <div class="servicos-intro-image fade-left">
+
+                        <img
+                            src="assets/img/services/equipe-tecnica.jpg"
+                            alt="Equipe técnica da B2 Energia Solar"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="servicos-intro-text fade-right">
+
+                        <span>
+                            Atendimento completo
+                        </span>
+
+                        <h2>
+                            Soluções desenvolvidas de acordo com cada necessidade
+                        </h2>
+
+                        <p>
+                            Cada imóvel possui características diferentes.
+                            Por isso, a B2 realiza uma análise individual antes
+                            de indicar equipamentos, serviços ou alterações
+                            elétricas.
+                        </p>
+
+                        <p>
+                            Nossa equipe acompanha todas as etapas, ajudando o
+                            cliente a entender o projeto e oferecendo suporte
+                            antes, durante e depois da execução.
+                        </p>
+
+                        <div class="servicos-intro-list">
+
+                            <div class="servicos-intro-item">
+
+                                <i
+                                    class="fa-solid fa-check"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Atendimento personalizado
+
+                            </div>
+
+                            <div class="servicos-intro-item">
+
+                                <i
+                                    class="fa-solid fa-check"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Equipe capacitada
+
+                            </div>
+
+                            <div class="servicos-intro-item">
+
+                                <i
+                                    class="fa-solid fa-check"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Projetos seguros
+
+                            </div>
+
+                            <div class="servicos-intro-item">
+
+                                <i
+                                    class="fa-solid fa-check"
+                                    aria-hidden="true"
+                                ></i>
+
+                                Acompanhamento técnico
+
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="obras.html"
+                            class="btn btn-secondary"
+                        >
+
+                            <i
+                                class="fa-solid fa-images"
+                                aria-hidden="true"
+                            ></i>
+
+                            Conhecer nossos trabalhos
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             LISTA DE SERVIÇOS
+        ================================================== -->
+
+        <section
+            class="servicos-lista"
+            id="nossos-servicos"
+        >
+
+            <div class="container">
+
+                <div class="section-title fade-up">
+
+                    <span>
+                        Nossos serviços
+                    </span>
+
+                    <h2>
+                        Conheça as soluções oferecidas pela B2
+                    </h2>
+
+                    <p>
+                        Atendemos projetos novos, sistemas já instalados,
+                        adequações elétricas, manutenções e regularizações.
+                    </p>
+
+                </div>
+
+                <div class="servicos-grid">
+
+                    <!-- =====================================
+                         ENERGIA SOLAR
+                    ====================================== -->
+
+                    <article
+                        class="servico-card servico-destaque fade-up"
+                        id="energia-solar"
+                    >
+
+                        <div class="servico-img">
+
+                            <img
+                                src="assets/img/services/energia-solar.jpg"
+                                alt="Sistema de energia solar instalado pela B2"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="servico-icon">
+
+                            <i
+                                class="fa-solid fa-solar-panel"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <div class="servico-info">
+
+                            <span class="servico-tag">
+                                Serviço principal
+                            </span>
+
+                            <h2>
+                                Energia solar fotovoltaica
+                            </h2>
+
+                            <p>
+                                Projetamos e instalamos sistemas solares para
+                                residências, empresas e propriedades rurais,
+                                considerando o consumo atual e as necessidades
+                                futuras do cliente.
+                            </p>
+
+                            <ul>
+
+                                <li>
+
+                                    <i class="fa-solid fa-check"></i>
+
+                                    Análise da conta de energia e do consumo
+
+                                </li>
+
+                                <li>
+
+                                    <i class="fa-solid fa-check"></i>
+
+                                    Dimensionamento personalizado do sistema
+
+                                </li>
+
+                                <li>
+
+                                    <i class="fa-solid fa-check"></i>
+
+                                    Fornecimento e instalação dos equipamentos
+
+                                </li>
+
+                                <li>
+
+                                    <i class="fa-solid fa-check"></i>
+
+                                    Projeto e homologação junto à concessionária
+
+                                </li>
+
+                                <li>
+
+                                    <i class="fa-solid fa-check"></i>
+
+                                    Orientação para acompanhamento da geração
+
+                                </li>
+
+                            </ul>
+
+                            <a
+                                href="orcamento.html"
+                                class="btn btn-laranja"
+                            >
+                                Solicitar orçamento de energia solar
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- =====================================
+                         MANUTENÇÃO
+                    ====================================== -->
+
+                    <article
+                        class="servico-card fade-up"
+                        id="manutencao"
+                    >
+
+                        <div class="servico-img">
+
+                            <img
+                                src="assets/img/services/manutencao.jpg"
+                                alt="Limpeza e manutenção de placas solares"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="servico-icon">
+
+                            <i
+                                class="fa-solid fa-screwdriver-wrench"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <div class="servico-info">
+
+                            <span class="servico-tag">
+                                Manutenção preventiva
+                            </span>
+
+                            <h2>
+                                Limpeza e manutenção
+                            </h2>
+
+                            <p>
+                                Serviços para verificar o funcionamento,
+                                a segurança e as condições gerais do sistema
+                                fotovoltaico.
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Limpeza adequada dos módulos
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Avaliação visual da instalação
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Verificação do inversor
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Análise de geração e desempenho
+                                </li>
+
+                            </ul>
+
+                            <a
+                                href="https://wa.me/5527997875792?text=Olá%2C%20gostaria%20de%20informações%20sobre%20limpeza%20e%20manutenção%20de%20energia%20solar."
+                                class="btn btn-outline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Solicitar atendimento
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- =====================================
+                         PADRÃO DE ENTRADA
+                    ====================================== -->
+
+                    <article
+                        class="servico-card fade-up"
+                        id="padrao-entrada"
+                    >
+
+                        <div class="servico-img">
+
+                            <img
+                                src="assets/img/services/padrao-entrada.jpg"
+                                alt="Execução de padrão de entrada de energia"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="servico-icon">
+
+                            <i
+                                class="fa-solid fa-bolt"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <div class="servico-info">
+
+                            <span class="servico-tag">
+                                Adequação elétrica
+                            </span>
+
+                            <h2>
+                                Padrão de entrada
+                            </h2>
+
+                            <p>
+                                Execução, reforma e adequação de padrões de
+                                energia conforme as necessidades do imóvel e
+                                as exigências da concessionária.
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Padrão monofásico
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Padrão bifásico
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Padrão trifásico
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Aumento de carga
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Agrupamento e desagrupamento
+                                </li>
+
+                            </ul>
+
+                            <a
+                                href="https://wa.me/5527997875792?text=Olá%2C%20gostaria%20de%20informações%20sobre%20padrão%20de%20entrada%20de%20energia."
+                                class="btn btn-outline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Solicitar avaliação
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- =====================================
+                         HOMOLOGAÇÃO
+                    ====================================== -->
+
+                    <article
+                        class="servico-card fade-up"
+                        id="homologacao"
+                    >
+
+                        <div class="servico-img">
+
+                            <img
+                                src="assets/img/services/homologacao.jpg"
+                                alt="Projeto para homologação de energia solar"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="servico-icon">
+
+                            <i
+                                class="fa-solid fa-file-circle-check"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <div class="servico-info">
+
+                            <span class="servico-tag">
+                                Documentação técnica
+                            </span>
+
+                            <h2>
+                                Projetos e homologação
+                            </h2>
+
+                            <p>
+                                Elaboração e acompanhamento da documentação
+                                necessária para análise e aprovação junto à
+                                concessionária de energia.
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Projeto fotovoltaico
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Regularização de sistemas
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Acompanhamento de solicitações
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Adequação documental
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Suporte junto à concessionária
+                                </li>
+
+                            </ul>
+
+                            <a
+                                href="https://wa.me/5527997875792?text=Olá%2C%20gostaria%20de%20informações%20sobre%20projeto%20e%20homologação%20de%20energia%20solar."
+                                class="btn btn-outline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Falar com a equipe
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- =====================================
+                         INSTALAÇÕES ELÉTRICAS
+                    ====================================== -->
+
+                    <article
+                        class="servico-card fade-up"
+                        id="instalacoes-eletricas"
+                    >
+
+                        <div class="servico-img">
+
+                            <img
+                                src="assets/img/services/instalacoes-eletricas.jpg"
+                                alt="Serviço de instalação elétrica"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="servico-icon">
+
+                            <i
+                                class="fa-solid fa-plug-circle-bolt"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <div class="servico-info">
+
+                            <span class="servico-tag">
+                                Serviços elétricos
+                            </span>
+
+                            <h2>
+                                Instalações e adequações elétricas
+                            </h2>
+
+                            <p>
+                                Serviços elétricos para adequar a estrutura do
+                                imóvel, melhorar a segurança e preparar novas
+                                cargas e equipamentos.
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Distribuição elétrica interna
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Instalação e adequação de quadros
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Circuitos para novas cargas
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Correções e melhorias elétricas
+                                </li>
+
+                            </ul>
+
+                            <a
+                                href="https://wa.me/5527997875792?text=Olá%2C%20gostaria%20de%20informações%20sobre%20serviços%20e%20adequações%20elétricas."
+                                class="btn btn-outline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Solicitar atendimento
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- =====================================
+                         CARREGADORES VEICULARES
+                    ====================================== -->
+
+                    <article
+                        class="servico-card fade-up"
+                        id="carregadores"
+                    >
+
+                        <div class="servico-img">
+
+                            <img
+                                src="assets/img/services/carregadores.jpg"
+                                alt="Instalação de carregador para veículo elétrico"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="servico-icon">
+
+                            <i
+                                class="fa-solid fa-charging-station"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <div class="servico-info">
+
+                            <span class="servico-tag">
+                                Mobilidade elétrica
+                            </span>
+
+                            <h2>
+                                Carregadores veiculares
+                            </h2>
+
+                            <p>
+                                Avaliação e instalação da infraestrutura
+                                necessária para carregamento seguro de veículos
+                                elétricos e híbridos.
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Avaliação da carga disponível
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Circuito dedicado
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Proteções elétricas
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Instalação residencial ou empresarial
+                                </li>
+
+                            </ul>
+
+                            <a
+                                href="https://wa.me/5527997875792?text=Olá%2C%20gostaria%20de%20informações%20sobre%20instalação%20de%20carregador%20veicular."
+                                class="btn btn-outline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Solicitar avaliação
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             DIFERENCIAIS
+        ================================================== -->
+
+        <section class="diferenciais">
+
+            <div class="container">
+
+                <div class="section-title fade-up">
+
+                    <span>
+                        Por que escolher a B2?
+                    </span>
+
+                    <h2>
+                        Experiência e acompanhamento em cada etapa
+                    </h2>
+
+                    <p>
+                        Trabalhamos para oferecer soluções seguras,
+                        transparentes e adequadas às necessidades de cada cliente.
+                    </p>
+
+                </div>
+
+                <div class="diferenciais-grid">
+
+                    <article class="diferencial-card fade-up">
+
+                        <div class="diferencial-icon">
+
+                            <i
+                                class="fa-solid fa-award"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h3>
+                            Mais de 9 anos
+                        </h3>
+
+                        <p>
+                            Experiência em energia solar e soluções elétricas
+                            para diferentes tipos de imóveis.
+                        </p>
+
+                    </article>
+
+                    <article class="diferencial-card fade-up">
+
+                        <div class="diferencial-icon">
+
+                            <i
+                                class="fa-solid fa-list-check"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h3>
+                            Mais de 1.600 serviços
+                        </h3>
+
+                        <p>
+                            Projetos, instalações, manutenções e atendimentos
+                            realizados pela equipe.
+                        </p>
+
+                    </article>
+
+                    <article class="diferencial-card fade-up">
+
+                        <div class="diferencial-icon">
+
+                            <i
+                                class="fa-solid fa-star"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h3>
+                            Avaliações 5 estrelas
+                        </h3>
+
+                        <p>
+                            Atendimento reconhecido pelos clientes nas
+                            avaliações publicadas no Google.
+                        </p>
+
+                    </article>
+
+                    <article class="diferencial-card fade-up">
+
+                        <div class="diferencial-icon">
+
+                            <i
+                                class="fa-solid fa-headset"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h3>
+                            Suporte ao cliente
+                        </h3>
+
+                        <p>
+                            Acompanhamento desde a primeira análise até a
+                            finalização do atendimento.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             PROCESSO
+        ================================================== -->
+
+        <section class="processo">
+
+            <div class="container">
+
+                <div class="section-title fade-up">
+
+                    <span>
+                        Como funciona
+                    </span>
+
+                    <h2>
+                        Etapas do nosso atendimento
+                    </h2>
+
+                    <p>
+                        O processo pode variar conforme o serviço, mas nossa
+                        equipe acompanha cada etapa de maneira organizada.
+                    </p>
+
+                </div>
+
+                <div class="timeline">
+
+                    <article class="etapa fade-up">
+
+                        <div class="etapa-numero">
+                            1
+                        </div>
+
+                        <h3>
+                            Primeiro contato
+                        </h3>
+
+                        <p>
+                            Entendemos a necessidade e coletamos as primeiras
+                            informações do cliente.
+                        </p>
+
+                    </article>
+
+                    <article class="etapa fade-up">
+
+                        <div class="etapa-numero">
+                            2
+                        </div>
+
+                        <h3>
+                            Análise
+                        </h3>
+
+                        <p>
+                            Avaliamos o imóvel, o consumo, a estrutura ou o
+                            problema apresentado.
+                        </p>
+
+                    </article>
+
+                    <article class="etapa fade-up">
+
+                        <div class="etapa-numero">
+                            3
+                        </div>
+
+                        <h3>
+                            Proposta
+                        </h3>
+
+                        <p>
+                            Apresentamos a solução recomendada, os equipamentos
+                            e as etapas do serviço.
+                        </p>
+
+                    </article>
+
+                    <article class="etapa fade-up">
+
+                        <div class="etapa-numero">
+                            4
+                        </div>
+
+                        <h3>
+                            Execução
+                        </h3>
+
+                        <p>
+                            Nossa equipe realiza o serviço conforme o projeto
+                            e as condições contratadas.
+                        </p>
+
+                    </article>
+
+                    <article class="etapa fade-up">
+
+                        <div class="etapa-numero">
+                            5
+                        </div>
+
+                        <h3>
+                            Acompanhamento
+                        </h3>
+
+                        <p>
+                            Orientamos o cliente e acompanhamos as etapas
+                            necessárias após a execução.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             PERGUNTAS FREQUENTES
+        ================================================== -->
+
+        <section class="faq">
+
+            <div class="container">
+
+                <div class="faq-layout">
+
+                    <div class="faq-intro fade-left">
+
+                        <span>
+                            Perguntas frequentes
+                        </span>
+
+                        <h2>
+                            Tire suas principais dúvidas
+                        </h2>
+
+                        <p>
+                            Algumas informações podem variar de acordo com o
+                            imóvel e o serviço. Nossa equipe realiza uma análise
+                            antes de confirmar prazos e valores.
+                        </p>
+
+                        <a
+                            href="contato.html"
+                            class="btn btn-secondary"
+                        >
+                            Falar com a equipe
+                        </a>
+
+                    </div>
+
+                    <div class="faq-list fade-right">
+
+                        <article class="faq-item active">
+
+                            <button
+                                type="button"
+                                class="faq-question"
+                                aria-expanded="true"
+                            >
+
+                                Quanto tempo leva um projeto de energia solar?
+
+                                <i
+                                    class="fa-solid fa-chevron-down"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                            <div
+                                class="faq-answer"
+                                style="max-height: 300px;"
+                            >
+
+                                <p>
+                                    O prazo depende do tamanho do sistema, da
+                                    estrutura do imóvel, da disponibilidade dos
+                                    equipamentos e da análise da concessionária.
+                                    Após avaliar o local, a equipe informa uma
+                                    previsão mais precisa.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="faq-item">
+
+                            <button
+                                type="button"
+                                class="faq-question"
+                                aria-expanded="false"
+                            >
+
+                                A B2 realiza orçamento gratuito?
+
+                                <i
+                                    class="fa-solid fa-chevron-down"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    A solicitação inicial e a simulação de energia
+                                    solar podem ser feitas pelo formulário do site.
+                                    Serviços que exigem visita técnica detalhada
+                                    podem ter condições específicas informadas
+                                    previamente pela equipe.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="faq-item">
+
+                            <button
+                                type="button"
+                                class="faq-question"
+                                aria-expanded="false"
+                            >
+
+                                Vocês realizam somente instalações novas?
+
+                                <i
+                                    class="fa-solid fa-chevron-down"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    Não. Também realizamos manutenção, limpeza,
+                                    avaliação de sistemas existentes, regularização,
+                                    adequações elétricas e serviços em padrões de
+                                    entrada.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="faq-item">
+
+                            <button
+                                type="button"
+                                class="faq-question"
+                                aria-expanded="false"
+                            >
+
+                                A B2 cuida da homologação junto à concessionária?
+
+                                <i
+                                    class="fa-solid fa-chevron-down"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    Sim. Nos projetos contratados com esse serviço,
+                                    a equipe prepara a documentação e acompanha as
+                                    etapas necessárias junto à concessionária.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="faq-item">
+
+                            <button
+                                type="button"
+                                class="faq-question"
+                                aria-expanded="false"
+                            >
+
+                                Atendem fora da Serra?
+
+                                <i
+                                    class="fa-solid fa-chevron-down"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    Sim. A B2 atende clientes em diferentes cidades
+                                    do Espírito Santo. A disponibilidade e as
+                                    condições de deslocamento são confirmadas pela
+                                    equipe no momento do atendimento.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             CTA FINAL
+        ================================================== -->
+
+        <section class="servicos-cta-final">
+
+            <div class="container fade-up">
+
+                <h2>
+                    Qual solução você precisa para seu imóvel?
+                </h2>
+
+                <p>
+                    Fale com a equipe da B2 Energia Solar ou preencha o formulário
+                    para receber um atendimento mais direcionado.
+                </p>
+
+                <div class="servicos-cta-actions">
+
+                    <a
+                        href="orcamento.html"
+                        class="btn btn-laranja btn-lg"
+                    >
+
+                        <i
+                            class="fa-solid fa-calculator"
+                            aria-hidden="true"
+                        ></i>
+
+                        Solicitar orçamento
+
+                    </a>
+
+                    <a
+                        href="https://wa.me/5527997875792?text=Olá%2C%20vi%20os%20serviços%20da%20B2%20Energia%20Solar%20no%20site%20e%20gostaria%20de%20mais%20informações."
+                        class="btn btn-transparente btn-lg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                        Falar no WhatsApp
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-logo">
+
+                <a
+                    href="index.html"
+                    aria-label="Página inicial da B2 Energia Solar"
+                >
+
+                    <img
+                        src="assets/img/logo/logo-b2.png"
+                        alt="B2 Energia Solar"
+                    >
+
+                </a>
+
+                <p>
+                    Soluções completas em energia solar, projetos elétricos,
+                    homologação, instalações, limpeza e manutenção.
+                </p>
+
+                <div
+                    class="social"
+                    aria-label="Redes sociais da B2 Energia Solar"
+                >
+
+                    <a
+                        href="https://www.instagram.com/b2energiasolar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram da B2 Energia Solar"
+                        title="Instagram"
+                    >
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+                    <a
+                        href="https://wa.me/5527997875792"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp da B2 Energia Solar"
+                        title="WhatsApp"
+                    >
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="obras.html">
+                            Obras e avaliações
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="orcamento.html">
+                            Orçamento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="endereco.html">
+                            Endereço
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>
+                    Serviços
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#energia-solar">
+                            Energia solar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#homologacao">
+                            Homologação
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#manutencao">
+                            Limpeza e manutenção
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#padrao-entrada">
+                            Padrão de entrada
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#carregadores">
+                            Carregadores veiculares
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Fale conosco
+                </h3>
+
+                <div class="footer-contact">
+
+                    <p>
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="https://wa.me/5527997875792"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            (27) 99787-5792
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="https://www.instagram.com/b2energiasolar/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @b2energiasolar
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i
+                            class="fa-solid fa-location-dot"
+                            aria-hidden="true"
+                        ></i>
+
+                        Av. Cel. Manoel Nunes, 1730
+                    </p>
+
+                    <p>
+                        José de Anchieta, Serra — ES
+                    </p>
+
+                    <p>
+                        CEP 29162-385
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    ©
+                    <span id="currentYear">
+                        2026
+                    </span>
+
+                    B2 Energia Solar. Todos os direitos reservados.
+                </p>
+
+                <p>
+                    Energia limpa para um futuro mais econômico.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =====================================================
+         WHATSAPP FLUTUANTE
+    ====================================================== -->
+
+    <a
+        href="https://wa.me/5527997875792?text=Olá%2C%20vi%20os%20serviços%20da%20B2%20Energia%20Solar%20no%20site%20e%20gostaria%20de%20mais%20informações."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Conversar com a B2 Energia Solar pelo WhatsApp"
+        title="Falar no WhatsApp"
+    >
+
+        <i
+            class="fa-brands fa-whatsapp"
+            aria-hidden="true"
+        ></i>
+
+    </a>
+
+    <!-- =====================================================
+         JAVASCRIPT PRINCIPAL
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+    <!-- =====================================================
+         SCRIPT DO FAQ
+    ====================================================== -->
+
+    <script>
+
+        "use strict";
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const perguntas = document.querySelectorAll(".faq-question");
+
+            perguntas.forEach((pergunta) => {
+
+                pergunta.addEventListener("click", () => {
+
+                    const itemAtual = pergunta.closest(".faq-item");
+                    const respostaAtual = itemAtual.querySelector(".faq-answer");
+
+                    const estavaAberto =
+                        itemAtual.classList.contains("active");
+
+                    document
+                        .querySelectorAll(".faq-item")
+                        .forEach((item) => {
+
+                            item.classList.remove("active");
+
+                            const botao =
+                                item.querySelector(".faq-question");
+
+                            const resposta =
+                                item.querySelector(".faq-answer");
+
+                            botao.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+                            resposta.style.maxHeight = null;
+
+                        });
+
+                    if (!estavaAberto) {
+
+                        itemAtual.classList.add("active");
+
+                        pergunta.setAttribute(
+                            "aria-expanded",
+                            "true"
+                        );
+
+                        respostaAtual.style.maxHeight =
+                            `${respostaAtual.scrollHeight}px`;
+
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

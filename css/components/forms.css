@@ -1,0 +1,359 @@
+/* =======================================================
+   FORMS.CSS
+   Projeto: B2 Energia Solar
+=======================================================*/
+
+/* =======================================================
+   CONTAINER DO FORMULÁRIO
+=======================================================*/
+
+.form-container{
+
+    width:100%;
+    max-width:900px;
+
+    margin:0 auto;
+
+    background:#fff;
+
+    padding:50px;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* =======================================================
+   TÍTULO
+=======================================================*/
+
+.form-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.form-title h2{
+
+    color:var(--secondary);
+
+    margin-bottom:10px;
+
+}
+
+.form-title p{
+
+    color:var(--text-light);
+
+}
+
+/* =======================================================
+   GRID
+=======================================================*/
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group.full{
+
+    grid-column:1 / -1;
+
+}
+
+/* =======================================================
+   LABEL
+=======================================================*/
+
+.form-group label{
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:var(--secondary);
+
+}
+
+/* =======================================================
+   INPUTS
+=======================================================*/
+
+.form-control{
+
+    width:100%;
+
+    height:58px;
+
+    padding:0 20px;
+
+    border:2px solid var(--gray-300);
+
+    border-radius:14px;
+
+    background:#fff;
+
+    color:var(--text);
+
+    transition:var(--transition);
+
+}
+
+/* =======================================================
+   TEXTAREA
+=======================================================*/
+
+textarea.form-control{
+
+    height:170px;
+
+    padding:18px 20px;
+
+    resize:vertical;
+
+}
+
+/* =======================================================
+   SELECT
+=======================================================*/
+
+select.form-control{
+
+    cursor:pointer;
+
+}
+
+/* =======================================================
+   FOCO
+=======================================================*/
+
+.form-control:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(255,122,0,.12);
+
+}
+
+/* =======================================================
+   PLACEHOLDER
+=======================================================*/
+
+.form-control::placeholder{
+
+    color:#999;
+
+}
+
+/* =======================================================
+   INPUT INVÁLIDO
+=======================================================*/
+
+.form-control.error{
+
+    border-color:#dc3545;
+
+}
+
+.form-control.success{
+
+    border-color:#28a745;
+
+}
+
+/* =======================================================
+   MENSAGEM DE ERRO
+=======================================================*/
+
+.input-error{
+
+    margin-top:8px;
+
+    color:#dc3545;
+
+    font-size:.85rem;
+
+}
+
+/* =======================================================
+   CHECKBOX
+=======================================================*/
+
+.checkbox-group{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+.checkbox-group input{
+
+    width:20px;
+
+    height:20px;
+
+    accent-color:var(--primary);
+
+}
+
+/* =======================================================
+   RADIO
+=======================================================*/
+
+.radio-group{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.radio-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    cursor:pointer;
+
+}
+
+.radio-group input{
+
+    accent-color:var(--primary);
+
+}
+
+/* =======================================================
+   BOTÕES
+=======================================================*/
+
+.form-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:40px;
+
+}
+
+/* =======================================================
+   ALERTA
+=======================================================*/
+
+.form-alert{
+
+    padding:18px 25px;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+    display:none;
+
+}
+
+.form-alert.success{
+
+    background:#d4edda;
+
+    color:#155724;
+
+}
+
+.form-alert.error{
+
+    background:#f8d7da;
+
+    color:#721c24;
+
+}
+
+/* =======================================================
+   LOADING
+=======================================================*/
+
+.form-loading{
+
+    display:none;
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+.form-loading span{
+
+    display:inline-block;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    border:3px solid rgba(255,122,0,.3);
+
+    border-top:3px solid var(--primary);
+
+    animation:loading .8s linear infinite;
+
+}
+
+@keyframes loading{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* =======================================================
+   RESPONSIVO
+=======================================================*/
+
+@media(max-width:768px){
+
+    .form-container{
+
+        padding:30px;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

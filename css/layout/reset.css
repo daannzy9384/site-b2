@@ -1,0 +1,131 @@
+/* =======================================================
+   RESET CSS
+   Projeto: B2 Energia Solar
+   Autor: Vitor Ramos
+   ======================================================= */
+
+/* Reset universal */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Remove foco azul em dispositivos móveis */
+
+html{
+    -webkit-tap-highlight-color:transparent;
+    scroll-behavior:smooth;
+}
+
+/* Body */
+
+body{
+    min-height:100vh;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* Imagens */
+
+img,
+picture,
+svg,
+video,
+canvas{
+    display:block;
+    max-width:100%;
+    user-select:none;
+}
+
+/* Formulários */
+
+input,
+button,
+textarea,
+select{
+    font:inherit;
+    border:none;
+    outline:none;
+    background:none;
+}
+
+/* Botões */
+
+button{
+    cursor:pointer;
+    border:none;
+    background:none;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Listas */
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* Tabelas */
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* Textarea */
+
+textarea{
+    resize:none;
+}
+
+/* Inputs Number */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+
+input[type="number"]{
+    appearance:textfield;
+    -moz-appearance:textfield;
+}
+
+/* Placeholder */
+
+::placeholder{
+    opacity:1;
+}
+
+/* Seleção de texto */
+
+::selection{
+    color:#fff;
+    background:#ff8c00;
+}
+
+/* Remove estilos do autofill */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+    -webkit-box-shadow:0 0 0 1000px transparent inset;
+    transition:background-color 9999s ease-in-out 0s;
+}
+
+/* Elementos ocultos */
+
+[hidden]{
+    display:none !important;
+}

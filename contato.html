@@ -1,0 +1,2543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- =====================================================
+         CONFIGURAÇÕES BÁSICAS
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Contato | B2 Energia Solar
+    </title>
+
+    <meta
+        name="description"
+        content="Entre em contato com a B2 Energia Solar pelo WhatsApp, Instagram ou visite nosso escritório em José de Anchieta, Serra, Espírito Santo."
+    >
+
+    <meta
+        name="keywords"
+        content="contato B2 Energia Solar, WhatsApp energia solar, energia solar Serra ES, orçamento energia solar"
+    >
+
+    <meta
+        name="author"
+        content="B2 Energia Solar"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0d3b66"
+    >
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta
+        property="og:title"
+        content="Fale com a B2 Energia Solar"
+    >
+
+    <meta
+        property="og:description"
+        content="Entre em contato com nossa equipe e encontre a melhor solução para sua necessidade."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:image"
+        content="assets/img/office/equipe-b2.jpg"
+    >
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/img/logo/favicon.png"
+    >
+
+    <!-- =====================================================
+         FONTES
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =====================================================
+         ÍCONES
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- =====================================================
+         CSS PRINCIPAL
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <!-- =====================================================
+         ESTILOS DA PÁGINA
+    ====================================================== -->
+
+    <style>
+
+        /* ===================================================
+           HERO
+        =================================================== */
+
+        .contato-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 180px 20px 115px;
+
+            background:
+                linear-gradient(
+                    rgba(7, 21, 31, .88),
+                    rgba(7, 21, 31, .92)
+                ),
+                url("assets/img/office/equipe-b2.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            text-align: center;
+
+            color: var(--white);
+
+        }
+
+        .contato-hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: -180px;
+            right: -140px;
+
+            width: 400px;
+            height: 400px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 122, 0, .13);
+
+        }
+
+        .contato-hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: -170px;
+            bottom: -220px;
+
+            width: 440px;
+            height: 440px;
+
+            border-radius: 50%;
+
+            background: rgba(0, 180, 216, .08);
+
+        }
+
+        .contato-hero .container {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+        .contato-hero span {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 18px;
+
+            color: var(--primary);
+
+            font-size: .92rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+
+        }
+
+        .contato-hero span::before,
+        .contato-hero span::after {
+
+            content: "";
+
+            width: 32px;
+            height: 3px;
+
+            border-radius: var(--radius-full);
+
+            background: var(--primary);
+
+        }
+
+        .contato-hero h1 {
+
+            max-width: 900px;
+
+            margin: 0 auto 22px;
+
+            color: var(--white);
+
+            font-size: clamp(2.4rem, 5vw, 4rem);
+
+        }
+
+        .contato-hero p {
+
+            max-width: 760px;
+
+            margin: 0 auto;
+
+            color: #dce3e8;
+
+            font-size: 1.08rem;
+
+            line-height: 1.85;
+
+        }
+
+        /* ===================================================
+           CANAIS DE CONTATO
+        =================================================== */
+
+        .canais-contato {
+
+            padding: 110px 0 70px;
+
+            background: var(--bg-section);
+
+        }
+
+        .contato-cards {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+
+            gap: 24px;
+
+        }
+
+        .contato-card {
+
+            position: relative;
+
+            display: flex;
+
+            flex-direction: column;
+
+            min-height: 310px;
+
+            padding: 34px 27px;
+
+            text-align: center;
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-sm);
+
+            transition:
+                transform var(--transition),
+                border-color var(--transition),
+                box-shadow var(--transition);
+
+        }
+
+        .contato-card:hover {
+
+            transform: translateY(-9px);
+
+            border-color: rgba(255, 122, 0, .35);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .contato-card-icon {
+
+            width: 72px;
+            height: 72px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            margin: 0 auto 24px;
+
+            color: var(--white);
+
+            background: var(--primary);
+
+            border-radius: 22px;
+
+            font-size: 30px;
+
+            box-shadow: 0 13px 27px rgba(255, 122, 0, .25);
+
+        }
+
+        .contato-card.whatsapp .contato-card-icon {
+
+            background: #25d366;
+
+            box-shadow: 0 13px 27px rgba(37, 211, 102, .25);
+
+        }
+
+        .contato-card.instagram .contato-card-icon {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #833ab4,
+                    #fd1d1d,
+                    #fcb045
+                );
+
+        }
+
+        .contato-card.localizacao .contato-card-icon {
+
+            background: var(--secondary);
+
+            box-shadow: 0 13px 27px rgba(13, 59, 102, .25);
+
+        }
+
+        .contato-card.email .contato-card-icon {
+
+            background: var(--accent);
+
+            box-shadow: 0 13px 27px rgba(0, 180, 216, .25);
+
+        }
+
+        .contato-card h2 {
+
+            margin-bottom: 12px;
+
+            color: var(--secondary);
+
+            font-size: 1.35rem;
+
+        }
+
+        .contato-card p {
+
+            margin-bottom: 23px;
+
+            font-size: .92rem;
+
+            line-height: 1.7;
+
+        }
+
+        .contato-card .btn {
+
+            width: 100%;
+
+            margin-top: auto;
+
+        }
+
+        /* ===================================================
+           ÁREA PRINCIPAL
+        =================================================== */
+
+        .contato-principal {
+
+            padding: 70px 0 115px;
+
+            background: var(--bg-section);
+
+        }
+
+        .contato-layout {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, .82fr)
+                minmax(0, 1.18fr);
+
+            gap: 55px;
+
+            align-items: stretch;
+
+        }
+
+        /* ===================================================
+           INFORMAÇÕES LATERAIS
+        =================================================== */
+
+        .contato-info {
+
+            display: flex;
+
+            flex-direction: column;
+
+            padding: 45px;
+
+            color: var(--white);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    var(--secondary),
+                    var(--secondary-dark)
+                );
+
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .contato-info > span {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            width: fit-content;
+
+            margin-bottom: 17px;
+
+            color: var(--primary);
+
+            font-size: .88rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+        }
+
+        .contato-info > span::before {
+
+            content: "";
+
+            width: 28px;
+            height: 3px;
+
+            border-radius: var(--radius-full);
+
+            background: var(--primary);
+
+        }
+
+        .contato-info h2 {
+
+            margin-bottom: 20px;
+
+            color: var(--white);
+
+            font-size: clamp(2rem, 4vw, 2.8rem);
+
+        }
+
+        .contato-info > p {
+
+            margin-bottom: 35px;
+
+            color: #d5e0e7;
+
+            line-height: 1.85;
+
+        }
+
+        .contato-info-list {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 17px;
+
+        }
+
+        .contato-info-item {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            background: rgba(255, 255, 255, .07);
+
+            border: 1px solid rgba(255, 255, 255, .09);
+            border-radius: 14px;
+
+        }
+
+        .contato-info-item i {
+
+            width: 44px;
+            height: 44px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            color: var(--primary);
+
+            background: rgba(255, 255, 255, .09);
+
+            border-radius: 12px;
+
+            font-size: 19px;
+
+        }
+
+        .contato-info-item h3 {
+
+            margin-bottom: 5px;
+
+            color: var(--white);
+
+            font-size: 1rem;
+
+        }
+
+        .contato-info-item p {
+
+            margin: 0;
+
+            color: #d5e0e7;
+
+            font-size: .88rem;
+
+            line-height: 1.6;
+
+        }
+
+        .contato-info-item a {
+
+            color: #d5e0e7;
+
+        }
+
+        .contato-info-item a:hover {
+
+            color: var(--primary);
+
+        }
+
+        .contato-social {
+
+            display: flex;
+
+            gap: 13px;
+
+            margin-top: auto;
+            padding-top: 35px;
+
+        }
+
+        .contato-social a {
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            color: var(--white);
+
+            background: rgba(255, 255, 255, .09);
+
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 50%;
+
+            font-size: 21px;
+
+            transition: var(--transition);
+
+        }
+
+        .contato-social a:hover {
+
+            background: var(--primary);
+
+            transform: translateY(-5px);
+
+        }
+
+        /* ===================================================
+           FORMULÁRIO
+        =================================================== */
+
+        .contato-form {
+
+            padding: 45px;
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+
+            box-shadow: var(--shadow-lg);
+
+        }
+
+        .contato-form-header {
+
+            margin-bottom: 33px;
+
+        }
+
+        .contato-form-header span {
+
+            display: inline-block;
+
+            margin-bottom: 12px;
+            padding: 7px 14px;
+
+            color: var(--primary);
+
+            background: rgba(255, 122, 0, .1);
+
+            border-radius: var(--radius-full);
+
+            font-size: .82rem;
+            font-weight: var(--fw-semibold);
+
+            text-transform: uppercase;
+            letter-spacing: .7px;
+
+        }
+
+        .contato-form-header h2 {
+
+            margin-bottom: 12px;
+
+            color: var(--secondary);
+
+        }
+
+        .contato-form-header p {
+
+            margin: 0;
+
+            line-height: 1.75;
+
+        }
+
+        .form-required {
+
+            color: var(--danger);
+
+        }
+
+        .form-help {
+
+            margin-top: 7px;
+
+            color: var(--text-light);
+
+            font-size: .8rem;
+
+        }
+
+        .assunto-options {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            gap: 12px;
+
+        }
+
+        .assunto-option {
+
+            position: relative;
+
+        }
+
+        .assunto-option input {
+
+            position: absolute;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+        }
+
+        .assunto-option label {
+
+            min-height: 68px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 11px;
+
+            margin: 0;
+            padding: 14px 16px;
+
+            color: var(--secondary);
+
+            background: var(--white);
+
+            border: 2px solid var(--gray-300);
+            border-radius: 13px;
+
+            cursor: pointer;
+
+            transition: var(--transition);
+
+        }
+
+        .assunto-option label i {
+
+            color: var(--primary);
+
+            font-size: 19px;
+
+        }
+
+        .assunto-option input:checked + label {
+
+            color: var(--primary);
+
+            background: rgba(255, 122, 0, .06);
+
+            border-color: var(--primary);
+
+            box-shadow: 0 0 0 4px rgba(255, 122, 0, .09);
+
+        }
+
+        .assunto-option input:focus-visible + label {
+
+            outline: 3px solid rgba(255, 122, 0, .25);
+
+            outline-offset: 2px;
+
+        }
+
+        .contato-form-alert {
+
+            display: none;
+
+            margin-bottom: 24px;
+            padding: 16px 20px;
+
+            border-radius: 12px;
+
+            font-size: .9rem;
+
+        }
+
+        .contato-form-alert.success {
+
+            display: block;
+
+            color: #155724;
+
+            background: #d4edda;
+
+        }
+
+        .contato-form-alert.error {
+
+            display: block;
+
+            color: #721c24;
+
+            background: #f8d7da;
+
+        }
+
+        .privacy-note {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 12px;
+
+            margin-top: 22px;
+            padding: 16px;
+
+            background: var(--gray-100);
+
+            border-radius: 12px;
+
+        }
+
+        .privacy-note i {
+
+            margin-top: 3px;
+
+            color: var(--secondary);
+
+        }
+
+        .privacy-note p {
+
+            margin: 0;
+
+            font-size: .8rem;
+
+            line-height: 1.6;
+
+        }
+
+        /* ===================================================
+           CTA
+        =================================================== */
+
+        .contato-cta {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 115px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(13, 59, 102, .94),
+                    rgba(7, 21, 31, .95)
+                ),
+                url("assets/img/hero/banner.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            text-align: center;
+
+        }
+
+        .contato-cta h2 {
+
+            max-width: 850px;
+
+            margin: 0 auto 20px;
+
+            color: var(--white);
+
+        }
+
+        .contato-cta p {
+
+            max-width: 720px;
+
+            margin: 0 auto 37px;
+
+            color: #dce3e8;
+
+            line-height: 1.8;
+
+        }
+
+        .contato-cta-actions {
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 16px;
+
+            flex-wrap: wrap;
+
+        }
+
+        /* ===================================================
+           RESPONSIVO
+        =================================================== */
+
+        @media(max-width: 1100px) {
+
+            .contato-cards {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+
+        }
+
+        @media(max-width: 992px) {
+
+            .contato-layout {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .contato-info {
+
+                min-height: auto;
+
+            }
+
+            .contato-social {
+
+                margin-top: 0;
+
+            }
+
+        }
+
+        @media(max-width: 768px) {
+
+            .contato-hero {
+
+                padding: 140px 20px 82px;
+
+            }
+
+            .canais-contato {
+
+                padding: 80px 0 50px;
+
+            }
+
+            .contato-principal {
+
+                padding: 50px 0 80px;
+
+            }
+
+            .contato-info,
+            .contato-form {
+
+                padding: 34px 27px;
+
+            }
+
+        }
+
+        @media(max-width: 620px) {
+
+            .contato-cards {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .contato-card {
+
+                min-height: auto;
+
+            }
+
+            .assunto-options {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+        @media(max-width: 576px) {
+
+            .contato-hero {
+
+                padding: 125px 16px 70px;
+
+            }
+
+            .contato-hero span::before,
+            .contato-hero span::after {
+
+                width: 18px;
+
+            }
+
+            .contato-info,
+            .contato-form {
+
+                padding: 27px 20px;
+
+            }
+
+            .contato-info-item {
+
+                padding: 16px;
+
+            }
+
+            .contato-cta-actions {
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+            }
+
+            .contato-cta-actions .btn {
+
+                width: 100%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header
+        class="header"
+        id="header"
+    >
+
+        <div class="container">
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Ir para a página inicial da B2 Energia Solar"
+            >
+
+                <img
+                    src="assets/img/logo/logo-b2.png"
+                    alt="B2 Energia Solar"
+                >
+
+            </a>
+
+            <nav
+                class="navbar"
+                id="navbar"
+                aria-label="Navegação principal"
+            >
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="obras.html">
+                            Obras e avaliações
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="orcamento.html">
+                            Orçamento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="endereco.html">
+                            Endereço
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="contato.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a
+                href="orcamento.html"
+                class="btn-header"
+            >
+                Solicitar orçamento
+            </a>
+
+            <button
+                class="menu-mobile"
+                id="menuMobile"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="navbar"
+            >
+
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true"
+                ></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="contato-hero">
+
+            <div class="container fade-up">
+
+                <span>
+                    Estamos à disposição
+                </span>
+
+                <h1>
+                    Fale com a equipe da B2 Energia Solar
+                </h1>
+
+                <p>
+                    Tire suas dúvidas, solicite atendimento ou conte para nossa
+                    equipe qual solução você está procurando.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             CANAIS DE CONTATO
+        ================================================== -->
+
+        <section class="canais-contato">
+
+            <div class="container">
+
+                <div class="section-title fade-up">
+
+                    <span>
+                        Canais de atendimento
+                    </span>
+
+                    <h2>
+                        Escolha a melhor maneira de falar conosco
+                    </h2>
+
+                    <p>
+                        Nossa equipe pode ajudar com energia solar, projetos,
+                        homologação, serviços elétricos, manutenção e limpeza.
+                    </p>
+
+                </div>
+
+                <div class="contato-cards">
+
+                    <!-- WhatsApp -->
+
+                    <article class="contato-card whatsapp fade-up">
+
+                        <div class="contato-card-icon">
+
+                            <i
+                                class="fa-brands fa-whatsapp"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h2>
+                            WhatsApp
+                        </h2>
+
+                        <p>
+                            Converse diretamente com nossa equipe pelo número
+                            (27) 99787-5792.
+                        </p>
+
+                        <a
+                            href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar%20e%20gostaria%20de%20mais%20informações."
+                            class="btn btn-whatsapp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <i
+                                class="fa-brands fa-whatsapp"
+                                aria-hidden="true"
+                            ></i>
+
+                            Iniciar conversa
+
+                        </a>
+
+                    </article>
+
+                    <!-- Instagram -->
+
+                    <article class="contato-card instagram fade-up">
+
+                        <div class="contato-card-icon">
+
+                            <i
+                                class="fa-brands fa-instagram"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h2>
+                            Instagram
+                        </h2>
+
+                        <p>
+                            Acompanhe nossos projetos, obras, instalações e
+                            novidades no perfil @b2energiasolar.
+                        </p>
+
+                        <a
+                            href="https://www.instagram.com/b2energiasolar/"
+                            class="btn btn-outline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <i
+                                class="fa-brands fa-instagram"
+                                aria-hidden="true"
+                            ></i>
+
+                            Visitar Instagram
+
+                        </a>
+
+                    </article>
+
+                    <!-- Localização -->
+
+                    <article class="contato-card localizacao fade-up">
+
+                        <div class="contato-card-icon">
+
+                            <i
+                                class="fa-solid fa-location-dot"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h2>
+                            Escritório
+                        </h2>
+
+                        <p>
+                            Av. Cel. Manoel Nunes, 1730, José de Anchieta,
+                            Serra — ES.
+                        </p>
+
+                        <a
+                            href="endereco.html"
+                            class="btn btn-secondary"
+                        >
+
+                            <i
+                                class="fa-solid fa-map-location-dot"
+                                aria-hidden="true"
+                            ></i>
+
+                            Ver localização
+
+                        </a>
+
+                    </article>
+
+                    <!-- Orçamento -->
+
+                    <article class="contato-card email fade-up">
+
+                        <div class="contato-card-icon">
+
+                            <i
+                                class="fa-solid fa-calculator"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h2>
+                            Orçamento
+                        </h2>
+
+                        <p>
+                            Preencha as informações do seu imóvel e envie uma
+                            solicitação completa para nossa equipe.
+                        </p>
+
+                        <a
+                            href="orcamento.html"
+                            class="btn btn-outline"
+                        >
+
+                            <i
+                                class="fa-solid fa-file-invoice-dollar"
+                                aria-hidden="true"
+                            ></i>
+
+                            Solicitar orçamento
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             FORMULÁRIO E INFORMAÇÕES
+        ================================================== -->
+
+        <section class="contato-principal">
+
+            <div class="container">
+
+                <div class="contato-layout">
+
+                    <!-- Informações -->
+
+                    <aside class="contato-info fade-left">
+
+                        <span>
+                            Informações de contato
+                        </span>
+
+                        <h2>
+                            Nossa equipe está pronta para atender você
+                        </h2>
+
+                        <p>
+                            Conte para nós o que você precisa. A B2 trabalha
+                            com soluções completas em energia solar e serviços
+                            elétricos.
+                        </p>
+
+                        <div class="contato-info-list">
+
+                            <article class="contato-info-item">
+
+                                <i
+                                    class="fa-brands fa-whatsapp"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        WhatsApp
+                                    </h3>
+
+                                    <p>
+
+                                        <a
+                                            href="https://wa.me/5527997875792"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            (27) 99787-5792
+                                        </a>
+
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="contato-info-item">
+
+                                <i
+                                    class="fa-brands fa-instagram"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        Instagram
+                                    </h3>
+
+                                    <p>
+
+                                        <a
+                                            href="https://www.instagram.com/b2energiasolar/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            @b2energiasolar
+                                        </a>
+
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="contato-info-item">
+
+                                <i
+                                    class="fa-solid fa-location-dot"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        Endereço
+                                    </h3>
+
+                                    <p>
+                                        Av. Cel. Manoel Nunes, 1730
+                                        <br>
+                                        José de Anchieta, Serra — ES
+                                        <br>
+                                        CEP 29162-385
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="contato-info-item">
+
+                                <i
+                                    class="fa-solid fa-solar-panel"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <div>
+
+                                    <h3>
+                                        Área de atendimento
+                                    </h3>
+
+                                    <p>
+                                        Atendemos clientes em todo o Espírito Santo.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                        <div
+                            class="contato-social"
+                            aria-label="Redes sociais da B2 Energia Solar"
+                        >
+
+                            <a
+                                href="https://www.instagram.com/b2energiasolar/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram da B2 Energia Solar"
+                                title="Instagram"
+                            >
+
+                                <i
+                                    class="fa-brands fa-instagram"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </a>
+
+                            <a
+                                href="https://wa.me/5527997875792"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="WhatsApp da B2 Energia Solar"
+                                title="WhatsApp"
+                            >
+
+                                <i
+                                    class="fa-brands fa-whatsapp"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </a>
+
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=Av.%20Cel.%20Manoel%20Nunes%2C%201730%20-%20Jos%C3%A9%20de%20Anchieta%2C%20Serra%20-%20ES%2C%2029162-385"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Localização da B2 no Google Maps"
+                                title="Google Maps"
+                            >
+
+                                <i
+                                    class="fa-solid fa-map-location-dot"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                    <!-- Formulário -->
+
+                    <div class="contato-form fade-right">
+
+                        <div class="contato-form-header">
+
+                            <span>
+                                Envie sua mensagem
+                            </span>
+
+                            <h2>
+                                Como podemos ajudar?
+                            </h2>
+
+                            <p>
+                                Preencha o formulário e sua mensagem será preparada
+                                para envio direto pelo WhatsApp.
+                            </p>
+
+                        </div>
+
+                        <form
+                            id="formContato"
+                            novalidate
+                        >
+
+                            <div
+                                class="contato-form-alert"
+                                id="contatoFormAlert"
+                                role="alert"
+                                aria-live="polite"
+                            ></div>
+
+                            <div class="form-grid">
+
+                                <!-- Nome -->
+
+                                <div class="form-group">
+
+                                    <label for="contatoNome">
+
+                                        Nome completo
+
+                                        <span class="form-required">
+                                            *
+                                        </span>
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="contatoNome"
+                                        name="nome"
+                                        class="form-control"
+                                        placeholder="Digite seu nome"
+                                        autocomplete="name"
+                                        minlength="3"
+                                        required
+                                    >
+
+                                </div>
+
+                                <!-- Telefone -->
+
+                                <div class="form-group">
+
+                                    <label for="contatoTelefone">
+
+                                        Telefone
+
+                                        <span class="form-required">
+                                            *
+                                        </span>
+
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="contatoTelefone"
+                                        name="telefone"
+                                        class="form-control"
+                                        placeholder="(27) 99999-9999"
+                                        autocomplete="tel"
+                                        inputmode="tel"
+                                        maxlength="15"
+                                        required
+                                    >
+
+                                </div>
+
+                                <!-- Assunto -->
+
+                                <div class="form-group full">
+
+                                    <label>
+
+                                        Assunto do atendimento
+
+                                        <span class="form-required">
+                                            *
+                                        </span>
+
+                                    </label>
+
+                                    <div class="assunto-options">
+
+                                        <div class="assunto-option">
+
+                                            <input
+                                                type="radio"
+                                                id="assunto-energia-solar"
+                                                name="assunto"
+                                                value="Energia solar"
+                                                required
+                                            >
+
+                                            <label for="assunto-energia-solar">
+
+                                                <i
+                                                    class="fa-solid fa-solar-panel"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Energia solar
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="assunto-option">
+
+                                            <input
+                                                type="radio"
+                                                id="assunto-manutencao"
+                                                name="assunto"
+                                                value="Limpeza ou manutenção"
+                                            >
+
+                                            <label for="assunto-manutencao">
+
+                                                <i
+                                                    class="fa-solid fa-screwdriver-wrench"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Limpeza ou manutenção
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="assunto-option">
+
+                                            <input
+                                                type="radio"
+                                                id="assunto-projeto"
+                                                name="assunto"
+                                                value="Projeto ou homologação"
+                                            >
+
+                                            <label for="assunto-projeto">
+
+                                                <i
+                                                    class="fa-solid fa-file-circle-check"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Projeto ou homologação
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="assunto-option">
+
+                                            <input
+                                                type="radio"
+                                                id="assunto-eletrica"
+                                                name="assunto"
+                                                value="Serviço elétrico"
+                                            >
+
+                                            <label for="assunto-eletrica">
+
+                                                <i
+                                                    class="fa-solid fa-bolt"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Serviço elétrico
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="assunto-option">
+
+                                            <input
+                                                type="radio"
+                                                id="assunto-carregador"
+                                                name="assunto"
+                                                value="Carregador veicular"
+                                            >
+
+                                            <label for="assunto-carregador">
+
+                                                <i
+                                                    class="fa-solid fa-charging-station"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Carregador veicular
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="assunto-option">
+
+                                            <input
+                                                type="radio"
+                                                id="assunto-outro"
+                                                name="assunto"
+                                                value="Outro assunto"
+                                            >
+
+                                            <label for="assunto-outro">
+
+                                                <i
+                                                    class="fa-solid fa-comments"
+                                                    aria-hidden="true"
+                                                ></i>
+
+                                                Outro assunto
+
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Cidade -->
+
+                                <div class="form-group full">
+
+                                    <label for="contatoCidade">
+                                        Cidade ou bairro
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="contatoCidade"
+                                        name="cidade"
+                                        class="form-control"
+                                        placeholder="Ex.: Serra, José de Anchieta"
+                                        autocomplete="address-level2"
+                                    >
+
+                                    <small class="form-help">
+                                        Essa informação ajuda nossa equipe a entender a região do atendimento.
+                                    </small>
+
+                                </div>
+
+                                <!-- Mensagem -->
+
+                                <div class="form-group full">
+
+                                    <label for="contatoMensagem">
+
+                                        Mensagem
+
+                                        <span class="form-required">
+                                            *
+                                        </span>
+
+                                    </label>
+
+                                    <textarea
+                                        id="contatoMensagem"
+                                        name="mensagem"
+                                        class="form-control"
+                                        placeholder="Conte um pouco sobre o serviço ou dúvida que você possui."
+                                        minlength="10"
+                                        required
+                                    ></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <div class="privacy-note">
+
+                                <i
+                                    class="fa-solid fa-lock"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <p>
+                                    Seus dados serão usados somente para o atendimento
+                                    da sua solicitação. Ao continuar, o WhatsApp abrirá
+                                    com a mensagem preenchida para que você possa revisar
+                                    antes de enviar.
+                                </p>
+
+                            </div>
+
+                            <div class="form-actions">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-whatsapp btn-lg btn-block"
+                                >
+
+                                    <i
+                                        class="fa-brands fa-whatsapp"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    Enviar mensagem pelo WhatsApp
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="contato-cta">
+
+            <div class="container fade-up">
+
+                <h2>
+                    Quer descobrir quanto pode economizar com energia solar?
+                </h2>
+
+                <p>
+                    Preencha nosso formulário de orçamento com os dados da sua
+                    conta e receba um atendimento mais completo.
+                </p>
+
+                <div class="contato-cta-actions">
+
+                    <a
+                        href="orcamento.html"
+                        class="btn btn-laranja btn-lg"
+                    >
+
+                        <i
+                            class="fa-solid fa-calculator"
+                            aria-hidden="true"
+                        ></i>
+
+                        Solicitar orçamento
+
+                    </a>
+
+                    <a
+                        href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar%20e%20gostaria%20de%20mais%20informações."
+                        class="btn btn-transparente btn-lg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                        Falar agora
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <!-- Empresa -->
+
+            <div class="footer-logo">
+
+                <a
+                    href="index.html"
+                    aria-label="Página inicial da B2 Energia Solar"
+                >
+
+                    <img
+                        src="assets/img/logo/logo-b2.png"
+                        alt="B2 Energia Solar"
+                    >
+
+                </a>
+
+                <p>
+                    Soluções completas em energia solar, projetos elétricos,
+                    homologação, instalações, limpeza e manutenção.
+                </p>
+
+                <div
+                    class="social"
+                    aria-label="Redes sociais da B2 Energia Solar"
+                >
+
+                    <a
+                        href="https://www.instagram.com/b2energiasolar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram da B2 Energia Solar"
+                        title="Instagram"
+                    >
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+                    <a
+                        href="https://wa.me/5527997875792"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp da B2 Energia Solar"
+                        title="WhatsApp"
+                    >
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Navegação -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="obras.html">
+                            Obras e avaliações
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="orcamento.html">
+                            Orçamento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="endereco.html">
+                            Endereço
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Serviços -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Serviços
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="servicos.html#energia-solar">
+                            Energia solar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#homologacao">
+                            Homologação
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#manutencao">
+                            Limpeza e manutenção
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#padrao-entrada">
+                            Padrão de entrada
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html#carregadores">
+                            Carregadores veiculares
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contato -->
+
+            <div>
+
+                <h3>
+                    Fale conosco
+                </h3>
+
+                <div class="footer-contact">
+
+                    <p>
+
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="https://wa.me/5527997875792"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            (27) 99787-5792
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+
+                        <a
+                            href="https://www.instagram.com/b2energiasolar/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @b2energiasolar
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <i
+                            class="fa-solid fa-location-dot"
+                            aria-hidden="true"
+                        ></i>
+
+                        Av. Cel. Manoel Nunes, 1730
+                    </p>
+
+                    <p>
+                        José de Anchieta, Serra — ES
+                    </p>
+
+                    <p>
+                        CEP 29162-385
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    ©
+                    <span id="currentYear">
+                        2026
+                    </span>
+
+                    B2 Energia Solar. Todos os direitos reservados.
+                </p>
+
+                <p>
+                    Energia limpa para um futuro mais econômico.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =====================================================
+         BOTÃO FLUTUANTE DO WHATSAPP
+    ====================================================== -->
+
+    <a
+        href="https://wa.me/5527997875792?text=Olá%2C%20vim%20pelo%20site%20da%20B2%20Energia%20Solar%20e%20gostaria%20de%20mais%20informações."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Conversar com a B2 Energia Solar pelo WhatsApp"
+        title="Falar no WhatsApp"
+    >
+
+        <i
+            class="fa-brands fa-whatsapp"
+            aria-hidden="true"
+        ></i>
+
+    </a>
+
+    <!-- =====================================================
+         JAVASCRIPT PRINCIPAL
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+    <!-- =====================================================
+         SCRIPT DO FORMULÁRIO DE CONTATO
+    ====================================================== -->
+
+    <script>
+
+        "use strict";
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const formulario = document.querySelector("#formContato");
+            const telefone = document.querySelector("#contatoTelefone");
+            const alerta = document.querySelector("#contatoFormAlert");
+
+            /* ===============================================
+               MÁSCARA DO TELEFONE
+            =============================================== */
+
+            if (telefone) {
+
+                telefone.addEventListener("input", () => {
+
+                    let valor = telefone.value.replace(/\D/g, "");
+
+                    valor = valor.slice(0, 11);
+
+                    if (valor.length > 10) {
+
+                        valor = valor.replace(
+                            /^(\d{2})(\d{5})(\d{4})$/,
+                            "($1) $2-$3"
+                        );
+
+                    } else if (valor.length > 6) {
+
+                        valor = valor.replace(
+                            /^(\d{2})(\d{4})(\d{0,4})$/,
+                            "($1) $2-$3"
+                        );
+
+                    } else if (valor.length > 2) {
+
+                        valor = valor.replace(
+                            /^(\d{2})(\d+)/,
+                            "($1) $2"
+                        );
+
+                    } else if (valor.length > 0) {
+
+                        valor = valor.replace(
+                            /^(\d*)/,
+                            "($1"
+                        );
+
+                    }
+
+                    telefone.value = valor;
+
+                });
+
+            }
+
+            /* ===============================================
+               ENVIO DO FORMULÁRIO
+            =============================================== */
+
+            if (!formulario) {
+                return;
+            }
+
+            formulario.addEventListener("submit", (evento) => {
+
+                evento.preventDefault();
+
+                limparErros();
+
+                const dados = new FormData(formulario);
+
+                const nome = String(
+                    dados.get("nome") || ""
+                ).trim();
+
+                const numeroTelefone = String(
+                    dados.get("telefone") || ""
+                ).trim();
+
+                const assunto = String(
+                    dados.get("assunto") || ""
+                ).trim();
+
+                const cidade = String(
+                    dados.get("cidade") || ""
+                ).trim();
+
+                const mensagemCliente = String(
+                    dados.get("mensagem") || ""
+                ).trim();
+
+                let formularioValido = true;
+
+                if (nome.length < 3) {
+
+                    mostrarErro(
+                        "contatoNome",
+                        "Informe seu nome completo."
+                    );
+
+                    formularioValido = false;
+
+                }
+
+                if (
+                    numeroTelefone.replace(/\D/g, "").length < 10
+                ) {
+
+                    mostrarErro(
+                        "contatoTelefone",
+                        "Informe um telefone válido com DDD."
+                    );
+
+                    formularioValido = false;
+
+                }
+
+                if (!assunto) {
+
+                    const grupoAssunto =
+                        document
+                            .querySelector("#assunto-energia-solar")
+                            ?.closest(".form-group");
+
+                    adicionarMensagemErro(
+                        grupoAssunto,
+                        "Selecione o assunto do atendimento."
+                    );
+
+                    formularioValido = false;
+
+                }
+
+                if (mensagemCliente.length < 10) {
+
+                    mostrarErro(
+                        "contatoMensagem",
+                        "Escreva uma mensagem com pelo menos 10 caracteres."
+                    );
+
+                    formularioValido = false;
+
+                }
+
+                if (!formularioValido) {
+
+                    exibirAlerta(
+                        "Confira os campos destacados antes de continuar.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+                const localidade =
+                    cidade || "Não informada";
+
+                const mensagemWhatsApp = [
+                    "Olá, equipe da B2 Energia Solar! ☀️",
+                    "",
+                    "Estou entrando em contato pelo site.",
+                    "",
+                    `Nome: ${nome}`,
+                    `Telefone: ${numeroTelefone}`,
+                    `Assunto: ${assunto}`,
+                    `Cidade ou bairro: ${localidade}`,
+                    "",
+                    "Mensagem:",
+                    mensagemCliente,
+                    "",
+                    "Aguardo o contato da equipe da B2."
+                ].join("\n");
+
+                const linkWhatsApp =
+                    "https://wa.me/5527997875792?text=" +
+                    encodeURIComponent(mensagemWhatsApp);
+
+                exibirAlerta(
+                    "Tudo certo! Estamos abrindo o WhatsApp com sua mensagem.",
+                    "success"
+                );
+
+                window.setTimeout(() => {
+
+                    window.open(
+                        linkWhatsApp,
+                        "_blank",
+                        "noopener,noreferrer"
+                    );
+
+                }, 450);
+
+            });
+
+            /* ===============================================
+               FUNÇÕES AUXILIARES
+            =============================================== */
+
+            function mostrarErro(idCampo, mensagem) {
+
+                const campo = document.querySelector(`#${idCampo}`);
+
+                if (!campo) {
+                    return;
+                }
+
+                campo.classList.add("error");
+                campo.setAttribute("aria-invalid", "true");
+
+                const grupo =
+                    campo.closest(".form-group") ||
+                    campo.parentElement;
+
+                adicionarMensagemErro(grupo, mensagem);
+
+            }
+
+            function adicionarMensagemErro(grupo, mensagem) {
+
+                if (!grupo) {
+                    return;
+                }
+
+                const erroExistente =
+                    grupo.querySelector(".input-error");
+
+                if (erroExistente) {
+
+                    erroExistente.textContent = mensagem;
+                    return;
+
+                }
+
+                const elementoErro =
+                    document.createElement("small");
+
+                elementoErro.className = "input-error";
+                elementoErro.textContent = mensagem;
+
+                grupo.appendChild(elementoErro);
+
+            }
+
+            function limparErros() {
+
+                formulario
+                    .querySelectorAll(".form-control.error")
+                    .forEach((campo) => {
+
+                        campo.classList.remove("error");
+                        campo.removeAttribute("aria-invalid");
+
+                    });
+
+                formulario
+                    .querySelectorAll(".input-error")
+                    .forEach((erro) => {
+
+                        erro.remove();
+
+                    });
+
+                alerta.classList.remove("success", "error");
+                alerta.style.display = "none";
+
+            }
+
+            function exibirAlerta(mensagem, tipo) {
+
+                alerta.textContent = mensagem;
+
+                alerta.classList.remove("success", "error");
+                alerta.classList.add(tipo);
+
+                alerta.style.display = "block";
+
+                alerta.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

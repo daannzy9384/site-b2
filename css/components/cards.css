@@ -1,0 +1,244 @@
+/* =======================================================
+   CARDS.CSS
+   Projeto: B2 Energia Solar
+======================================================= */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    background: var(--bg-card);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 122, 0, 0.35);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-image {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.card:hover .card-image img {
+    transform: scale(1.06);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 28px;
+}
+
+.card-tag {
+    width: fit-content;
+
+    margin-bottom: 14px;
+    padding: 7px 14px;
+
+    color: var(--primary);
+    background: rgba(255, 122, 0, 0.1);
+
+    border-radius: var(--radius-full);
+
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+}
+
+.card-title {
+    margin-bottom: 14px;
+    color: var(--secondary);
+    font-size: var(--fs-xl);
+}
+
+.card-text {
+    margin-bottom: 24px;
+    line-height: 1.8;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--gray-200);
+}
+
+.card-icon {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    color: var(--white);
+    background: var(--primary);
+
+    border-radius: 18px;
+    font-size: 28px;
+
+    box-shadow: 0 12px 25px rgba(255, 122, 0, 0.25);
+}
+
+.card--center {
+    text-align: center;
+}
+
+.card--center .card-icon,
+.card--center .card-tag {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card--featured {
+    border: 2px solid var(--primary);
+}
+
+.card--featured::before {
+    content: "Destaque";
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+
+    padding: 7px 14px;
+
+    color: var(--white);
+    background: var(--primary);
+
+    border-radius: var(--radius-full);
+
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.review-card {
+    position: relative;
+
+    padding: 32px;
+
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.review-card::before {
+    content: "“";
+
+    position: absolute;
+    top: 4px;
+    right: 24px;
+
+    color: rgba(255, 122, 0, 0.16);
+
+    font-size: 7rem;
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.review-stars {
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 18px;
+
+    color: #f4b400;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    position: relative;
+    z-index: 1;
+
+    min-height: 105px;
+    margin-bottom: 24px;
+
+    color: var(--gray-700);
+    line-height: 1.8;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.review-avatar {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--white);
+    background: var(--secondary);
+
+    border-radius: 50%;
+
+    font-weight: var(--fw-bold);
+}
+
+.review-author strong {
+    display: block;
+    color: var(--secondary);
+}
+
+.review-author small {
+    color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 680px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image {
+        height: 220px;
+    }
+}
